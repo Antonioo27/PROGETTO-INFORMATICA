@@ -31,7 +31,14 @@ public class PaginaInizialeController {
         stage.show();
     }
 
-    public void loginPlayer(ActionEvent event) {
+    public void loginPlayer(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("GiocatoreLogin.fxml"));
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        Image icon = new Image("C:\\Users\\HP\\ProvaDefinitiva\\src\\logo.png");
+        stage.getIcons().add(icon);
+        stage.show();
     }
 
 }
