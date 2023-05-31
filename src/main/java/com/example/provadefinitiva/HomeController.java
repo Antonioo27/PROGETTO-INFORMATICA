@@ -25,13 +25,21 @@ public class HomeController {
     @FXML
     private Label loginLabel;
 
+    private String codicePartita;
+
     public void displayName(String username){
         loginLabel.setText("Benvenuto :"+username);
     }
 
     public void creaPartita(ActionEvent event) throws IOException {
         codPartita_text.setText("Codice Partita : "+String.valueOf((int)(Math.random()*10000)));
-          Parent root = FXMLLoader.load(getClass().getResource("AggiungiNomi.fxml"));
+
+        String codicePartita = codPartita_text.getText();
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("AggiungiNomi.fxml"));
+        root= loader.load();
+        AggiungiNomiController aggiungiNomiController = loader.getController();
+        aggiungiNomiController.visualizzaCodicePartita(codicePartita);
+         // Parent root = FXMLLoader.load(getClass().getResource("AggiungiNomi.fxml"));
           stage = (Stage)((Node)event.getSource()).getScene().getWindow();
           scene = new Scene(root);
           stage.setScene(scene);

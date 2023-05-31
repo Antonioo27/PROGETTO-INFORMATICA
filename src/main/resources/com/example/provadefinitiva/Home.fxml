@@ -8,7 +8,7 @@
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.provadefinitiva.HomeController">
    <children>
-      <Text layoutX="43.0" layoutY="46.0" lineSpacing="3.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="S.P.A.C.C.A" textAlignment="CENTER" wrappingWidth="514.1366577148438">
+      <Text layoutX="257.0" layoutY="42.0" lineSpacing="3.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="S.P.A.C.C.A" textAlignment="CENTER" wrappingWidth="215.73663330078125">
          <font>
             <Font name="Berlin Sans FB Demi Bold" size="29.0" />
          </font>
@@ -23,9 +23,9 @@
             <Font size="15.0" />
          </font>
       </Text>
-      <Label fx:id="loginLabel" layoutX="14.0" layoutY="8.0" prefHeight="31.0" prefWidth="100.0" text="c">
+      <Label fx:id="loginLabel" layoutX="14.0" layoutY="8.0" prefHeight="39.0" prefWidth="222.0" textFill="#137ab9">
          <font>
-            <Font size="15.0" />
+            <Font name="System Bold" size="15.0" />
          </font>
       </Label>
    </children>

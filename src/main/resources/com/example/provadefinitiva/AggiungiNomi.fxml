@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
@@ -8,12 +9,24 @@
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.provadefinitiva.AggiungiNomiController">
    <children>
-      <Text layoutX="151.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PARTECIPANTI DELLA PARTITA" textAlignment="CENTER">
+      <Text layoutX="244.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PARTECIPANTI  PARTITA" textAlignment="CENTER">
          <font>
             <Font size="22.0" />
          </font>
       </Text>
-      <TextField fx:id="giocatore_textField" layoutX="226.0" layoutY="87.0" promptText="Aggiungi nome giocatore.." />
+      <TextField fx:id="giocatore_textField" layoutX="214.0" layoutY="109.0" promptText="Aggiungi nome giocatore.." />
       <Button fx:id="aggiungi_button" layoutX="252.0" layoutY="161.0" mnemonicParsing="false" onAction="#aggiungiGiocatore" text="AGGIUNGI" />
+      <Button layoutX="187.0" layoutY="237.0" mnemonicParsing="false" onAction="#visualizzaGiocatori" text="VISUALIZZA GIOCATORI AGGIUNTI" />
+      <Label fx:id="labelGiocatori" layoutX="112.0" layoutY="284.0" prefHeight="86.0" prefWidth="400.0">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Button layoutX="538.0" layoutY="10.0" mnemonicParsing="false" onAction="#logout" prefHeight="25.0" prefWidth="56.0" text="logout" />
+      <Label fx:id="labelCodicePartita" layoutX="28.0" layoutY="23.0" prefHeight="25.0" prefWidth="149.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
    </children>
 </Pane>
