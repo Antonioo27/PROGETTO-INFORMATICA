@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.provadefinitiva.HomeController">
+   <children>
+      <Text layoutX="43.0" layoutY="46.0" lineSpacing="3.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="S.P.A.C.C.A" textAlignment="CENTER" wrappingWidth="514.1366577148438">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="29.0" />
+         </font>
+      </Text>
+      <Button fx:id="creaPartita_button" layoutX="242.0" layoutY="185.0" mnemonicParsing="false" onAction="#creaPartita" text="CREA PARTITA">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Text fx:id="codPartita_text" layoutX="189.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="222.46442871093757">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Label fx:id="loginLabel" layoutX="14.0" layoutY="8.0" prefHeight="31.0" prefWidth="100.0" text="c">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

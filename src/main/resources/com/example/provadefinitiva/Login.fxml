@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.provadefinitiva.LoginController">
+   <children>
+      <PasswordField fx:id="passwordLogin" alignment="CENTER" layoutX="220.0" layoutY="200.0" prefHeight="25.0" prefWidth="165.0" promptText="Type your password.." />
+      <Button id="buttonLogin" alignment="TOP_CENTER" layoutX="194.0" layoutY="276.0" mnemonicParsing="false" onAction="#checkLogin" prefHeight="27.0" prefWidth="91.0" text="LOGIN" textFill="#1ebad9">
+         <font>
+            <Font size="13.0" />
+         </font></Button>
+      <Text fill="#199fe3" layoutX="147.0" layoutY="67.0" stroke="#2a86b4" strokeType="OUTSIDE" text="ADMINISTRATOR LOGIN" textAlignment="CENTER" wrappingWidth="310.0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <TextField fx:id="username_field" alignment="CENTER" layoutX="222.0" layoutY="134.0" prefHeight="25.0" prefWidth="156.0" promptText="Typer your username ..." />
+      <Text layoutX="213.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" textAlignment="CENTER" wrappingWidth="165.0" />
+      <Text layoutX="196.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" textAlignment="CENTER" wrappingWidth="207.99999392032623" />
+      <Text fx:id="loginMsg" layoutX="224.0" layoutY="357.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="155.99993896484375">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <Button fx:id="Clear_Button" alignment="TOP_CENTER" layoutX="316.0" layoutY="276.0" mnemonicParsing="false" onAction="#clearLogin" prefHeight="27.0" prefWidth="91.0" text="CLEAR" textAlignment="RIGHT" textFill="#1ebad9">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>
