@@ -13,11 +13,11 @@ import java.io.IOException;
 public class Prova extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("Login.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("PaginaIniziale.fxml"));
         Scene scene = new Scene(root);
         Image icon = new Image("C:\\Users\\HP\\ProvaDefinitiva\\src\\logo.png");
         stage.getIcons().add(icon);
-        stage.setTitle("LOGIN PAGE");
+        stage.setTitle("PAGINA INIZIALE");
         //stage.setFullScreen(true);
 
         //commento di prova
