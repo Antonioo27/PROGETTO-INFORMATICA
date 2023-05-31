@@ -19,6 +19,8 @@ public class Prova extends Application {
         stage.getIcons().add(icon);
         stage.setTitle("LOGIN PAGE");
         //stage.setFullScreen(true);
+
+        //commento di prova
         stage.setScene(scene);
         stage.show();
     }
