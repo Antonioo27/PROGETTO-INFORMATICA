@@ -32,7 +32,7 @@ public class HomeController {
     }
 
     public void creaPartita(ActionEvent event) throws IOException {
-        codPartita_text.setText("Codice Partita : "+String.valueOf((int)(Math.random()*10000)));
+        codPartita_text.setText(String.valueOf((int)(Math.random()*10000)));
 
         String codicePartita = codPartita_text.getText();
         FXMLLoader loader = new FXMLLoader(getClass().getResource("AggiungiNomi.fxml"));

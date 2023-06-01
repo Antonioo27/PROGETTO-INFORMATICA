@@ -7,7 +7,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.provadefinitiva.LoginController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.provadefinitiva.LoginAmministratoreController">
    <children>
       <PasswordField fx:id="passwordLogin" alignment="CENTER" layoutX="220.0" layoutY="200.0" prefHeight="25.0" prefWidth="165.0" promptText="Type your password.." />
       <Button id="buttonLogin" alignment="TOP_CENTER" layoutX="194.0" layoutY="276.0" mnemonicParsing="false" onAction="#checkLogin" prefHeight="27.0" prefWidth="91.0" text="LOGIN" textFill="#1ebad9">

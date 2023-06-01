@@ -1,0 +1,4 @@
+.root{
+  -fx-background-image:url('../Immagini/tavolodaPoker.png');
+    -fx-background-size:cover;
+}

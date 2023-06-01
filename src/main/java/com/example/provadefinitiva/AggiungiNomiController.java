@@ -29,9 +29,14 @@ public class AggiungiNomiController {
     private Scene scene;
     private Parent root;
 
-
+    public void visualizzaCodicePartita(String codicePartita) throws FileNotFoundException {
+        labelCodicePartita.setText("Codice Partita : "+codicePartita);
+        PrintWriter scrivo = new PrintWriter("Partita.txt");
+          scrivo.println(codicePartita);
+          scrivo.close();
+    }
     public void aggiungiGiocatore(ActionEvent event) throws IOException, FileNotFoundException {
-        FileWriter scrivo = new FileWriter("Giocatori.txt",true);
+        FileWriter scrivo = new FileWriter("Partita.txt",true);
         PrintWriter scrivoveramente = new PrintWriter(scrivo);
 
         if (giocatore_textField.getText() != null) {
@@ -57,7 +62,6 @@ public class AggiungiNomiController {
         stage.show();
     }
 
-    public void visualizzaCodicePartita(String codicePartita) {
-        labelCodicePartita.setText(codicePartita);
-    }
+
+
 }

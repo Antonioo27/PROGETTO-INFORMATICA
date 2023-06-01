@@ -15,7 +15,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class LoginController {
+public class LoginAmministratoreController {
     @FXML
     private Text loginMsg;
     @FXML
