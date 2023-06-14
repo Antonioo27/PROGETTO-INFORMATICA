@@ -43,7 +43,7 @@ public class HomeController {
           stage = (Stage)((Node)event.getSource()).getScene().getWindow();
           scene = new Scene(root);
           stage.setScene(scene);
-          Image icon = new Image("C:\\Users\\HP\\ProvaDefinitiva\\src\\logo.png");
+          Image icon = new Image("C:\\Users\\HP\\ProvaDefinitiva\\src\\main\\resources\\com\\example\\provadefinitiva\\Immagini\\logo.png");
           stage.getIcons().add(icon);
           stage.show();
     }

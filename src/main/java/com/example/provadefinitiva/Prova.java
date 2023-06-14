@@ -13,9 +13,9 @@ import java.io.IOException;
 public class Prova extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("PaginaIniziale.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("PagIniziale.fxml"));
         Scene scene = new Scene(root);
-        Image icon = new Image("C:\\Users\\HP\\ProvaDefinitiva\\src\\logo.png");
+        Image icon = new Image("C:\\Users\\HP\\ProvaDefinitiva\\src\\main\\resources\\com\\example\\provadefinitiva\\Immagini\\logo.png");
         stage.getIcons().add(icon);
         stage.setTitle("PAGINA INIZIALE");
         //stage.setFullScreen(true);

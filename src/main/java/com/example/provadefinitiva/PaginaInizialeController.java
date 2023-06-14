@@ -21,11 +21,11 @@ public class PaginaInizialeController {
     private Parent root;
 
     public void loginAdministrator(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("Login.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("AmministratoreLogin.fxml"));
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
-        Image icon = new Image("C:\\Users\\HP\\ProvaDefinitiva\\src\\logo.png");
+        Image icon = new Image("C:\\Users\\HP\\ProvaDefinitiva\\src\\main\\resources\\com\\example\\provadefinitiva\\Immagini\\logo.png");
         stage.getIcons().add(icon);
         stage.setTitle("Pagina Iniziale");
         stage.show();
@@ -36,7 +36,7 @@ public class PaginaInizialeController {
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
-        Image icon = new Image("C:\\Users\\HP\\ProvaDefinitiva\\src\\logo.png");
+        Image icon = new Image("C:\\Users\\HP\\ProvaDefinitiva\\src\\main\\resources\\com\\example\\provadefinitiva\\Immagini\\logo.png");
         stage.getIcons().add(icon);
         stage.show();
     }
