@@ -1,0 +1,214 @@
+Index: src/main/resources/com/example/provadefinitiva/Home.fxml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\r\n<?import javafx.scene.control.Button?>\r\n<?import javafx.scene.control.Label?>\r\n<?import javafx.scene.layout.Pane?>\r\n<?import javafx.scene.text.Font?>\r\n<?import javafx.scene.text.Text?>\r\n\r\n<Pane maxHeight=\"-Infinity\" maxWidth=\"-Infinity\" minHeight=\"-Infinity\" minWidth=\"-Infinity\" prefHeight=\"400.0\" prefWidth=\"600.0\" xmlns=\"http://javafx.com/javafx/20.0.1\" xmlns:fx=\"http://javafx.com/fxml/1\" fx:controller=\"com.example.provadefinitiva.HomeController\">\r\n   <children>\r\n      <Text layoutX=\"43.0\" layoutY=\"46.0\" lineSpacing=\"3.0\" mouseTransparent=\"true\" strokeType=\"OUTSIDE\" strokeWidth=\"0.0\" text=\"S.P.A.C.C.A\" textAlignment=\"CENTER\" wrappingWidth=\"514.1366577148438\">\r\n         <font>\r\n            <Font name=\"Berlin Sans FB Demi Bold\" size=\"29.0\" />\r\n         </font>\r\n      </Text>\r\n      <Button fx:id=\"creaPartita_button\" layoutX=\"242.0\" layoutY=\"185.0\" mnemonicParsing=\"false\" onAction=\"#creaPartita\" text=\"CREA PARTITA\">\r\n         <font>\r\n            <Font size=\"15.0\" />\r\n         </font>\r\n      </Button>\r\n      <Text fx:id=\"codPartita_text\" layoutX=\"189.0\" layoutY=\"306.0\" strokeType=\"OUTSIDE\" strokeWidth=\"0.0\" textAlignment=\"CENTER\" wrappingWidth=\"222.46442871093757\">\r\n         <font>\r\n            <Font size=\"15.0\" />\r\n         </font>\r\n      </Text>\r\n      <Label fx:id=\"loginLabel\" layoutX=\"14.0\" layoutY=\"8.0\" prefHeight=\"31.0\" prefWidth=\"100.0\" text=\"c\">\r\n         <font>\r\n            <Font size=\"15.0\" />\r\n         </font>\r\n      </Label>\r\n   </children>\r\n</Pane>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/resources/com/example/provadefinitiva/Home.fxml b/src/main/resources/com/example/provadefinitiva/Home.fxml
+--- a/src/main/resources/com/example/provadefinitiva/Home.fxml	(revision 649b68ce44184ad9a0629a23db867d13d4f4279c)
++++ b/src/main/resources/com/example/provadefinitiva/Home.fxml	(date 1685537838724)
+@@ -8,7 +8,7 @@
+ 
+ <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.provadefinitiva.HomeController">
+    <children>
+-      <Text layoutX="43.0" layoutY="46.0" lineSpacing="3.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="S.P.A.C.C.A" textAlignment="CENTER" wrappingWidth="514.1366577148438">
++      <Text layoutX="216.0" layoutY="50.0" lineSpacing="3.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="S.P.A.C.C.A" textAlignment="CENTER" wrappingWidth="194.93658447265625">
+          <font>
+             <Font name="Berlin Sans FB Demi Bold" size="29.0" />
+          </font>
+@@ -23,7 +23,7 @@
+             <Font size="15.0" />
+          </font>
+       </Text>
+-      <Label fx:id="loginLabel" layoutX="14.0" layoutY="8.0" prefHeight="31.0" prefWidth="100.0" text="c">
++      <Label fx:id="loginLabel" layoutX="14.0" layoutY="14.0" prefHeight="31.0" prefWidth="153.0" textFill="#448bc9">
+          <font>
+             <Font size="15.0" />
+          </font>
+Index: src/main/java/com/example/provadefinitiva/AggiungiNomiController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.provadefinitiva;\r\n\r\nimport javafx.event.ActionEvent;\r\nimport javafx.fxml.FXML;\r\nimport javafx.scene.control.TextField;\r\n\r\nimport java.util.ArrayList;\r\n\r\npublic class AggiungiNomiController {\r\n   @FXML\r\n   private TextField giocatore_textField;\r\n   private ArrayList<String>giocatori = new ArrayList<String>() ;\r\n\r\n\r\n    public void aggiungiGiocatore(ActionEvent event) {\r\n\r\n        if (giocatore_textField.getText() != null) {\r\n            giocatori.add(giocatore_textField.getText());\r\n            System.out.println(giocatori);\r\n            giocatore_textField.setText(\"\");\r\n        }\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/example/provadefinitiva/AggiungiNomiController.java b/src/main/java/com/example/provadefinitiva/AggiungiNomiController.java
+--- a/src/main/java/com/example/provadefinitiva/AggiungiNomiController.java	(revision 649b68ce44184ad9a0629a23db867d13d4f4279c)
++++ b/src/main/java/com/example/provadefinitiva/AggiungiNomiController.java	(date 1685539612969)
+@@ -2,13 +2,19 @@
+ 
+ import javafx.event.ActionEvent;
+ import javafx.fxml.FXML;
++import javafx.scene.control.Label;
+ import javafx.scene.control.TextField;
+ 
+ import java.util.ArrayList;
+ 
+ public class AggiungiNomiController {
+-   @FXML
+-   private TextField giocatore_textField;
++
++    @FXML
++    private TextField giocatore_textField;
++    @FXML
++    private Label labelGiocatori;
++    @FXML
++    private Label labelCodicePartita;
+    private ArrayList<String>giocatori = new ArrayList<String>() ;
+ 
+ 
+@@ -20,4 +26,17 @@
+             giocatore_textField.setText("");
+         }
+     }
++
++    public void visualizzaGiocatori(ActionEvent event) {
++         labelGiocatori.setText(String.valueOf(giocatori));
++       }
++
++    public void logout(ActionEvent event) {
++
++    }
++
++    public void visualizzaCodicePartita(String codicePartita) {
++        labelCodicePartita.setText(codicePartita);
++    }
+ }
++
+Index: src/main/java/com/example/provadefinitiva/HomeController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.provadefinitiva;\r\n\r\nimport javafx.event.ActionEvent;\r\nimport javafx.fxml.FXML;\r\nimport javafx.fxml.FXMLLoader;\r\nimport javafx.scene.Node;\r\nimport javafx.scene.Parent;\r\nimport javafx.scene.Scene;\r\nimport javafx.scene.control.Label;\r\nimport javafx.scene.control.PasswordField;\r\nimport javafx.scene.control.TextField;\r\nimport javafx.scene.image.Image;\r\nimport javafx.scene.paint.Color;\r\nimport javafx.scene.text.Text;\r\nimport javafx.stage.Stage;\r\n\r\nimport java.io.IOException;\r\n\r\npublic class HomeController {\r\n    private Stage stage;\r\n    private Scene scene;\r\n    private Parent root;\r\n    @FXML\r\n    private Text codPartita_text;\r\n    @FXML\r\n    private Label loginLabel;\r\n\r\n    public void displayName(String username){\r\n        loginLabel.setText(\"Benvenuto :\"+username);\r\n    }\r\n\r\n    public void creaPartita(ActionEvent event) throws IOException {\r\n        codPartita_text.setText(\"Codice Partita : \"+String.valueOf((int)(Math.random()*10000)));\r\n          Parent root = FXMLLoader.load(getClass().getResource(\"AggiungiNomi.fxml\"));\r\n          stage = (Stage)((Node)event.getSource()).getScene().getWindow();\r\n          scene = new Scene(root);\r\n          stage.setScene(scene);\r\n          Image icon = new Image(\"C:\\\\Users\\\\HP\\\\ProvaDefinitiva\\\\src\\\\logo.png\");\r\n          stage.getIcons().add(icon);\r\n          stage.show();\r\n    }\r\n\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/example/provadefinitiva/HomeController.java b/src/main/java/com/example/provadefinitiva/HomeController.java
+--- a/src/main/java/com/example/provadefinitiva/HomeController.java	(revision 649b68ce44184ad9a0629a23db867d13d4f4279c)
++++ b/src/main/java/com/example/provadefinitiva/HomeController.java	(date 1685539612966)
+@@ -20,6 +20,7 @@
+     private Stage stage;
+     private Scene scene;
+     private Parent root;
++
+     @FXML
+     private Text codPartita_text;
+     @FXML
+@@ -30,8 +31,15 @@
+     }
+ 
+     public void creaPartita(ActionEvent event) throws IOException {
+-        codPartita_text.setText("Codice Partita : "+String.valueOf((int)(Math.random()*10000)));
+-          Parent root = FXMLLoader.load(getClass().getResource("AggiungiNomi.fxml"));
++         codPartita_text.setText("Codice Partita : "+String.valueOf((int)(Math.random()*10000)));
++         String codicePartita= codPartita_text.getText();
++         FXMLLoader loader = new FXMLLoader(getClass().getResource("AggiungiNomi.fxml"));
++         root = loader.load();
++
++         AggiungiNomiController aggiungiNomiController = loader.getController();
++         aggiungiNomiController.visualizzaCodicePartita(codicePartita);
++
++         //Parent root = FXMLLoader.load(getClass().getResource("AggiungiNomi.fxml"));
+           stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+           scene = new Scene(root);
+           stage.setScene(scene);
+Index: src/main/resources/com/example/provadefinitiva/AggiungiNomi.fxml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\r\n<?import javafx.scene.control.Button?>\r\n<?import javafx.scene.control.TextField?>\r\n<?import javafx.scene.layout.Pane?>\r\n<?import javafx.scene.text.Font?>\r\n<?import javafx.scene.text.Text?>\r\n\r\n<Pane maxHeight=\"-Infinity\" maxWidth=\"-Infinity\" minHeight=\"-Infinity\" minWidth=\"-Infinity\" prefHeight=\"400.0\" prefWidth=\"600.0\" xmlns=\"http://javafx.com/javafx/20.0.1\" xmlns:fx=\"http://javafx.com/fxml/1\" fx:controller=\"com.example.provadefinitiva.AggiungiNomiController\">\r\n   <children>\r\n      <Text layoutX=\"151.0\" layoutY=\"46.0\" strokeType=\"OUTSIDE\" strokeWidth=\"0.0\" text=\"PARTECIPANTI DELLA PARTITA\" textAlignment=\"CENTER\">\r\n         <font>\r\n            <Font size=\"22.0\" />\r\n         </font>\r\n      </Text>\r\n      <TextField fx:id=\"giocatore_textField\" layoutX=\"226.0\" layoutY=\"87.0\" promptText=\"Aggiungi nome giocatore..\" />\r\n      <Button fx:id=\"aggiungi_button\" layoutX=\"252.0\" layoutY=\"161.0\" mnemonicParsing=\"false\" onAction=\"#aggiungiGiocatore\" text=\"AGGIUNGI\" />\r\n   </children>\r\n</Pane>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/resources/com/example/provadefinitiva/AggiungiNomi.fxml b/src/main/resources/com/example/provadefinitiva/AggiungiNomi.fxml
+--- a/src/main/resources/com/example/provadefinitiva/AggiungiNomi.fxml	(revision 649b68ce44184ad9a0629a23db867d13d4f4279c)
++++ b/src/main/resources/com/example/provadefinitiva/AggiungiNomi.fxml	(date 1685540462013)
+@@ -1,6 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ 
+ <?import javafx.scene.control.Button?>
++<?import javafx.scene.control.Label?>
+ <?import javafx.scene.control.TextField?>
+ <?import javafx.scene.layout.Pane?>
+ <?import javafx.scene.text.Font?>
+@@ -8,12 +9,24 @@
+ 
+ <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.provadefinitiva.AggiungiNomiController">
+    <children>
+-      <Text layoutX="151.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PARTECIPANTI DELLA PARTITA" textAlignment="CENTER">
++      <Text layoutX="250.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PARTECIPANTI  PARTITA" textAlignment="CENTER">
+          <font>
+-            <Font size="22.0" />
++            <Font name="System Bold" size="22.0" />
+          </font>
+       </Text>
+-      <TextField fx:id="giocatore_textField" layoutX="226.0" layoutY="87.0" promptText="Aggiungi nome giocatore.." />
+-      <Button fx:id="aggiungi_button" layoutX="252.0" layoutY="161.0" mnemonicParsing="false" onAction="#aggiungiGiocatore" text="AGGIUNGI" />
++      <TextField fx:id="giocatore_textField" layoutX="40.0" layoutY="105.0" prefHeight="25.0" prefWidth="157.0" promptText="Aggiungi nome giocatore.." />
++      <Button fx:id="aggiungi_button" layoutX="243.0" layoutY="105.0" mnemonicParsing="false" onAction="#aggiungiGiocatore" text="AGGIUNGI" />
++      <Button layoutX="40.0" layoutY="200.0" mnemonicParsing="false" onAction="#visualizzaGiocatori" prefHeight="25.0" prefWidth="181.0" style="-fx-background-color: #1ddcd7;" text="Visuallizza i giocatori inseriti" textFill="#201e1e" textOverrun="WORD_ELLIPSIS" />
++      <Label fx:id="labelGiocatori" layoutX="36.0" layoutY="266.0" prefHeight="82.0" prefWidth="380.0">
++         <font>
++            <Font name="System Italic" size="27.0" />
++         </font>
++      </Label>
++      <Button layoutX="541.0" layoutY="2.0" mnemonicParsing="false" onAction="#logout" text="logout" />
++      <Label fx:id="labelCodicePartita" layoutX="14.0" layoutY="15.0" prefHeight="19.0" prefWidth="195.0">
++         <font>
++            <Font size="16.0" />
++         </font>
++      </Label>
+    </children>
+ </Pane>
+Index: src/main/java/com/example/provadefinitiva/PaginaInizialeController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/example/provadefinitiva/PaginaInizialeController.java b/src/main/java/com/example/provadefinitiva/PaginaInizialeController.java
+new file mode 100644
+--- /dev/null	(date 1685540760847)
++++ b/src/main/java/com/example/provadefinitiva/PaginaInizialeController.java	(date 1685540760847)
+@@ -0,0 +1,8 @@
++package com.example.provadefinitiva;
++
++import javafx.fxml.FXML;
++
++public class PaginaInizialeController {
++    @FXML
++    private
++}
+Index: .idea/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.gitignore b/.idea/.gitignore
+new file mode 100644
+--- /dev/null	(date 1685308541714)
++++ b/.idea/.gitignore	(date 1685308541714)
+@@ -0,0 +1,8 @@
++# Default ignored files
++/shelf/
++/workspace.xml
++# Editor-based HTTP Client requests
++/httpRequests/
++# Datasource local storage ignored files
++/dataSources/
++/dataSources.local.xml
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(date 1685536749503)
++++ b/.idea/vcs.xml	(date 1685536749503)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file

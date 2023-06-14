@@ -1,0 +1,17 @@
+.root{
+    -fx-background-image: url('../Immagini/sfondo.png');
+    -fx-background-size: cover;
+}
+
+.button{
+    -fx-background-color: #57ea64;
+    -fx-padding: 15px 40px;
+    -fx-font-family: sans-serif;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+    -fx-font-size: 17px;
+    -fx-border-radius: 5px;
+}
+
+
+
