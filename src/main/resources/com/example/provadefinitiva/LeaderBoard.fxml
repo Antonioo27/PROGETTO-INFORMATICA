@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="806.0" prefWidth="1143.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.provadefinitiva.LeaderBoardController">
+   <children>
+      <TableView fx:id="TableView" layoutX="326.0" layoutY="149.0" prefHeight="422.0" prefWidth="455.0">
+        <columns>
+          <TableColumn fx:id="username" prefWidth="221.0" resizable="false" text="Giocatore" />
+          <TableColumn fx:id="totalScore" minWidth="0.0" prefWidth="233.0" text="Punteggio" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
