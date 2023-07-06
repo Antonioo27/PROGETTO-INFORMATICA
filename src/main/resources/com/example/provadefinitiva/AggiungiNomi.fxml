@@ -1,32 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.provadefinitiva.AggiungiNomiController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="624.0" prefWidth="862.0" stylesheets="@Css/PaginaIniziale.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.provadefinitiva.AggiungiGiocatoriController">
    <children>
-      <Text layoutX="244.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PARTECIPANTI  PARTITA" textAlignment="CENTER">
+      <Text layoutX="310.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PARTECIPANTI  PARTITA" textAlignment="CENTER" wrappingWidth="291.3726806640625">
          <font>
             <Font size="22.0" />
          </font>
+         <effect>
+            <ColorAdjust brightness="1.0" contrast="1.0" hue="1.0" saturation="1.0" />
+         </effect>
       </Text>
-      <TextField fx:id="giocatore_textField" layoutX="214.0" layoutY="109.0" promptText="Aggiungi nome giocatore.." />
-      <Button fx:id="aggiungi_button" layoutX="252.0" layoutY="161.0" mnemonicParsing="false" onAction="#aggiungiGiocatore" text="AGGIUNGI" />
-      <Button layoutX="187.0" layoutY="237.0" mnemonicParsing="false" onAction="#visualizzaGiocatori" text="VISUALIZZA GIOCATORI AGGIUNTI" />
-      <Label fx:id="labelGiocatori" layoutX="112.0" layoutY="284.0" prefHeight="86.0" prefWidth="400.0">
-         <font>
-            <Font size="19.0" />
-         </font>
-      </Label>
-      <Button layoutX="538.0" layoutY="10.0" mnemonicParsing="false" onAction="#logout" prefHeight="25.0" prefWidth="56.0" text="logout" />
-      <Label fx:id="labelCodicePartita" layoutX="28.0" layoutY="23.0" prefHeight="25.0" prefWidth="149.0">
+      <TextField fx:id="giocatore_textField" layoutX="310.0" layoutY="149.0" prefHeight="40.0" prefWidth="196.0" promptText="Aggiungi nome giocatore..">
          <font>
             <Font size="13.0" />
+         </font></TextField>
+      <Button fx:id="aggiungi_button" layoutX="531.0" layoutY="150.0" mnemonicParsing="false" onAction="#aggiungiGiocatore" styleClass="button2" text="AGGIUNGI" />
+      <Button layoutX="253.0" layoutY="346.0" mnemonicParsing="false" onAction="#visualizzaGiocatori" prefHeight="14.0" prefWidth="356.0" styleClass="button2" text="VISUALIZZA GIOCATORI AGGIUNTI" />
+      <Label fx:id="labelGiocatori" layoutX="105.0" layoutY="444.0" prefHeight="90.0" prefWidth="625.0" textFill="#2c0ad9">
+         <font>
+            <Font name="System Bold" size="19.0" />
          </font>
       </Label>
+      <Button layoutX="788.0" layoutY="10.0" mnemonicParsing="false" onAction="#logout" prefHeight="25.0" prefWidth="68.0" style="-fx-background-color: CBDCE4;" styleClass="button2" stylesheets="@Css/PaginaIniziale.css" text="logout">
+         <font>
+            <Font size="6.0" />
+         </font></Button>
+      <Label fx:id="labelCodicePartita" layoutX="14.0" layoutY="18.0" prefHeight="40.0" prefWidth="249.0" textFill="#dc0b38">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="ChoiceBox" layoutX="105.0" layoutY="149.0" prefWidth="150.0" />
    </children>
 </Pane>

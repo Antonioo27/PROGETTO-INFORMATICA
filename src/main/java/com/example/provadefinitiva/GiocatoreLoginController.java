@@ -30,29 +30,30 @@ public class GiocatoreLoginController {
     private Stage stage;
     private Scene scene;
     private Parent root;
-    private ArrayList<String> giocatori = new ArrayList<String>();
+    private ArrayList<Giocatore> giocatori = new ArrayList<Giocatore>();
 
 
     public void aggiungiUtente(ActionEvent event) throws IOException {
         Scanner scan = new Scanner(new File("C:\\Users\\HP\\ProvaDefinitiva\\Partita.txt"));
-         int count=0;
-         String codicePartita="";
-          while(scan.hasNext()){
-              if(count==0){
-                  codicePartita= scan.next();
-              }
-             String giocatore = scan.next();
-             if(usernameField.getText().equalsIgnoreCase(giocatore) && codicePartitaField.getText().equalsIgnoreCase(codicePartita)){
-                  giocatori.add(giocatore);
-                  labelMsg.setText("Giocatore presente sulla lista.");
-                  labelMsg.setTextFill(Color.GREEN);
-                  break;
+         scan.nextLine();
+         String codicePartita= scan.nextLine();
+          while(scan.hasNextLine()){
+              String username = scan.next();
+              int score = Integer.parseInt(scan.next());
+               Giocatore g1 = new Giocatore(username,score);
+             if(usernameField.getText().equalsIgnoreCase(username) && codicePartitaField.getText().equalsIgnoreCase(codicePartita)){
+                   giocatori.add(g1);
+                   labelMsg.setText("Giocatore presente sulla lista.");
+                   labelMsg.setTextFill(Color.GREEN);
+                   usernameField.setText("");
+                   break;
              }
               else{
                  labelMsg.setText("Mi dispiace ma non sei sulla lista");
                   labelMsg.setTextFill(Color.RED);
+                  usernameField.setText("");
              }
-            count++;
+
           }
     }
 

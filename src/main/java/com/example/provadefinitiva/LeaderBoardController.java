@@ -8,10 +8,10 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.cell.PropertyValueFactory;
-import java.net.URL;
-import java.util.ResourceBundle;
+import java.util.ArrayList;
 
-public class LeaderBoardController implements Initializable {
+
+public class LeaderBoardController  {
 
     @FXML
     private TableView<Giocatore> TableView;
@@ -21,15 +21,19 @@ public class LeaderBoardController implements Initializable {
 
     @FXML
     private TableColumn<Giocatore, Integer> totalScore;
-     ObservableList<Giocatore> listaGiocatori = FXCollections.observableArrayList(
-             new Giocatore("Cavallo",500)
-             );
 
-    @Override
-    public void initialize(URL url, ResourceBundle resourceBundle) {
+    private ArrayList<Giocatore> GIOCATORI = new ArrayList<>();
+
+    //Metodo che prende i Giocatori che hanno fatto il login e una volta premuto il pulsante leaderBoard li inserisce dentro
+    //Da fare : costruire un file dove salvare la leaderboard ogni volta.
+    public void prendiGiocatori(ArrayList<Giocatore> Giocatori){
+
+        GIOCATORI.addAll(Giocatori);
+        ObservableList<Giocatore> listaGiocatori = FXCollections.observableArrayList(GIOCATORI);
         username.setCellValueFactory(new PropertyValueFactory<Giocatore, String>("username"));
         totalScore.setCellValueFactory(new PropertyValueFactory<Giocatore, Integer>("totalScore"));
 
         TableView.setItems(listaGiocatori);
     }
+
 }

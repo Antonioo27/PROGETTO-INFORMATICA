@@ -4,7 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a83edf22-57de-43e6-8a3f-681ebb786d0e" name="Changes" comment="bro code" />
+    <list default="true" id="a83edf22-57de-43e6-8a3f-681ebb786d0e" name="Changes" comment="leaderboard">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Partita.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Partita.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/AggiungiNomiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/AggiungiGiocatoriController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/GiocatoreLoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/GiocatoreLoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/GiocoUtenteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/GiocoUtenteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/PartitaOTorneoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/LeaderBoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/LeaderBoardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/LoginAmministratoreController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/LoginAmministratoreController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/Prova.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/Prova.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/AggiungiNomi.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/AggiungiNomi.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/AmministratoreLogin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/AmministratoreLogin.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Css/PaginaIniziale.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Css/PaginaIniziale.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Home.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/giocoUtente.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/giocoUtente.fxml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,8 +29,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
-        <option value="Class" />
         <option value="CSS File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -126,7 +141,14 @@
       <workItem from="1686231045939" duration="2635000" />
       <workItem from="1686234646033" duration="15000" />
       <workItem from="1686747929815" duration="3166000" />
-      <workItem from="1686765171725" duration="1337000" />
+      <workItem from="1686765171725" duration="5397000" />
+      <workItem from="1686776278924" duration="1665000" />
+      <workItem from="1686814191416" duration="7415000" />
+      <workItem from="1686824308193" duration="475000" />
+      <workItem from="1686848847596" duration="1464000" />
+      <workItem from="1686850329611" duration="3043000" />
+      <workItem from="1687285030512" duration="1555000" />
+      <workItem from="1688636396693" duration="506000" />
     </task>
     <task id="LOCAL-00001" summary="added gitignore">
       <created>1685536664827</created>
@@ -205,7 +227,21 @@
       <option name="project" value="LOCAL" />
       <updated>1686749303852</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="altra roba">
+      <created>1686767038121</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1686767038121</updated>
+    </task>
+    <task id="LOCAL-00013" summary="leaderboard">
+      <created>1686824688460</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1686824688460</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,7 +258,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/master" />
+                        <option value="master" />
                       </list>
                     </value>
                   </entry>
@@ -246,7 +282,9 @@
     <MESSAGE value="COMPLETATA REGISTRAZIONE PER UN SINGOLO UTENTE, NON SONO RIUSCITO A VISUALIZZARE IL TAVOLO DA POKER" />
     <MESSAGE value="File xml riguardanti il giocatore" />
     <MESSAGE value="bro code" />
-    <option name="LAST_COMMIT_MESSAGE" value="bro code" />
+    <MESSAGE value="altra roba" />
+    <MESSAGE value="leaderboard" />
+    <option name="LAST_COMMIT_MESSAGE" value="leaderboard" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

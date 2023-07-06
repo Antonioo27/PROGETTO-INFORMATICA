@@ -7,16 +7,13 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
-import javafx.scene.control.PasswordField;
-import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
-import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class HomeController {
+public class PartitaOTorneoController {
     private Stage stage;
     private Scene scene;
     private Parent root;
@@ -31,15 +28,14 @@ public class HomeController {
         loginLabel.setText("Benvenuto :"+username);
     }
 
-    public void creaPartita(ActionEvent event) throws IOException {
-        codPartita_text.setText(String.valueOf((int)(Math.random()*10000)));
+    public void creaPartitaSingola(ActionEvent event) throws IOException {
+        codPartita_text.setText(String.valueOf((int)(Math.random() * (3000 - 2000 + 1) + 2000)));
 
         String codicePartita = codPartita_text.getText();
         FXMLLoader loader = new FXMLLoader(getClass().getResource("AggiungiNomi.fxml"));
         root= loader.load();
-        AggiungiNomiController aggiungiNomiController = loader.getController();
+        AggiungiGiocatoriController aggiungiNomiController = loader.getController();
         aggiungiNomiController.visualizzaCodicePartita(codicePartita);
-         // Parent root = FXMLLoader.load(getClass().getResource("AggiungiNomi.fxml"));
           stage = (Stage)((Node)event.getSource()).getScene().getWindow();
           scene = new Scene(root);
           stage.setScene(scene);
@@ -49,4 +45,19 @@ public class HomeController {
     }
 
 
+    public void creaTorneo(ActionEvent event) throws IOException {
+        codPartita_text.setText(String.valueOf((int)(Math.random() * (2000 - 1000 + 1) + 1000)));
+
+        String codicePartita = codPartita_text.getText();
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("AggiungiNomi.fxml"));
+        root= loader.load();
+        AggiungiGiocatoriController aggiungiNomiController = loader.getController();
+        aggiungiNomiController.visualizzaCodicePartita(codicePartita);
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        Image icon = new Image("C:\\Users\\HP\\ProvaDefinitiva\\src\\main\\resources\\com\\example\\provadefinitiva\\Immagini\\logo.png");
+        stage.getIcons().add(icon);
+        stage.show();
+    }
 }

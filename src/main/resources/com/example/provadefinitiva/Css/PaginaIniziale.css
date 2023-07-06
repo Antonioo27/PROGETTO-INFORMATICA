@@ -12,6 +12,8 @@
     -fx-font-size: 17px;
     -fx-border-radius: 5px;
 }
-
+.button2{
+    -fx-padding: 4px 4px;
+}
 
 

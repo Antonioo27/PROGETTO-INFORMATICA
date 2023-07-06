@@ -6,14 +6,14 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.provadefinitiva.HomeController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="608.0" prefWidth="836.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.provadefinitiva.PartitaOTorneoController">
    <children>
-      <Text layoutX="257.0" layoutY="42.0" lineSpacing="3.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="S.P.A.C.C.A" textAlignment="CENTER" wrappingWidth="215.73663330078125">
+      <Text layoutX="325.0" layoutY="45.0" lineSpacing="3.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="S.P.A.C.C.A" textAlignment="CENTER" wrappingWidth="215.73663330078125">
          <font>
             <Font name="Berlin Sans FB Demi Bold" size="29.0" />
          </font>
       </Text>
-      <Button fx:id="creaPartita_button" layoutX="242.0" layoutY="185.0" mnemonicParsing="false" onAction="#creaPartita" text="CREA PARTITA">
+      <Button fx:id="PartitaSingolaButton" layoutX="168.0" layoutY="310.0" mnemonicParsing="false" onAction="#creaPartitaSingola" prefHeight="57.0" prefWidth="154.0" text="Partita Singola">
          <font>
             <Font size="15.0" />
          </font>
@@ -23,10 +23,15 @@
             <Font size="15.0" />
          </font>
       </Text>
-      <Label fx:id="loginLabel" layoutX="14.0" layoutY="8.0" prefHeight="39.0" prefWidth="222.0" textFill="#137ab9">
+      <Label fx:id="loginLabel" layoutX="14.0" layoutY="8.0" prefHeight="39.0" prefWidth="279.0" textFill="#137ab9">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </Label>
+      <Button fx:id="TorneoButton" layoutX="501.0" layoutY="306.0" mnemonicParsing="false" onAction="#creaTorneo" prefHeight="65.0" prefWidth="162.0" text="Torneo">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
    </children>
 </Pane>

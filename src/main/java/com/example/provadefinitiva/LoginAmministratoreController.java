@@ -36,7 +36,7 @@ public class LoginAmministratoreController {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("Home.fxml"));
         root= loader.load();
 
-        HomeController homeController = loader.getController();
+        PartitaOTorneoController homeController = loader.getController();
         homeController.displayName(username);
 
         if(passwordLogin.getText().equals(this.password) && username_field.getText().equalsIgnoreCase(username)){
@@ -47,8 +47,6 @@ public class LoginAmministratoreController {
               stage = (Stage)((Node)event.getSource()).getScene().getWindow();
               scene = new Scene(root);
               stage.setScene(scene);
-              Image icon = new Image("C:\\Users\\HP\\ProvaDefinitiva\\src\\main\\resources\\com\\example\\provadefinitiva\\Immagini\\logo.png");
-              stage.getIcons().add(icon);
               stage.setTitle("HOME PAGE");
               stage.show();
         }

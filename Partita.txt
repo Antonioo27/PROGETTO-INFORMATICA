@@ -1,3 +1,5 @@
-9318
-valerio
-gabriele
+USERNAME     SCORE 
+2111
+nicola           0
+fabio           0
+carlo           0
