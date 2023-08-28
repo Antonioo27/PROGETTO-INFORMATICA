@@ -8,7 +8,7 @@ public class Carta {
         this.s = s;
         this.valore = valore;
     }
-
+//ciao sono Nicola e sto facendo delle prove con git
     public String toString(){
         return " [" + this.valore + " di " +
                 this.s + "] ";
