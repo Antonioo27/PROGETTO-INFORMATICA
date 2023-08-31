@@ -10,13 +10,7 @@ public class Mazzo {
         public Mazzo(){
             this.numCarte = 40;
             this.mazzo = new LinkedList<Carta>();
-
-            for (int i=0; i < 10 ; i++) {
-                this.mazzo.add(i, new Carta(Seme.DENARI, i+1));
-                this.mazzo.add(i+10, new Carta(Seme.DENARI, i+1));
-                this.mazzo.add(i+20, new Carta(Seme.DENARI, i+1));
-                this.mazzo.add(i+30, new Carta(Seme.DENARI, i+1));
-            }
+//da rieditare
         }
 
         public void mischia(){
