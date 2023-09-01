@@ -3,29 +3,29 @@ import java.util.LinkedList;
 
 public class Giocatore {
         private String username;
-        private int totalScore;
+        private int follower;
         private boolean turn;
 
         public Giocatore(){
             this.username = null;
-            this.totalScore = 0;
+            this.follower = 0;
             //this.turn = false;
         }
 
         public Giocatore(String nome){
             this.username = nome;
-            this.totalScore = 0;
+            this.follower= 0;
             this.turn = false;
         }
 
         public Giocatore(String nome, int punti){
             this.username = nome;
-            this.totalScore = punti;
+            this.follower = punti;
             this.turn = false;
         }
 
         public int getTotalScore() {
-            return totalScore;
+            return follower;
         }
 
         public String getUsername() {
@@ -38,8 +38,8 @@ public class Giocatore {
 
 
 
-        public void setTotalScore(int totalScore) {
-            this.totalScore = totalScore;
+        public void setFollower(int totalScore) {
+            this.follower = totalScore;
         }
 
         public void setUsername(String username) {
@@ -54,7 +54,7 @@ public class Giocatore {
 
      public String toString() {
             return "\n[Username] : "+username +
-                    "\n[Score] : "+totalScore;
+                    "\n[Score] : "+follower;
         }
     }
 

@@ -29,6 +29,17 @@ public class GiocoUtenteController {
     @FXML
     private Label labelGiocatore4;
     @FXML
+    private Label Giocatore1Score;
+
+    @FXML
+    private Label Giocatore2Score;
+
+    @FXML
+    private Label Giocatore3Score;
+
+    @FXML
+    private Label Giocatore4Score;
+    @FXML
     private Label labelCodicePartita;
     @FXML
     private Button giocaButton;

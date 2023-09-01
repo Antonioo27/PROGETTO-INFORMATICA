@@ -10,6 +10,7 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.paint.Color;
+import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
@@ -52,8 +53,9 @@ public class LoginAmministratoreController {
         }
 
         else {
-            loginMsg.setText("Forgot your password ?");
-            loginMsg.setFill(Color.RED);
+            loginMsg.setText("Did you forget your password ?");
+            loginMsg.setFill(Color.LIGHTSEAGREEN);
+
 
         }
 
