@@ -6,19 +6,19 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="608.0" prefWidth="836.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.provadefinitiva.PartitaOTorneoController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="598.0" prefWidth="688.0" styleClass="pane" stylesheets="@Css/ProvaNick.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.provadefinitiva.PartitaOTorneoController">
    <children>
-      <Text layoutX="325.0" layoutY="45.0" lineSpacing="3.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="S.P.A.C.C.A" textAlignment="CENTER" wrappingWidth="215.73663330078125">
+      <Text fill="#1aff00" layoutX="173.0" layoutY="86.0" lineSpacing="3.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="S.P.A.C.C.A" textAlignment="CENTER" wrappingWidth="342.0">
          <font>
-            <Font name="Berlin Sans FB Demi Bold" size="29.0" />
+            <Font name="System Bold" size="36.0" />
          </font>
       </Text>
-      <Button fx:id="PartitaSingolaButton" layoutX="168.0" layoutY="310.0" mnemonicParsing="false" onAction="#creaPartitaSingola" prefHeight="57.0" prefWidth="154.0" text="Partita Singola">
+      <Button fx:id="PartitaSingolaButton" layoutX="78.0" layoutY="294.0" mnemonicParsing="false" onAction="#creaPartitaSingola" prefHeight="77.0" prefWidth="194.0" style="-fx-background-color: lime;" text="Partita Singola">
          <font>
-            <Font size="15.0" />
+            <Font name="System Bold" size="15.0" />
          </font>
       </Button>
-      <Text fx:id="codPartita_text" layoutX="189.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="222.46442871093757">
+      <Text fx:id="codPartita_text" layoutX="139.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="222.46442871093757">
          <font>
             <Font size="15.0" />
          </font>
@@ -28,9 +28,9 @@
             <Font name="System Bold" size="15.0" />
          </font>
       </Label>
-      <Button fx:id="TorneoButton" layoutX="501.0" layoutY="306.0" mnemonicParsing="false" onAction="#creaTorneo" prefHeight="65.0" prefWidth="162.0" text="Torneo">
+      <Button fx:id="TorneoButton" layoutX="441.0" layoutY="294.0" mnemonicParsing="false" onAction="#creaTorneo" prefHeight="77.0" prefWidth="194.0" style="-fx-background-color: lime;" text="Torneo">
          <font>
-            <Font size="15.0" />
+            <Font name="System Bold" size="15.0" />
          </font>
       </Button>
    </children>

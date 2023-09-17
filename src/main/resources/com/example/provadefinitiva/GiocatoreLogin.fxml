@@ -7,31 +7,32 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.provadefinitiva.GiocatoreLoginController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="pane" stylesheets="@Css/ProvaNick.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.provadefinitiva.GiocatoreLoginController">
    <children>
-      <Text fill="#0392f2" layoutX="223.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LOGIN UTENTE" textAlignment="CENTER">
+      <Text fill="#05f007" layoutX="171.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LOGIN UTENTE" textAlignment="CENTER">
          <font>
-            <Font size="23.0" />
+            <Font name="System Bold" size="36.0" />
          </font>
       </Text>
-      <TextField fx:id="usernameField" layoutX="226.0" layoutY="175.0" promptText="username.." />
-      <Text layoutX="135.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="USERNAME">
-         <font>
-            <Font size="15.0" />
-         </font>
-      </Text>
-      <Button fx:id="AggiungiButton" layoutX="442.0" layoutY="175.0" mnemonicParsing="false" onAction="#aggiungiUtente" text="AGGIUNGI" />
-      <TextField fx:id="codicePartitaField" layoutX="226.0" layoutY="212.0" promptText="codice partita.." />
-      <Text layoutX="99.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CODICE PARTITA">
-         <font>
-            <Font size="15.0" />
-         </font>
-      </Text>
-      <Label fx:id="labelMsg" layoutX="91.0" layoutY="304.0" prefHeight="26.0" prefWidth="444.0">
+      <TextField fx:id="usernameField" layoutX="278.0" layoutY="175.0" promptText="username.." />
+      <Button fx:id="AggiungiButton" layoutX="416.0" layoutY="346.0" mnemonicParsing="false" onAction="#aggiungiUtente" style="-fx-padding: 5 10; -fx-background-color: #57ea64;" text="AGGIUNGI">
          <font>
             <Font size="14.0" />
+         </font></Button>
+      <TextField fx:id="codicePartitaField" layoutX="278.0" layoutY="226.0" promptText="codice partita.." />
+      <Button fx:id="ProseguiButton" layoutX="509.0" layoutY="346.0" mnemonicParsing="false" onAction="#InizializzaGiocatori" style="-fx-padding: 5 10; -fx-background-color: #57ea64;" text="PROSEGUI">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Label layoutX="128.0" layoutY="160.0" prefHeight="40.0" prefWidth="143.0" style="-fx-background-color: BLACK;" text="USERNAME:" textFill="#05f007">
+         <font>
+            <Font name="System Bold" size="24.0" />
          </font>
       </Label>
-      <Button fx:id="ProseguiButton" layoutX="442.0" layoutY="212.0" mnemonicParsing="false" onAction="#InizializzaGiocatori" text="PROSEGUI" />
+      <Label layoutX="71.0" layoutY="216.0" style="-fx-background-color: BLACK;" text="CODICE PARTITA:" textFill="#05f007">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
