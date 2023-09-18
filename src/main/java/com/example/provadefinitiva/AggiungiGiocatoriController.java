@@ -68,9 +68,10 @@ public class AggiungiGiocatoriController {
 
 
         if (giocatore_textField.getText() != null) {
-            giocatori.add(new Giocatore(giocatore_textField.getText(),0));
-            scrivoPartita.print(giocatore_textField.getText());
-            scrivoPartita.println("           0");
+            Giocatore player=new Giocatore(giocatore_textField.getText());
+            giocatori.add(new Giocatore(giocatore_textField.getText()));
+            scrivoPartita.print(player.toString());
+          
             //Non inserisco giocatori doppioni, cioe con stesso nome
             Scanner scan = new Scanner(new File("GiocatoriVecchi.txt"));
             boolean condizione = true;

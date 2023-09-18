@@ -1,15 +1,23 @@
 package com.example.provadefinitiva;
+import java.util.ArrayList;
 import java.util.LinkedList;
 
 public class Giocatore {
         private String username;
         private int follower;
         private boolean turn;
+        private ArrayList<Carta> carte; //carte che giocatore ha in mano
+       // private Mazzo mazzo=new Mazzo();//carte complessive del mazzzo
 
-        public Giocatore(){
+        public Giocatore(Mazzo mazzo){
             this.username = null;
             this.follower = 0;
             //this.turn = false;
+            for(int i=0; i<3; i++ ){
+                int n=(int)(1+Math.random()*mazzo.getMazzo().size());
+                this.carte.add(mazzo.getMazzo().get(n));
+                mazzo.getMazzo().remove(n);
+            }
         }
 
         public Giocatore(String nome){
@@ -53,8 +61,11 @@ public class Giocatore {
 
 
      public String toString() {
-            return "\n[Username] : "+username +
-                    "\n[Score] : "+follower;
+String carteinmano="";
+for(Carta c:this.carte)
+    carteinmano=carteinmano+"\t"+c.toString();
+            return "\n[Username] : "+username +","+
+                    "\t[Score] : "+follower+","+"\tCarte:"+carteinmano+"\n";
         }
     }
 
