@@ -33,4 +33,5 @@ public class CartaImprevisto implements Carta {
         else
             return false;
     }
+
 }

@@ -34,8 +34,9 @@ public class AggiungiGiocatoriController {
         File file = new File("GiocatoriVecchi.txt");
         if(file.exists()) {
             Scanner scan = new Scanner(new File("GiocatoriVecchi.txt"));
-            ArrayList<String> giocatori = new ArrayList<>();
+            ArrayList<String> giocatori = new ArrayList<String>();
             while (scan.hasNext()) {
+
                 String gioc = scan.next();
                 giocatori.add(gioc);
             }
