@@ -39,6 +39,9 @@ public class AggGiocatoriPartitaSingola {
     private Mazzo mazzo=new Mazzo();
     private ArrayList<String> nomiGiocatori=new ArrayList<String>();
 
+    public AggGiocatoriPartitaSingola() throws Exception {
+    }
+
     @FXML
    public void aggiungiGiocatore(ActionEvent event) throws IOException {
 
@@ -46,9 +49,8 @@ public class AggGiocatoriPartitaSingola {
         PrintWriter scrivo = new PrintWriter(writer);
 
         if(giocatore_textField.getText()!=null){
-           Giocatore player = new Giocatore(giocatore_textField.getText(),this.mazzo);
            this.nomiGiocatori.add(giocatore_textField.getText());
-           scrivo.print(player.toString());
+           scrivo.println(giocatore_textField.getText());
            giocatore_textField.setText("");
         }
         scrivo.close();

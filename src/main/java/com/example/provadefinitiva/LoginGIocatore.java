@@ -34,49 +34,57 @@ public class LoginGIocatore {
     private ArrayList<Giocatore> giocatori = new ArrayList<Giocatore>();
 
     @FXML
-    private Button AggiungiButton;
+    private Button CaricaPartitaButton;
 
-    @FXML
-    private Button ProseguiButton;
-    ArrayList<String> nomi=new ArrayList<String>();
+    ArrayList<String> nomi = new ArrayList<String>();
 
-    public void aggiungiUtente(ActionEvent event) throws IOException {
+
+    public void IniziaPartita(ActionEvent event) throws IOException {
 
         String codiceControllo = codicePartitaField.getText()+".csv";
         File file = new File(codiceControllo);
         if(file.exists()) {
-            Scanner scan=new Scanner(file);
-            while (scan.hasNextLine()){
-                String riga= scan.nextLine();
-                String[] strings=riga.split(","); //Creare tasto salva partita una volta entrati nel gioco, e magari prima nella creazione della partita salvare solamente i nomi dei giocatori e non punteggio e carte
-                nomi.add(strings[0]);
+            Scanner scan2 = new Scanner(file);
+            Scanner scan = new Scanner(file);
+                if(scan.nextLine().charAt(0)=='.'){
+                    FXMLLoader loader = new FXMLLoader(getClass().getResource("Partita.fxml"));
+                    root = loader.load();
+                    Partita partita = loader.getController();
+                    partita.carica(file);
+                    partita.visualizzaCodicePartita(codicePartitaField.getText());
+                    stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                    scene = new Scene(root);
+                    stage.setScene(scene);
+                    stage.setTitle("GIOCHIAMO");
+                    stage.show();
+                }
+                else{
 
-            }
+                    while(scan2.hasNextLine()){
+                        String string = scan2.nextLine();
+                        nomi.add(string);
+                    }
 
-            if(nomi.contains(usernameField.getText())) {
-                System.out.println("il nome è presente");
-                System.out.println(nomi.get(0).toString());
-            }
-            else
-                System.out.println("il nome non è sulla lista");
-        }else
-            labelMsg.setText("Codice partita non valido");
+                    FXMLLoader loader = new FXMLLoader(getClass().getResource("Partita.fxml"));
+                    root = loader.load();
+                    Partita partita = loader.getController();
+                    partita.inizia(nomi);
+                    partita.visualizzaCodicePartita(codicePartitaField.getText());
+                    stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                    scene = new Scene(root);
+                    stage.setScene(scene);
+                    stage.setTitle("GIOCHIAMO");
+                    stage.show();
+
+                }
+
+        }
+        else
+            labelMsg.setText("codice non valido");
+
+
     }
 
-
-    public void InizializzaGiocatori(ActionEvent event) throws IOException {
-
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("Partita.fxml"));
-        root = loader.load();
-        Partita partita = loader.getController();
-        partita.inizia(nomi);
-        partita.visualizzaCodicePartita(codicePartitaField.getText());
-        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.setTitle("GIOCHIAMO");
-        stage.show();
-    }
 
 
 }

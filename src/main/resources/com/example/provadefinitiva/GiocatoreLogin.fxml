@@ -9,30 +9,22 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="pane" stylesheets="@Css/ProvaNick.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.provadefinitiva.LoginGIocatore">
    <children>
-      <Text fill="#05f007" layoutX="171.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LOGIN UTENTE" textAlignment="CENTER">
+      <Text fill="#05f007" layoutX="209.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BENVENUTI" textAlignment="CENTER">
          <font>
             <Font name="System Bold" size="36.0" />
          </font>
       </Text>
-      <TextField fx:id="usernameField" layoutX="278.0" layoutY="175.0" promptText="username.." />
-      <Button fx:id="AggiungiButton" layoutX="416.0" layoutY="346.0" mnemonicParsing="false" onAction="#aggiungiUtente" style="-fx-padding: 5 10; -fx-background-color: #57ea64;" text="AGGIUNGI">
-         <font>
-            <Font size="14.0" />
-         </font></Button>
-      <TextField fx:id="codicePartitaField" layoutX="278.0" layoutY="226.0" promptText="codice partita.." />
-      <Button fx:id="ProseguiButton" layoutX="509.0" layoutY="346.0" mnemonicParsing="false" onAction="#InizializzaGiocatori" style="-fx-padding: 5 10; -fx-background-color: #57ea64;" text="PROSEGUI">
-         <font>
-            <Font size="14.0" />
-         </font></Button>
-      <Label layoutX="128.0" layoutY="160.0" prefHeight="40.0" prefWidth="143.0" style="-fx-background-color: BLACK;" text="USERNAME:" textFill="#05f007">
+      <TextField fx:id="codicePartitaField" layoutX="277.0" layoutY="169.0" prefHeight="18.0" prefWidth="150.0" promptText="codice partita.." />
+      <Label layoutX="48.0" layoutY="164.0" style="-fx-background-color: BLACK;" text="CODICE PARTITA:" textFill="#05f007">
          <font>
             <Font name="System Bold" size="24.0" />
          </font>
       </Label>
-      <Label layoutX="71.0" layoutY="216.0" style="-fx-background-color: BLACK;" text="CODICE PARTITA:" textFill="#05f007">
+      <Label fx:id="labelMsg" layoutX="202.0" layoutY="288.0" prefHeight="18.0" prefWidth="241.0" textFill="#fffbfb" />
+      <Button fx:id="CaricaPartitaButton" layoutX="444.0" layoutY="345.0" mnemonicParsing="false" onAction="#IniziaPartita" style="-fx-padding: 5 10; -fx-background-color: #57ea64;" text="CARICA PARTITA">
          <font>
-            <Font name="System Bold" size="24.0" />
+            <Font size="14.0" />
          </font>
-      </Label>
+      </Button>
    </children>
 </AnchorPane>

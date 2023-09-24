@@ -51,8 +51,8 @@ public class Giocatore {
      public String toString() {
         String carteinmano="";
         for(Carta c:this.carte)
-            carteinmano=carteinmano+"\t"+c.toString();
-        return username +"," + "\t"+punteggio+","+"\t"+carteinmano+"\n";
+            carteinmano=carteinmano+" "+c.getNome()+",";
+        return username +"," +punteggio+","+carteinmano+"\n";
         }
     }
 

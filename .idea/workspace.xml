@@ -4,11 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a83edf22-57de-43e6-8a3f-681ebb786d0e" name="Changes" comment="leaderboard">
+    <list default="true" id="a83edf22-57de-43e6-8a3f-681ebb786d0e" name="Changes" comment="try to fix repo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Partita.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Partita.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/AggGiocatoriPartitaSingola.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/AggGiocatoriPartitaSingola.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/ChiaraFerragni.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/CristianoRonaldo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/Fedez.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/Giocatore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/Giocatore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/GiocoUtenteController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/LeaderBoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/LeaderBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/LoginGIocatore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/LoginGIocatore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/Mazzo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/Mazzo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/Partita.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/Partita.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/GiocatoreLogin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/GiocatoreLogin.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Home.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Immagini/figurine_progetto/Schumacher.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Immagini/figurine_progetto/dua lipa.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Immagini/figurine_progetto/dualipa.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Immagini/figurine_progetto/rossi.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/LeaderBoard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/LeaderBoard.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Partita.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Partita.fxml" afterDir="false" />
+    </list>
+    <list id="148d9e1f-9515-4ba3-9cd1-3c8846722339" name="Changes by Gabri" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/Mazzo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/Mazzo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/Partita.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/Partita.java" afterDir="false" />
+    </list>
+    <list id="b9f212a7-5dff-4e94-8b6c-e34024d5985f" name="Changes by TINARI" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/CartaInfluencer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/CartaInfluencer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/Giocatore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/Giocatore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/LeaderBoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/LeaderBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/LoginGIocatore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/LoginGIocatore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/Partita.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/Partita.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,11 +51,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
   }
-}</component>
+}]]></component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -39,6 +62,71 @@
         <option name="url" value="https://github.com/Antonioo27/PROGETTO-INFORMATICA.git" />
       </UrlAndAccount>
     </option>
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/Partita.java">
+      <ranges>
+        <range start1="3" end1="3" start2="3" end2="4" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
+        <range start1="4" end1="4" start2="5" end2="9" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
+        <range start1="6" end1="6" start2="11" end2="13" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
+        <range start1="9" end1="9" start2="16" end2="19" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
+        <range start1="22" end1="25" start2="32" end2="32" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
+        <range start1="41" end1="43" start2="48" end2="78" changelist="148d9e1f-9515-4ba3-9cd1-3c8846722339" />
+        <range start1="45" end1="45" start2="80" end2="83" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
+        <range start1="49" end1="49" start2="87" end2="105" changelist="b9f212a7-5dff-4e94-8b6c-e34024d5985f" />
+        <range start1="52" end1="54" start2="108" end2="118" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
+        <range start1="57" end1="60" start2="121" end2="124" changelist="b9f212a7-5dff-4e94-8b6c-e34024d5985f" />
+        <range start1="62" end1="67" start2="126" end2="129" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
+        <range start1="69" end1="70" start2="131" end2="132" changelist="b9f212a7-5dff-4e94-8b6c-e34024d5985f" />
+        <range start1="71" end1="75" start2="133" end2="136" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
+        <range start1="77" end1="79" start2="138" end2="140" changelist="b9f212a7-5dff-4e94-8b6c-e34024d5985f" />
+        <range start1="84" end1="85" start2="145" end2="146" changelist="b9f212a7-5dff-4e94-8b6c-e34024d5985f" />
+        <range start1="87" end1="88" start2="148" end2="149" changelist="b9f212a7-5dff-4e94-8b6c-e34024d5985f" />
+        <range start1="90" end1="91" start2="151" end2="152" changelist="b9f212a7-5dff-4e94-8b6c-e34024d5985f" />
+        <range start1="98" end1="103" start2="159" end2="163" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
+        <range start1="104" end1="105" start2="164" end2="165" changelist="b9f212a7-5dff-4e94-8b6c-e34024d5985f" />
+        <range start1="106" end1="106" start2="166" end2="168" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
+        <range start1="108" end1="108" start2="170" end2="228" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/Giocatore.java">
+      <ranges>
+        <range start1="20" end1="20" start2="20" end2="26" changelist="b9f212a7-5dff-4e94-8b6c-e34024d5985f" />
+        <range start1="53" end1="55" start2="59" end2="61" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
+        <range start1="56" end1="56" start2="62" end2="65" changelist="b9f212a7-5dff-4e94-8b6c-e34024d5985f" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/Mazzo.java">
+      <ranges>
+        <range start1="2" end1="2" start2="2" end2="7" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
+        <range start1="10" end1="11" start2="15" end2="16" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
+        <range start1="12" end1="13" start2="17" end2="18" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
+        <range start1="14" end1="15" start2="19" end2="20" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
+        <range start1="16" end1="23" start2="21" end2="40" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
+        <range start1="24" end1="24" start2="41" end2="47" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
+        <range start1="40" end1="42" start2="63" end2="65" changelist="148d9e1f-9515-4ba3-9cd1-3c8846722339" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/LoginGIocatore.java">
+      <ranges>
+        <range start1="21" end1="23" start2="21" end2="22" changelist="b9f212a7-5dff-4e94-8b6c-e34024d5985f" />
+        <range start1="36" end1="37" start2="35" end2="36" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
+        <range start1="38" end1="41" start2="37" end2="38" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
+        <range start1="42" end1="43" start2="39" end2="41" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
+        <range start1="47" end1="54" start2="45" end2="60" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
+        <range start1="55" end1="67" start2="61" end2="65" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
+        <range start1="68" end1="78" start2="66" end2="84" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
+        <range start1="81" end1="81" start2="87" end2="88" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/LeaderBoard.java">
+      <ranges>
+        <range start1="6" end1="7" start2="6" end2="6" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
+        <range start1="13" end1="14" start2="12" end2="13" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
+        <range start1="24" end1="25" start2="23" end2="24" changelist="b9f212a7-5dff-4e94-8b6c-e34024d5985f" />
+        <range start1="29" end1="29" start2="28" end2="33" changelist="b9f212a7-5dff-4e94-8b6c-e34024d5985f" />
+      </ranges>
+    </file>
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -242,7 +330,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686824688460</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="try to fix repo">
+      <created>1695565462548</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1695565462549</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -285,7 +380,8 @@
     <MESSAGE value="bro code" />
     <MESSAGE value="altra roba" />
     <MESSAGE value="leaderboard" />
-    <option name="LAST_COMMIT_MESSAGE" value="leaderboard" />
+    <MESSAGE value="try to fix repo" />
+    <option name="LAST_COMMIT_MESSAGE" value="try to fix repo" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
