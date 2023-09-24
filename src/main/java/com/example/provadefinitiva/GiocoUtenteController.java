@@ -8,16 +8,12 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.layout.Border;
-import javafx.scene.layout.BorderWidths;
 import javafx.scene.paint.Color;
 
-import javafx.scene.shape.StrokeType;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.LinkedList;
 
 public class GiocoUtenteController {
     @FXML
@@ -28,6 +24,17 @@ public class GiocoUtenteController {
     private Label labelGiocatore3;
     @FXML
     private Label labelGiocatore4;
+    @FXML
+    private Label Giocatore1Score;
+
+    @FXML
+    private Label Giocatore2Score;
+
+    @FXML
+    private Label Giocatore3Score;
+
+    @FXML
+    private Label Giocatore4Score;
     @FXML
     private Label labelCodicePartita;
     @FXML
@@ -68,7 +75,7 @@ public class GiocoUtenteController {
     public void gioca(ActionEvent event) {
         giocaButton.setDisable(true);
         giocaButton.setVisible(false);
-        Gioca gioco = new Gioca( Giocatori);
+       // Partita gioco = new Partita( Giocatori);
 
         labelGiocatore1.setStyle("-fx-background-color: WHITE;-fx-border-color:RED ;-fx-border-width: 3px;");
 

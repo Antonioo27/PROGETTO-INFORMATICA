@@ -1,16 +1,11 @@
 package com.example.provadefinitiva;
 
-public class Carta {
-    private Seme s;
-    private int valore;
+import javafx.scene.image.Image;
 
-    public Carta(Seme s, int valore){
-        this.s = s;
-        this.valore = valore;
-    }
+public interface Carta {
+    public  String getNome();
+    public String toString();
+    public Image getImage();
+    public boolean equals(Image imm);
 
-    public String toString(){
-        return " [" + this.valore + " di " +
-                this.s + "] ";
-    }
 }

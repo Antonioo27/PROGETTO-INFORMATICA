@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a83edf22-57de-43e6-8a3f-681ebb786d0e" name="Changes" comment="ULTIMO AGGIORNAMENTO">
+    <list default="true" id="a83edf22-57de-43e6-8a3f-681ebb786d0e" name="Changes" comment="leaderboard">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/Prova.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/Prova.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Partita.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Partita.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/GiocatoreLogin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/GiocatoreLogin.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Home.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,30 +19,12 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
-        <option value="CSS File" />
         <option value="Class" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <excluded-from-favorite>
-      <branch-storage>
-        <map>
-          <entry type="REMOTE">
-            <value>
-              <list>
-                <branch-info repo="$PROJECT_DIR$" source="origin/master" />
-              </list>
-            </value>
-          </entry>
-        </map>
-      </branch-storage>
-    </excluded-from-favorite>
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="master" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -54,6 +38,14 @@
         <option name="accountId" value="7474599e-1ff4-49e4-a157-fcbfb7934c12" />
         <option name="url" value="https://github.com/Antonioo27/PROGETTO-INFORMATICA.git" />
       </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
     </option>
   </component>
   <component name="ProblemsViewState">
@@ -155,10 +147,9 @@
       <workItem from="1686850329611" duration="3043000" />
       <workItem from="1687285030512" duration="1555000" />
       <workItem from="1688636396693" duration="506000" />
-      <workItem from="1688637073627" duration="943000" />
-      <workItem from="1688750708227" duration="1750000" />
-      <workItem from="1690528251860" duration="1094000" />
-      <workItem from="1690529838808" duration="374000" />
+      <workItem from="1693239969025" duration="515000" />
+      <workItem from="1693586946109" duration="3762000" />
+      <workItem from="1694949382431" duration="2146000" />
     </task>
     <task id="LOCAL-00001" summary="added gitignore">
       <created>1685536664827</created>
@@ -251,14 +242,7 @@
       <option name="project" value="LOCAL" />
       <updated>1686824688460</updated>
     </task>
-    <task id="LOCAL-00014" summary="ULTIMO AGGIORNAMENTO">
-      <created>1688643124356</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1688643124356</updated>
-    </task>
-    <option name="localTasksCounter" value="15" />
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -275,7 +259,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/master" />
+                        <option value="master" />
                       </list>
                     </value>
                   </entry>
@@ -301,8 +285,7 @@
     <MESSAGE value="bro code" />
     <MESSAGE value="altra roba" />
     <MESSAGE value="leaderboard" />
-    <MESSAGE value="ULTIMO AGGIORNAMENTO" />
-    <option name="LAST_COMMIT_MESSAGE" value="ULTIMO AGGIORNAMENTO" />
+    <option name="LAST_COMMIT_MESSAGE" value="leaderboard" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
