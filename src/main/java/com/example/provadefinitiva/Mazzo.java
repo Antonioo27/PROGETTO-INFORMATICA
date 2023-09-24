@@ -3,32 +3,44 @@ package com.example.provadefinitiva;
 import java.util.Collections;
 import java.util.LinkedList;
 
+
 public class Mazzo {
-        private LinkedList<Carta> mazzo;
-        private int numCarte;
+
+        private LinkedList<Carta> mazzo = new LinkedList<Carta>();
+
+        public ChiaraFerragni chiaraFerragni;
+
+        public Fedez fedez;
+
+        public CristianoRonaldo cristianoRonaldo;
 
         public Mazzo(){
-            this.numCarte = 40;
-            this.mazzo = new LinkedList<Carta>();
+                chiaraFerragni=new ChiaraFerragni();
+                fedez=new Fedez();
+                cristianoRonaldo=new CristianoRonaldo();
+                this.mazzo.add(chiaraFerragni);
+                this.mazzo.add(cristianoRonaldo);
+                this.mazzo.add(fedez);
 
-            for (int i=0; i < 10 ; i++) {
-                this.mazzo.add(i, new Carta(Seme.DENARI, i+1));
-                this.mazzo.add(i+10, new Carta(Seme.DENARI, i+1));
-                this.mazzo.add(i+20, new Carta(Seme.DENARI, i+1));
-                this.mazzo.add(i+30, new Carta(Seme.DENARI, i+1));
-            }
         }
 
         public void mischia(){
-            Collections.shuffle(mazzo);
-        }
+                Collections.shuffle(this.mazzo);
+}
 
+        public LinkedList<Carta> getMazzo(){
+                return this.mazzo;
+}
+
+        public void setMazzo(LinkedList<Carta> mazzo1){
+            this.mazzo=mazzo1;
+        }
 
         public String toString(){
-            String s = "";
-            for (int i=0; i < numCarte ; i++)
-                s += this.mazzo.get(i) + " , ";
-
+            String s="";
+            for(Carta c: this.mazzo)
+                s=s+"\t"+c.toString();
             return s;
         }
+
 }

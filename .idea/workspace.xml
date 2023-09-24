@@ -7,18 +7,8 @@
     <list default="true" id="a83edf22-57de-43e6-8a3f-681ebb786d0e" name="Changes" comment="leaderboard">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Partita.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Partita.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/AggiungiNomiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/AggiungiGiocatoriController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/GiocatoreLoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/GiocatoreLoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/GiocoUtenteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/GiocoUtenteController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/PartitaOTorneoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/LeaderBoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/LeaderBoardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/LoginAmministratoreController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/LoginAmministratoreController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/Prova.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/Prova.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/AggiungiNomi.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/AggiungiNomi.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/AmministratoreLogin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/AmministratoreLogin.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Css/PaginaIniziale.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Css/PaginaIniziale.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/GiocatoreLogin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/GiocatoreLogin.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Home.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/giocoUtente.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/giocoUtente.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,8 +19,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
-        <option value="CSS File" />
         <option value="Class" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -48,6 +38,14 @@
         <option name="accountId" value="7474599e-1ff4-49e4-a157-fcbfb7934c12" />
         <option name="url" value="https://github.com/Antonioo27/PROGETTO-INFORMATICA.git" />
       </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
     </option>
   </component>
   <component name="ProblemsViewState">
@@ -149,6 +147,9 @@
       <workItem from="1686850329611" duration="3043000" />
       <workItem from="1687285030512" duration="1555000" />
       <workItem from="1688636396693" duration="506000" />
+      <workItem from="1693239969025" duration="515000" />
+      <workItem from="1693586946109" duration="3762000" />
+      <workItem from="1694949382431" duration="2146000" />
     </task>
     <task id="LOCAL-00001" summary="added gitignore">
       <created>1685536664827</created>
