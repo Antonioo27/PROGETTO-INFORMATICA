@@ -8,17 +8,15 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
-import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class PartitaOTorneoController {
+public class PartitaSingolaOTorneo {
     private Stage stage;
     private Scene scene;
     private Parent root;
-    @FXML
-    private Text codPartita_text;
+
     @FXML
     private Label loginLabel;
 
@@ -29,12 +27,11 @@ public class PartitaOTorneoController {
     }
 
     public void creaPartitaSingola(ActionEvent event) throws IOException {
-        codPartita_text.setText(String.valueOf((int)(Math.random() * (3000 - 2000 + 1) + 2000)));
 
-        String codicePartita = codPartita_text.getText();
+        String codicePartita = String.valueOf((int)(Math.random() * (3000 - 2000 + 1) + 2000));
         FXMLLoader loader = new FXMLLoader(getClass().getResource("AggiungiNomi.fxml"));
         root= loader.load();
-        AggiungiGiocatoriController aggiungiNomiController = loader.getController();
+        AggGiocatoriPartitaSingola aggiungiNomiController = loader.getController();
         aggiungiNomiController.visualizzaCodicePartita(codicePartita);
           stage = (Stage)((Node)event.getSource()).getScene().getWindow();
           scene = new Scene(root);
@@ -46,12 +43,11 @@ public class PartitaOTorneoController {
 
 
     public void creaTorneo(ActionEvent event) throws IOException {
-        codPartita_text.setText(String.valueOf((int)(Math.random() * (2000 - 1000 + 1) + 1000)));
 
-        String codicePartita = codPartita_text.getText();
+        String codicePartita = String.valueOf((int)(Math.random() * (2000 - 1000 + 1) + 1000));
         FXMLLoader loader = new FXMLLoader(getClass().getResource("AggiungiNomi.fxml"));
         root= loader.load();
-        AggiungiGiocatoriController aggiungiNomiController = loader.getController();
+        AggGiocatoriPartitaSingola aggiungiNomiController = loader.getController();
         aggiungiNomiController.visualizzaCodicePartita(codicePartita);
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);

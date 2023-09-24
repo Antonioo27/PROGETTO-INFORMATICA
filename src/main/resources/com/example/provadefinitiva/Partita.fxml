@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="632.0" prefWidth="1040.0" stylesheets="@Css/giocoStylesheet.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.provadefinitiva.GiocoUtenteController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="632.0" prefWidth="1040.0" stylesheets="@Css/giocoStylesheet.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.provadefinitiva.Partita">
    <children>
       <Label fx:id="labelGiocatore1" alignment="CENTER" layoutX="181.0" layoutY="112.0" prefHeight="41.0" prefWidth="114.0" style="-fx-background-color: #fffefc;" text="null" textAlignment="CENTER" textFill="#0d0d0d">
          <font>
@@ -54,5 +54,6 @@
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
+      <Button fx:id="ButtonSalvaPartita" layoutX="863.0" layoutY="12.0" mnemonicParsing="false" onAction="#SalvaPartita" text="SalvaPartita" />
    </children>
 </AnchorPane>

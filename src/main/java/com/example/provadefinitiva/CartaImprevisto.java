@@ -33,4 +33,9 @@ public class CartaImprevisto implements Carta {
         else
             return false;
     }
+
+    @Override
+    public String toString() {
+        return this.frase;
+    }
 }

@@ -9,7 +9,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="624.0" prefWidth="862.0" stylesheets="@Css/PaginaIniziale.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.provadefinitiva.AggiungiGiocatoriController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="624.0" prefWidth="862.0" stylesheets="@Css/PaginaIniziale.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.provadefinitiva.AggGiocatoriPartitaSingola">
    <children>
       <Text layoutX="310.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PARTECIPANTI  PARTITA" textAlignment="CENTER" wrappingWidth="291.3726806640625">
          <font>
@@ -24,7 +24,8 @@
             <Font size="13.0" />
          </font></TextField>
       <Button fx:id="aggiungi_button" layoutX="531.0" layoutY="150.0" mnemonicParsing="false" onAction="#aggiungiGiocatore" styleClass="button2" text="AGGIUNGI" />
-      <Button layoutX="253.0" layoutY="346.0" mnemonicParsing="false" onAction="#visualizzaGiocatori" prefHeight="14.0" prefWidth="356.0" styleClass="button2" text="VISUALIZZA GIOCATORI AGGIUNTI" />
+      <Button layoutX="253.0" layoutY="346.0" mnemonicParsing="false"
+              onAction="#visualizzaGiocatori" prefHeight="14.0" prefWidth="356.0" styleClass="button2" text="VISUALIZZA GIOCATORI AGGIUNTI" />
       <Label fx:id="labelGiocatori" layoutX="105.0" layoutY="444.0" prefHeight="90.0" prefWidth="625.0" textFill="#2c0ad9">
          <font>
             <Font name="System Bold" size="19.0" />

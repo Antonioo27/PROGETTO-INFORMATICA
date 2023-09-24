@@ -40,6 +40,6 @@ public class CartaInfluencer  implements Carta{
 
     @Override
     public String toString() {
-        return nome+"\t"+this.follower+"\n";
+        return nome+"\t"+this.follower+",\t";
     }
 }

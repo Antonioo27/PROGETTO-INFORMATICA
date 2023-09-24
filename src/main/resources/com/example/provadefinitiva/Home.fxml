@@ -6,7 +6,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="598.0" prefWidth="688.0" styleClass="pane" stylesheets="@Css/ProvaNick.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.provadefinitiva.PartitaOTorneoController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="598.0" prefWidth="688.0" styleClass="pane" stylesheets="@Css/ProvaNick.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.provadefinitiva.PartitaSingolaOTorneo">
    <children>
       <Text fill="#1aff00" layoutX="173.0" layoutY="86.0" lineSpacing="3.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="S.P.A.C.C.A" textAlignment="CENTER" wrappingWidth="342.0">
          <font>
@@ -18,11 +18,6 @@
             <Font name="System Bold" size="15.0" />
          </font>
       </Button>
-      <Text fx:id="codPartita_text" layoutX="139.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="222.46442871093757">
-         <font>
-            <Font size="15.0" />
-         </font>
-      </Text>
       <Label fx:id="loginLabel" layoutX="14.0" layoutY="8.0" prefHeight="39.0" prefWidth="279.0" textFill="#137ab9">
          <font>
             <Font name="System Bold" size="15.0" />

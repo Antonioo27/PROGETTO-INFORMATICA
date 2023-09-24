@@ -1,60 +1,58 @@
 package com.example.provadefinitiva;
+import java.util.ArrayList;
 import java.util.LinkedList;
 
 public class Giocatore {
         private String username;
-        private int follower;
-        private boolean turn;
+        private int punteggio;
+        private ArrayList<Carta> carte=new ArrayList<Carta>(); //carte che giocatore ha in mano
 
-        public Giocatore(){
-            this.username = null;
-            this.follower = 0;
+
+        public Giocatore(String nome,Mazzo mazzo){
+            this.username = nome;
+            this.punteggio = 0;
             //this.turn = false;
+            for(int i=0; i<3; i++ ){
+                int indice = (int)(Math.random()*mazzo.getMazzo().size()); //numero casuale da 0 a 2
+                this.carte.add(mazzo.getMazzo().get(indice));
+                mazzo.getMazzo().remove(indice);
+            }
         }
 
         public Giocatore(String nome){
             this.username = nome;
-            this.follower= 0;
-            this.turn = false;
+            this.punteggio= 0;
         }
 
         public Giocatore(String nome, int punti){
             this.username = nome;
-            this.follower = punti;
-            this.turn = false;
+            this.punteggio = punti;
         }
 
         public int getTotalScore() {
-            return follower;
+            return punteggio;
         }
 
         public String getUsername() {
             return username;
         }
 
-        public boolean isTurn() {
-            return turn;
-        }
-
-
 
         public void setFollower(int totalScore) {
-            this.follower = totalScore;
+            this.punteggio = totalScore;
         }
 
         public void setUsername(String username) {
             this.username = username;
         }
 
-        public void setTurn(boolean turn) {
-            this.turn = turn;
-        }
-
 
 
      public String toString() {
-            return "\n[Username] : "+username +
-                    "\n[Score] : "+follower;
+        String carteinmano="";
+        for(Carta c:this.carte)
+            carteinmano=carteinmano+"\t"+c.toString();
+        return username +"," + "\t"+punteggio+","+"\t"+carteinmano+"\n";
         }
     }
 
