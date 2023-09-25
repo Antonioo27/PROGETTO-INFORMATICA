@@ -61,8 +61,8 @@ public class Mazzo {
 
         public String toString(){
             String s="";
-            for(Carta c: this.mazzo)
-                s=s+"\t"+c.toString();
+            for(Carta c : this.mazzo)
+                s = s + c.getNome()+",";
             return s;
         }
 
