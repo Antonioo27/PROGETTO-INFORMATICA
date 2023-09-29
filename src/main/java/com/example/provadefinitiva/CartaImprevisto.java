@@ -5,25 +5,41 @@ import javafx.scene.image.Image;
 public class CartaImprevisto implements Carta {
     String frase;
     Image immagine;
+    String id;
 
     public CartaImprevisto(){
         this.frase=null;
         this.immagine=null;
+        this.id="";
     }
     public CartaImprevisto(Image imm){
         this.frase=null;
         this.immagine=imm;
+        this.id="";
+    }
+    public CartaImprevisto(String frase, String id){
+        this.frase=frase;
+        this.immagine=null;
+        this.id=id;
+    }
+public CartaImprevisto(String id, Image imm){
+        this.immagine=imm;
+        this.id=id;
+}
+    @Override
+    public int getFollower(){
+        return 0;
     }
 
     @Override
     public String getNome() {
-        return "Marchetta o dissing e in cui specificheremo l' abilità";
+        return this.frase;
     }
 
     //anche l' immagine la decideremo insieme
     @Override
     public Image getImage() {
-        return null;
+        return this.immagine;
     }
 
     @Override
@@ -38,4 +54,12 @@ public class CartaImprevisto implements Carta {
     public String toString() {
         return this.frase;
     }
+
+    public String getFrase() {
+        return frase;
+    }
+    public String getId() {
+        return this.id;
+    }
+
 }

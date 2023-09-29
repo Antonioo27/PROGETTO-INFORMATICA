@@ -18,6 +18,12 @@ public class Giocatore {
                 mazzo.getMazzo().remove(indice);
             }
         }
+    public Giocatore(String nome,int punteggio,ArrayList<Carta> mazzo){
+        this.username = nome;
+        this.punteggio = punteggio;
+        this.carte=mazzo;
+
+    }
 
         public Giocatore(String nome){
             this.username = nome;
@@ -38,7 +44,7 @@ public class Giocatore {
         }
 
 
-        public void setFollower(int totalScore) {
+        public void setTotalScore(int totalScore) {
             this.punteggio = totalScore;
         }
 
@@ -51,8 +57,11 @@ public class Giocatore {
      public String toString() {
         String carteinmano="";
         for(Carta c:this.carte)
-            carteinmano=carteinmano+" "+c.getNome()+",";
+            carteinmano = carteinmano+c.getNome()+",";
         return username +"," +punteggio+","+carteinmano+"\n";
+        }
+        public ArrayList<Carta> getCarte(){
+            return carte;
         }
     }
 

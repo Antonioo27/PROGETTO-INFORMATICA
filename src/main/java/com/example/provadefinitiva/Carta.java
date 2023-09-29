@@ -7,5 +7,5 @@ public interface Carta {
     public String toString();
     public Image getImage();
     public boolean equals(Image imm);
-
+    public int getFollower();
 }

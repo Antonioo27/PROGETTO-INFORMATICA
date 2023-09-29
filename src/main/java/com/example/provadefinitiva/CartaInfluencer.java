@@ -19,6 +19,11 @@ public class CartaInfluencer  implements Carta{
         this.follower=0;
         this.immagine=imm;
     }
+    public CartaInfluencer(String nome, int follower, Image imm){
+        this.nome=nome;
+        this.follower=follower;
+        this.immagine=imm;
+    }
 
     //ogni influencer avra una stringa con il proprio nome
     public String getNome(){
@@ -29,6 +34,7 @@ public class CartaInfluencer  implements Carta{
     public Image getImage() {
         return immagine;
     }
+    public int getFollower(){ return this.follower;}
 
     @Override
     public boolean equals(Image imm) {

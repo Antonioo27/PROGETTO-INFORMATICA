@@ -18,6 +18,8 @@ public class Mazzo {
         private ArrayList<Integer> insiemeFollower=new ArrayList<Integer>();
 
         private ArrayList<Image> immagini = new ArrayList<Image>();
+        private ArrayList<Image> immaginiImprevisti = new ArrayList<Image>();
+        private ArrayList<String> ID=new ArrayList<String>();
 
         public Mazzo() {
             immagini.add(new Image("C:\\Users\\HP\\Desktop\\PROGETTO-INFORMATICA\\src\\main\\resources\\com\\example\\provadefinitiva\\Immagini\\figurine_progetto\\arianagrande.jpeg"));
@@ -39,11 +41,22 @@ public class Mazzo {
             immagini.add(new Image("C:\\Users\\HP\\Desktop\\PROGETTO-INFORMATICA\\src\\main\\resources\\com\\example\\provadefinitiva\\Immagini\\figurine_progetto\\smith.jpeg"));
             immagini.add(new Image("C:\\Users\\HP\\Desktop\\PROGETTO-INFORMATICA\\src\\main\\resources\\com\\example\\provadefinitiva\\Immagini\\figurine_progetto\\williams.jpeg"));
 
-            insiemeFollower.addAll(Arrays.asList(85,89,95,85,82,90,90,87,97,88,99,95,88,86,91,99,92,82));
+            insiemeFollower.addAll(Arrays.asList(85,89,95,84,82,93,90,87,97,88,99,96,83,86,91,98,92,80));
             nomiInfluencer.addAll(Arrays.asList("arianagrande","cruise","curry","deniro","djokovic","dualipa","ferragni","ibra","james","leodicaprio","messi","musk","obama","pacino","robbie","ronaldo","smith","williams"));
+
+            ID.addAll(Arrays.asList("ProfiloVirale","ProdottoDifettoso","InformazioniPreziosa"));
+
+
+            immaginiImprevisti.add(new Image("C:\\Users\\HP\\Desktop\\PROGETTO-INFORMATICA\\src\\main\\resources\\com\\example\\provadefinitiva\\Immagini\\figurine_progetto\\profilovirale.jpeg"));
+            immaginiImprevisti.add(new Image("C:\\Users\\HP\\Desktop\\PROGETTO-INFORMATICA\\src\\main\\resources\\com\\example\\provadefinitiva\\Immagini\\figurine_progetto\\perdifollowers.jpeg"));
+            immaginiImprevisti.add(new Image("C:\\Users\\HP\\Desktop\\PROGETTO-INFORMATICA\\src\\main\\resources\\com\\example\\provadefinitiva\\Immagini\\figurine_progetto\\vedicarte.jpeg"));
 
            for(int i=0; i< immagini.size(); i++){
                this.mazzo.add(new CartaInfluencer(nomiInfluencer.get(i),insiemeFollower.get(i), immagini.get(i)));
+           }
+
+           for(int j=0; j<ID.size(); j++){
+               this.mazzo.add(new CartaImprevisto(ID.get(j), immaginiImprevisti.get(j)));
            }
         }
 

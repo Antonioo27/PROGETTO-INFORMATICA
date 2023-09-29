@@ -29,8 +29,8 @@
             <Font name="System Bold" size="15.0" />
          </font>
       </Label>
-      <Button fx:id="giocaButton" layoutX="496.0" layoutY="298.0" mnemonicParsing="false" onAction="#gioca" prefHeight="35.0" prefWidth="114.0" text="GIOCA" />
-      <Button layoutX="8.0" layoutY="25.0" mnemonicParsing="false" onAction="#vaiAllaLeaderboard" prefHeight="22.0" prefWidth="161.0" text="Visualizza LeaderBoard" />
+      <Button fx:id="giocaButton" layoutX="482.0" layoutY="193.0" mnemonicParsing="false" onAction="#gioca" prefHeight="35.0" prefWidth="114.0" text="GIOCA" />
+      <Button layoutX="8.0" layoutY="25.0" mnemonicParsing="false" onAction="#openNewWindow" prefHeight="22.0" prefWidth="161.0" text="Visualizza LeaderBoard" />
       <Label fx:id="Giocatore1Score" alignment="CENTER" layoutX="187.0" layoutY="78.0" prefHeight="25.0" prefWidth="101.0" text="0">
          <font>
             <Font name="System Bold" size="18.0" />
@@ -46,51 +46,64 @@
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <Button fx:id="ButtonSalvaPartita" layoutX="929.0" layoutY="12.0" mnemonicParsing="false" onAction="#SalvaPartita" text="SalvaPartita" />
-      <ImageView fx:id="Imm1G1" fitHeight="88.0" fitWidth="93.0" layoutX="170.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true">
+      <Button fx:id="ButtonSalvaPartita" layoutX="944.0" layoutY="12.0" mnemonicParsing="false" onAction="#SalvaPartita" text="SalvaPartita" />
+      <ImageView fx:id="Imm1G1" fitHeight="88.0" fitWidth="93.0" layoutX="170.0" layoutY="189.0" onMouseClicked="#muoviCarta1G1" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@Immagini/backCard2.jpeg" />
          </image>
       </ImageView>
-      <ImageView fx:id="Imm2G1" fitHeight="88.0" fitWidth="93.0" layoutX="251.0" layoutY="160.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="Imm2G1" fitHeight="88.0" fitWidth="93.0" layoutX="251.0" layoutY="160.0" onMouseClicked="#muoviCarta2G1" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@Immagini/backCard2.jpeg" />
          </image>
       </ImageView>
-      <ImageView fx:id="Imm3G1" fitHeight="88.0" fitWidth="93.0" layoutX="320.0" layoutY="136.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="Imm3G1" fitHeight="88.0" fitWidth="93.0" layoutX="326.0" layoutY="133.0" onMouseClicked="#muoviCarta3G1" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@Immagini/backCard2.jpeg" />
          </image>
       </ImageView>
-      <ImageView fx:id="Imm2G2" fitHeight="88.0" fitWidth="93.0" layoutX="782.0" layoutY="160.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="Imm2G2" fitHeight="88.0" fitWidth="93.0" layoutX="782.0" layoutY="160.0" onMouseClicked="#muoviCarta2G2" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@Immagini/backCard2.jpeg" />
          </image>
       </ImageView>
-      <ImageView fx:id="Imm3G2" fitHeight="88.0" fitWidth="93.0" layoutX="870.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="Imm3G2" fitHeight="88.0" fitWidth="93.0" layoutX="870.0" layoutY="189.0" onMouseClicked="#muoviCarta3G2" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@Immagini/backCard2.jpeg" />
          </image>
       </ImageView>
-      <ImageView fx:id="Imm1G3" fitHeight="88.0" fitWidth="93.0" layoutX="425.0" layoutY="416.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="Imm1G3" fitHeight="88.0" fitWidth="93.0" layoutX="425.0" layoutY="416.0" onMouseClicked="#muoviCarta1G3" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@Immagini/backCard2.jpeg" />
          </image>
       </ImageView>
-      <ImageView fx:id="Imm2G3" fitHeight="88.0" fitWidth="93.0" layoutX="509.0" layoutY="416.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="Imm2G3" fitHeight="88.0" fitWidth="93.0" layoutX="509.0" layoutY="416.0" onMouseClicked="#muoviCarta2G3" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@Immagini/backCard2.jpeg" />
          </image>
       </ImageView>
-      <ImageView fx:id="Imm3G3" fitHeight="88.0" fitWidth="93.0" layoutX="590.0" layoutY="416.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="Imm3G3" fitHeight="88.0" fitWidth="93.0" layoutX="590.0" layoutY="416.0" onMouseClicked="#muoviCarta3G3" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@Immagini/backCard2.jpeg" />
          </image>
       </ImageView>
-      <ImageView fx:id="Imm1G2" fitHeight="88.0" fitWidth="93.0" layoutX="703.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="Imm1G2" fitHeight="88.0" fitWidth="93.0" layoutX="703.0" layoutY="123.0" onMouseClicked="#muoviCarta1G2" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@Immagini/backCard2.jpeg" />
          </image>
       </ImageView>
+      <Label fx:id="labelCheckSave" alignment="CENTER_RIGHT" layoutX="863.0" layoutY="51.0" prefHeight="22.0" prefWidth="162.0" text="PARTITA SALVATA !" textAlignment="CENTER" textFill="#5dc784" visible="false">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="cartaSelG1" fitHeight="88.0" fitWidth="93.0" layoutX="414.0" layoutY="242.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="cartaSelG3" fitHeight="88.0" fitWidth="93.0" layoutX="487.0" layoutY="307.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="cartaSelG2" fitHeight="88.0" fitWidth="93.0" layoutX="566.0" layoutY="242.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="labelAllert" alignment="CENTER" layoutX="357.0" layoutY="57.0" prefHeight="32.0" prefWidth="363.0" textAlignment="CENTER" textFill="#e72209">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

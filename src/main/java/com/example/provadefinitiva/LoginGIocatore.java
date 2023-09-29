@@ -19,8 +19,7 @@ import java.util.Scanner;
 
 public class LoginGIocatore {
 
-    @FXML
-    private TextField usernameField;
+
 
     @FXML
     private TextField codicePartitaField;
