@@ -8,4 +8,5 @@ public interface Carta {
     public Image getImage();
     public boolean equals(Image imm);
     public int getFollower();
+
 }

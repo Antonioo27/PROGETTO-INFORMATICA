@@ -7,21 +7,31 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="pane" stylesheets="@Css/ProvaNick.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.provadefinitiva.LoginGIocatore">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="492.0" prefWidth="727.0" styleClass="pane" stylesheets="@Css/PaginaIniziale.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.provadefinitiva.LoginGIocatoreController">
    <children>
-      <Text fill="#05f007" layoutX="209.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BENVENUTI" textAlignment="CENTER">
+      <Text fill="#05f007" layoutX="263.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BENVENUTI" textAlignment="CENTER">
          <font>
             <Font name="System Bold" size="36.0" />
          </font>
       </Text>
-      <TextField fx:id="codicePartitaField" layoutX="277.0" layoutY="169.0" prefHeight="18.0" prefWidth="150.0" promptText="codice partita.." />
-      <Label layoutX="48.0" layoutY="164.0" style="-fx-background-color: BLACK;" text="CODICE PARTITA:" textFill="#05f007">
+      <TextField fx:id="codicePartitaField" layoutX="333.0" layoutY="197.0" prefHeight="33.0" prefWidth="162.0" promptText="codice partita.." />
+      <Label layoutX="134.0" layoutY="201.0" prefHeight="26.0" prefWidth="161.0" styleClass="label-custom-punteggio" stylesheets="@Css/ProvaNick.css" text="CODICE PARTITA:" textFill="#05f007">
          <font>
-            <Font name="System Bold" size="24.0" />
+            <Font name="System Bold" size="17.0" />
          </font>
       </Label>
-      <Label fx:id="labelMsg" layoutX="202.0" layoutY="288.0" prefHeight="18.0" prefWidth="241.0" textFill="#fffbfb" />
-      <Button fx:id="CaricaPartitaButton" layoutX="444.0" layoutY="345.0" mnemonicParsing="false" onAction="#IniziaPartita" style="-fx-padding: 5 10; -fx-background-color: #57ea64;" text="CARICA PARTITA">
+      <Button fx:id="CaricaPartitaButton" layoutX="577.0" layoutY="431.0" mnemonicParsing="false" onAction="#IniziaPartita" styleClass="button-salvaPartita" stylesheets="@Css/ProvaNick.css" text="CARICA PARTITA">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="codiceTorneoField1" layoutX="333.0" layoutY="246.0" prefHeight="33.0" prefWidth="162.0" promptText="codice partita.." />
+      <Label layoutX="134.0" layoutY="250.0" prefHeight="26.0" prefWidth="161.0" styleClass="label-custom-punteggio" stylesheets="@Css/ProvaNick.css" text="CODICE TORNEO:" textFill="#05f007">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Button layoutX="427.0" layoutY="431.0" mnemonicParsing="false" onAction="#iniziaTorneo" styleClass="button-salvaPartita" stylesheets="@Css/ProvaNick.css" text="CARICA TORNEO">
          <font>
             <Font size="14.0" />
          </font>

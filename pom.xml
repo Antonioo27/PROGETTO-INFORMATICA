@@ -4,6 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+
     <groupId>com.example</groupId>
     <artifactId>ProvaDefinitiva</artifactId>
     <version>1.0-SNAPSHOT</version>
@@ -18,7 +19,7 @@
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-controls</artifactId>
-            <version>19.0.2</version>
+            <version>19.0.2</version>f
         </dependency>
         <dependency>
             <groupId>org.openjfx</groupId>
@@ -75,6 +76,12 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
+                            <resources>
+                                <resource>
+                                    <directory>${project.basedir}/src/main/resources</directory>
+                                    <filtering>true</filtering>
+                                </resource>
+                            </resources>
                             <mainClass>com.example.provadefinitiva/com.example.provadefinitiva.HelloApplication
                             </mainClass>
                             <launcher>app</launcher>
@@ -89,4 +96,5 @@
             </plugin>
         </plugins>
     </build>
+
 </project>

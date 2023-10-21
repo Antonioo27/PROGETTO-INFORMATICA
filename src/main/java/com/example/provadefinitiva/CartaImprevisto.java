@@ -2,7 +2,9 @@ package com.example.provadefinitiva;
 
 import javafx.scene.image.Image;
 
-public class CartaImprevisto implements Carta {
+import java.util.ArrayList;
+
+public abstract class CartaImprevisto implements Carta {
     String frase;
     Image immagine;
     String id;
@@ -22,21 +24,20 @@ public class CartaImprevisto implements Carta {
         this.immagine=null;
         this.id=id;
     }
-public CartaImprevisto(String id, Image imm){
+   public CartaImprevisto(String id, Image imm,String frase){
+        this.frase=frase;
         this.immagine=imm;
         this.id=id;
-}
+    }
     @Override
     public int getFollower(){
         return 0;
     }
 
-    @Override
-    public String getNome() {
+    public String getFrase() {
         return this.frase;
     }
 
-    //anche l' immagine la decideremo insieme
     @Override
     public Image getImage() {
         return this.immagine;
@@ -54,12 +55,10 @@ public CartaImprevisto(String id, Image imm){
     public String toString() {
         return this.frase;
     }
-
-    public String getFrase() {
-        return frase;
-    }
-    public String getId() {
+    @Override
+    public String getNome() {
         return this.id;
     }
 
+    public abstract void calcolaEffetto(ArrayList<Giocatore> giocatori, int indice, ArrayList<Carta> carteInCampo);
 }

@@ -44,6 +44,7 @@ public class CartaInfluencer  implements Carta{
             return false;
     }
 
+
     @Override
     public String toString() {
         return nome+"\t"+this.follower+",\t";

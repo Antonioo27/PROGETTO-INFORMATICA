@@ -3,17 +3,6 @@
     -fx-background-size: cover;
 }
 
-.button{
-    -fx-background-color: #57ea64;
-    -fx-padding: 15px 40px;
-    -fx-font-family: sans-serif;
-    -fx-font-weight: bold;
-    -fx-alignment: center;
-    -fx-font-size: 17px;
-    -fx-border-radius: 5px;
-}
-.button2{
-    -fx-padding: 4px 4px;
-}
+
 
 

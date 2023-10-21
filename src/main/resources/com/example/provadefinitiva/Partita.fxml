@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.net.URL?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
@@ -7,46 +8,49 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="632.0" prefWidth="1040.0" stylesheets="@Css/giocoStylesheet.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.provadefinitiva.Partita">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="632.0" prefWidth="1066.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.provadefinitiva.PartitaController">
    <children>
-      <Label fx:id="labelGiocatore1" alignment="CENTER" layoutX="181.0" layoutY="112.0" prefHeight="41.0" prefWidth="114.0" style="-fx-background-color: #fffefc;" text="null" textAlignment="CENTER" textFill="#0d0d0d">
+      <Label fx:id="labelGiocatore1" alignment="CENTER" layoutX="171.0" layoutY="70.0" prefHeight="42.0" prefWidth="134.0" style="-fx-background-color: #fffefc;" styleClass="label-custom" stylesheets="@Css/ProvaNick.css" text="null" textAlignment="CENTER" textFill="#0d0d0d">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </Label>
-      <Label fx:id="labelCodicePartita" alignment="CENTER" layoutX="339.0" layoutY="14.0" prefHeight="22.0" prefWidth="384.0" style="-fx-background-color: #fffefc;" textAlignment="CENTER" textFill="#131313">
+      <Label fx:id="labelCodicePartita" alignment="CENTER" layoutX="357.0" layoutY="13.0" prefHeight="22.0" prefWidth="398.0" styleClass="label-custom-punteggio" stylesheets="@Css/ProvaNick.css" textAlignment="CENTER" textFill="#131313">
          <font>
             <Font size="15.0" />
          </font>
       </Label>
-      <Label fx:id="labelGiocatore2" alignment="CENTER" layoutX="813.0" layoutY="112.0" prefHeight="41.0" prefWidth="114.0" style="-fx-background-color: #fffefc;" text="null" textAlignment="CENTER" textFill="#0d0d0d">
+      <Label fx:id="labelGiocatore2" alignment="CENTER" layoutX="810.0" layoutY="70.0" prefHeight="42.0" prefWidth="134.0" style="-fx-background-color: #fffefc;" styleClass="label-custom" stylesheets="@Css/ProvaNick.css" text="null" textAlignment="CENTER" textFill="#0d0d0d">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </Label>
-      <Label fx:id="labelGiocatore3" alignment="CENTER" layoutX="496.0" layoutY="524.0" prefHeight="41.0" prefWidth="114.0" style="-fx-background-color: #fffefc;" text="null" textAlignment="CENTER" textFill="#0d0d0d">
+      <Label fx:id="labelGiocatore3" alignment="CENTER" layoutX="478.0" layoutY="558.0" prefHeight="42.0" prefWidth="150.0" style="-fx-background-color: #fffefc;" styleClass="label-custom" stylesheets="@Css/ProvaNick.css" text="null" textAlignment="CENTER" textFill="#0d0d0d">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </Label>
-      <Button fx:id="giocaButton" layoutX="482.0" layoutY="193.0" mnemonicParsing="false" onAction="#gioca" prefHeight="35.0" prefWidth="114.0" text="GIOCA" />
-      <Button layoutX="8.0" layoutY="25.0" mnemonicParsing="false" onAction="#openNewWindow" prefHeight="22.0" prefWidth="161.0" text="Visualizza LeaderBoard" />
-      <Label fx:id="Giocatore1Score" alignment="CENTER" layoutX="187.0" layoutY="78.0" prefHeight="25.0" prefWidth="101.0" text="0">
+      <Button fx:id="giocaButton" layoutX="499.0" layoutY="289.0" mnemonicParsing="false" onAction="#gioca" prefHeight="35.0" prefWidth="114.0" styleClass="button-gioca" stylesheets="@Css/ProvaNick.css" text="GIOCA">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Button layoutX="14.0" layoutY="12.0" mnemonicParsing="false" onAction="#visualizzaLeaderBoard" prefHeight="22.0" prefWidth="161.0" text="Visualizza LeaderBoard" />
+      <Label fx:id="Giocatore1Score" alignment="CENTER" layoutX="204.0" layoutY="119.0" prefHeight="27.0" prefWidth="68.0" styleClass="label-custom-punteggio" stylesheets="@Css/ProvaNick.css" text="0">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <Label fx:id="Giocatore3Score" alignment="CENTER" layoutX="503.0" layoutY="572.0" prefHeight="25.0" prefWidth="101.0" text="0">
+      <Label fx:id="Giocatore3Score" alignment="CENTER" layoutX="524.0" layoutY="521.0" prefHeight="27.0" prefWidth="58.0" styleClass="label-custom-punteggio" stylesheets="@Css/ProvaNick.css" text="0">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <Label fx:id="Giocatore2Score" alignment="CENTER" layoutX="819.0" layoutY="78.0" prefHeight="25.0" prefWidth="101.0" text="0">
+      <Label fx:id="Giocatore2Score" alignment="CENTER" layoutX="848.0" layoutY="119.0" prefHeight="27.0" prefWidth="58.0" styleClass="label-custom-punteggio" stylesheets="@Css/ProvaNick.css" text="0">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <Button fx:id="ButtonSalvaPartita" layoutX="944.0" layoutY="12.0" mnemonicParsing="false" onAction="#SalvaPartita" text="SalvaPartita" />
+      <Button fx:id="ButtonSalvaPartita" layoutX="974.0" layoutY="12.0" mnemonicParsing="false" onAction="#SalvaPartita" styleClass="button-salvaPartita" stylesheets="@Css/ProvaNick.css" text="SalvaPartita" />
       <ImageView fx:id="Imm1G1" fitHeight="88.0" fitWidth="93.0" layoutX="170.0" layoutY="189.0" onMouseClicked="#muoviCarta1G1" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@Immagini/backCard2.jpeg" />
@@ -105,5 +109,40 @@
             <Font name="System Bold" size="22.0" />
          </font>
       </Label>
+      <ImageView fx:id="ImmMazzo" fitHeight="88.0" fitWidth="93.0" layoutX="245.0" layoutY="358.0" onMouseClicked="#muoviCarta1G3" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Immagini/backCard2.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ImmMazzo3" fitHeight="88.0" fitWidth="93.0" layoutX="245.0" layoutY="358.0" onMouseClicked="#muoviCarta1G3" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Immagini/backCard2.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ImmMazzo2" fitHeight="88.0" fitWidth="93.0" layoutX="245.0" layoutY="358.0" onMouseClicked="#muoviCarta1G3" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Immagini/backCard2.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ImmMazzo1" fitHeight="88.0" fitWidth="93.0" layoutX="245.0" layoutY="358.0" onMouseClicked="#muoviCarta1G3" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Immagini/backCard2.jpeg" />
+         </image>
+      </ImageView>
+      <Label fx:id="labelCarteMazzo" alignment="CENTER" layoutX="238.0" layoutY="453.0" prefHeight="25.0" prefWidth="101.0" styleClass="label-custom-punteggio" stylesheets="@Css/ProvaNick.css" text="0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="LabelVincitore" alignment="CENTER" layoutX="328.0" layoutY="273.0" prefHeight="68.0" prefWidth="450.0" styleClass="label-custom-punteggio" stylesheets="@Css/ProvaNick.css" textFill="#d4e83f" visible="false">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <Button layoutX="784.0" layoutY="23.0" mnemonicParsing="false" onAction="#tornaIndietro" text="Torna indietro" />
    </children>
+   <stylesheets>
+      <URL value="@Css/giocoStylesheet.css" />
+      <URL value="@Css/ProvaNick.css" />
+   </stylesheets>
 </AnchorPane>

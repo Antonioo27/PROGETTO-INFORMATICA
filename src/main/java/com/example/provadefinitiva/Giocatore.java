@@ -2,32 +2,23 @@ package com.example.provadefinitiva;
 import java.util.ArrayList;
 import java.util.LinkedList;
 
-public class Giocatore {
+public class  Giocatore implements Comparable {
+
         private String username;
+
         private int punteggio;
-        private ArrayList<Carta> carte=new ArrayList<Carta>(); //carte che giocatore ha in mano
 
+        private ArrayList<Carta> carte=new ArrayList<Carta>(3); //carte che giocatore ha in mano
 
-        public Giocatore(String nome,Mazzo mazzo){
-            this.username = nome;
-            this.punteggio = 0;
-            //this.turn = false;
-            for(int i=0; i<3; i++ ){
-                int indice = (int)(Math.random()*mazzo.getMazzo().size()); //numero casuale da 0 a 2
-                this.carte.add(mazzo.getMazzo().get(indice));
-                mazzo.getMazzo().remove(indice);
-            }
-        }
-    public Giocatore(String nome,int punteggio,ArrayList<Carta> mazzo){
-        this.username = nome;
-        this.punteggio = punteggio;
-        this.carte=mazzo;
-
-    }
+       public Giocatore(String nome,int punteggio,ArrayList<Carta> mazzo){
+           this.username = nome;
+           this.punteggio = punteggio;
+           this.carte = mazzo;
+       }
 
         public Giocatore(String nome){
             this.username = nome;
-            this.punteggio= 0;
+            this.punteggio = 0;
         }
 
         public Giocatore(String nome, int punti){
@@ -43,7 +34,6 @@ public class Giocatore {
             return username;
         }
 
-
         public void setTotalScore(int totalScore) {
             this.punteggio = totalScore;
         }
@@ -52,16 +42,55 @@ public class Giocatore {
             this.username = username;
         }
 
+        public void pesca(Mazzo mazzo) {
+            for (int i = 0; i < this.carte.size(); i++) {
+                if(this.carte.get(i)==null) {
+                    this.carte.set(i, mazzo.getMazzo().getFirst());
+                    mazzo.getMazzo().removeFirst();
+                }
+            }
+        }
 
 
      public String toString() {
         String carteinmano="";
-        for(Carta c:this.carte)
-            carteinmano = carteinmano+c.getNome()+",";
-        return username +"," +punteggio+","+carteinmano+"\n";
+        for(Carta c : this.carte) {
+            if (c != null)
+                carteinmano = carteinmano + c.getNome() + ",";
         }
+        return username + "," + punteggio + "," + carteinmano + "\n";
+     }
+
+
+     public int giocaCartaMigliore(){
+
+         int n= this.getCarte().indexOf(Partita.TrovaMaggiore(this.getCarte()));
+         if(n==-1) {
+             for (int i=0; i<this.getCarte().size(); i++) {
+                 if (this.getCarte().get(i) != null) {
+                     n = i;
+                     break;
+                 }
+             }
+         }
+     return n;
+      }
+
+
         public ArrayList<Carta> getCarte(){
             return carte;
         }
+
+    @Override
+    public int compareTo(Object o) {
+           if(o!=null&& o instanceof Giocatore){
+               Giocatore g=(Giocatore) o;
+               if(g.getTotalScore()>this.getTotalScore())
+                   return 1;
+               else
+                   return -1;
+           }
+        return 0;
     }
+}
 

@@ -5,28 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a83edf22-57de-43e6-8a3f-681ebb786d0e" name="Changes" comment="push ultima versione che gira">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/LeaderBoardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/cssdialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/cssdialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/Giocatore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/Giocatore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/LeaderBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/LeaderBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/Mazzo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/Mazzo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/Partita.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/Partita.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/Seme.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Immagini/figurine_progetto/deniro.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Immagini/figurine_progetto/deniro.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Immagini/figurine_progetto/dualipa.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Immagini/figurine_progetto/dualipa.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Immagini/figurine_progetto/obama.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Immagini/figurine_progetto/obama.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Immagini/figurine_progetto/ronaldo.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Immagini/figurine_progetto/ronaldo.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Immagini/figurine_progetto/williams.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Immagini/figurine_progetto/williams.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/LeaderBoard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/LeaderBoard.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Partita.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Partita.fxml" afterDir="false" />
-    </list>
-    <list id="b9f212a7-5dff-4e94-8b6c-e34024d5985f" name="Changes by TINARI" comment="ultima versione buona">
+      <change beforePath="$PROJECT_DIR$/2248.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/AggGiocatoriPartitaSingola.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/AddPlayerSingleGameController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/Carta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/Carta.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/CartaImprevisto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/CartaImprevisto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/CartaInfluencer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/CartaInfluencer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/Giocatore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/Giocatore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/LeaderBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/LeaderBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/LoginGIocatore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/LoginGIocatore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/LeaderBoard.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/LoginAmministratoreController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/LoginAmministratoreController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/LoginGIocatore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/LoginGIocatoreController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/Mazzo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/Mazzo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/PaginaInizialeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/PaginaInizialeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/Partita.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/PartitaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/PartitaSingolaOTorneo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/PartitaSingolaOTorneoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/Prova.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/Prova.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/AggiungiNomi.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/AggiungiNomi.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/AmministratoreLogin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/AmministratoreLogin.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Css/PaginaIniziale.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Css/PaginaIniziale.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Css/ProvaNick.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Css/ProvaNick.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/GiocatoreLogin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/GiocatoreLogin.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Home.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Immagini/figurine_progetto/musk.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Immagini/figurine_progetto/musk.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Immagini/figurine_progetto/vedicarte.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/LeaderBoard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/LeaderBoard.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/PagIniziale.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/PagIniziale.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Partita.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Partita.fxml" afterDir="false" />
+    </list>
+    <list id="25592f24-e3d1-439f-9564-35d46712c479" name="Changes by Gabri" comment="">
+      <change beforePath="$PROJECT_DIR$/ListaInfluencer.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,8 +47,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
-        <option value="Class" />
         <option value="CSS File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -57,35 +67,6 @@
       </UrlAndAccount>
     </option>
   </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/LeaderBoard.java">
-      <ranges>
-        <range start1="5" end1="5" start2="5" end2="6" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
-        <range start1="6" end1="6" start2="7" end2="12" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
-        <range start1="9" end1="9" start2="15" end2="18" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
-        <range start1="22" end1="22" start2="31" end2="33" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
-        <range start1="23" end1="24" start2="34" end2="38" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
-        <range start1="28" end1="28" start2="42" end2="47" changelist="b9f212a7-5dff-4e94-8b6c-e34024d5985f" />
-        <range start1="37" end1="37" start2="56" end2="77" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/Giocatore.java">
-      <ranges>
-        <range start1="20" end1="20" start2="20" end2="26" changelist="b9f212a7-5dff-4e94-8b6c-e34024d5985f" />
-        <range start1="40" end1="41" start2="46" end2="47" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
-        <range start1="53" end1="54" start2="59" end2="60" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
-        <range start1="56" end1="56" start2="62" end2="65" changelist="b9f212a7-5dff-4e94-8b6c-e34024d5985f" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/Mazzo.java">
-      <ranges>
-        <range start1="20" end1="20" start2="20" end2="22" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
-        <range start1="41" end1="42" start2="43" end2="44" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
-        <range start1="44" end1="44" start2="46" end2="53" changelist="b9f212a7-5dff-4e94-8b6c-e34024d5985f" />
-        <range start1="46" end1="46" start2="55" end2="59" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
-      </ranges>
-    </file>
-  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -98,7 +79,9 @@
     <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2QRFYLn1k4ynFOGO2SPvbippMqP" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -114,14 +97,14 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;19&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/HP/DAMA&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/HP/Desktop/PROGETTO-INFORMATICA&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.tabs&quot;,
@@ -129,6 +112,9 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.provadefinitiva" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\HP\ProvaDefinitiva\src\main\resources\com\example\provadefinitiva\Immagini" />
     </key>
@@ -202,6 +188,39 @@
       <workItem from="1695711155039" duration="159000" />
       <workItem from="1695738150115" duration="11709000" />
       <workItem from="1695999995143" duration="6964000" />
+      <workItem from="1696007736693" duration="8609000" />
+      <workItem from="1696077537077" duration="9484000" />
+      <workItem from="1696092570897" duration="4000" />
+      <workItem from="1696174967323" duration="9402000" />
+      <workItem from="1696256421280" duration="10797000" />
+      <workItem from="1696604672771" duration="9458000" />
+      <workItem from="1696667649479" duration="10450000" />
+      <workItem from="1696692684207" duration="9423000" />
+      <workItem from="1696768501732" duration="8019000" />
+      <workItem from="1696776806413" duration="954000" />
+      <workItem from="1696781670382" duration="245000" />
+      <workItem from="1696860721291" duration="12812000" />
+      <workItem from="1696948388062" duration="10237000" />
+      <workItem from="1697098146127" duration="6421000" />
+      <workItem from="1697117784663" duration="655000" />
+      <workItem from="1697183717199" duration="132000" />
+      <workItem from="1697188095989" duration="270000" />
+      <workItem from="1697208400522" duration="5967000" />
+      <workItem from="1697374861894" duration="10142000" />
+      <workItem from="1697389120048" duration="3712000" />
+      <workItem from="1697399602759" duration="567000" />
+      <workItem from="1697462396826" duration="10090000" />
+      <workItem from="1697545407519" duration="6000" />
+      <workItem from="1697552041732" duration="1117000" />
+      <workItem from="1697553175884" duration="6000" />
+      <workItem from="1697553211965" duration="4929000" />
+      <workItem from="1697644810383" duration="151000" />
+      <workItem from="1697644970327" duration="1418000" />
+      <workItem from="1697700535335" duration="8797000" />
+      <workItem from="1697788399755" duration="1720000" />
+      <workItem from="1697812724133" duration="3492000" />
+      <workItem from="1697873803445" duration="9272000" />
+      <workItem from="1697883113092" duration="4539000" />
     </task>
     <task id="LOCAL-00001" summary="added gitignore">
       <created>1685536664827</created>
@@ -332,7 +351,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="refactor" />
                       </list>
                     </value>
                   </entry>
@@ -366,8 +385,17 @@
     <option name="LAST_COMMIT_MESSAGE" value="push ultima versione che gira" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="4" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
+        <PinnedItemInfo parentTag="com.example.provadefinitiva.Partita" memberName="codice" />
         <PinnedItemInfo parentTag="com.example.provadefinitiva.Partita" memberName="labelAllert" />
         <PinnedItemInfo parentTag="com.example.provadefinitiva.Partita" memberName="mazzo" />
       </pinned-members>
@@ -376,5 +404,10 @@
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Giocatore_java$Prova.ic" NAME="Prova Coverage Results" MODIFIED="1696184167120" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.example.provadefinitiva.*</FILTER>
+    </SUITE>
   </component>
 </project>
