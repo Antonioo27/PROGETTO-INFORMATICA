@@ -267,7 +267,15 @@ public class TorneoGiocaController{
     public void caricaQuarti(File file) throws FileNotFoundException {
         fileTorneo = file;
         m.caricaTorneo(file);
-        System.out.println(m.getPartiteTorneo().size());
+        if(m.getPartiteTorneo().get(0).getVincitore()!=null) {
+            System.out.println(m.getPartiteTorneo().get(0).getVincitore().getUsername());
+            System.out.println(m.getPartiteTorneo().get(0).getGiocatori().size());
+        }
+
+        System.out.println(m.getPartiteTorneo().get(0).getGiocatori().get(0).getUsername());
+        System.out.println(m.getPartiteTorneo().get(0).getGiocatori().get(1).getUsername());
+        System.out.println(m.getPartiteTorneo().get(0).getGiocatori().get(2).getUsername());
+
         ArrayList<Label> labelArrayList = new ArrayList<>();
 
         labelArrayList.addAll(Arrays.asList(Lbl1_1_1,Lbl2_1_1,Lbl3_1_1,Lbl1_2_1,Lbl2_2_1,Lbl3_2_1,Lbl1_3_1,Lbl2_3_1,Lbl3_3_1,Lbl1_1_2,Lbl2_1_2,Lbl3_1_2,Lbl1_2_2,Lbl2_2_2,Lbl3_2_2,Lbl1_3_2,Lbl2_3_2,Lbl3_3_2,Lbl1_1_3,Lbl2_1_3,Lbl3_1_3,Lbl1_2_3,Lbl2_2_3,Lbl3_2_3,Lbl1_3_3,Lbl2_3_3,Lbl3_3_3));
@@ -284,7 +292,8 @@ public class TorneoGiocaController{
                 indiceGiocatore = 0;
                 indicePartitaTorneo++;
             }else{
-
+                //finite//cicala tutti i quarti
+                //caricaSemifinale()
 
             }
         }

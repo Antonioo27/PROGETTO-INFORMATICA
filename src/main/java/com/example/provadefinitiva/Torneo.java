@@ -33,7 +33,6 @@ public class Torneo {
             temp.addAll(Arrays.asList(giocatori.get(i), giocatori.get(i + 1), giocatori.get(i + 2)));
             partite.add(new Partita(temp, codicePartita));
         }
-
     }
 
     public void caricaTorneo(File file) throws FileNotFoundException {

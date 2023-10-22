@@ -40,12 +40,8 @@ public class Partita {
         PrintWriter scrivo = new PrintWriter(codice + ".csv");
         scrivo.println(".");
         scrivo.println(mazzo.toString() + "\n");
-        if(vincitore!=null) {
-            scrivo.println("vincitore="+this.vincitore.getUsername()+","+this.vincitore.getTotalScore());
-            for(int h=0; h<giocatori.size(); h++) {
-                if (vincitore.getUsername().equalsIgnoreCase(giocatori.get(h).getUsername()))
-                    this.giocatori.remove(h);
-            }
+        if(vincitore!=null) { // se esiste vincitore
+            scrivo.println(this.vincitore.getUsername()+","+this.vincitore.getTotalScore());
             for (int i = 0; i < giocatori.size(); i++) {
                 scrivo.println(giocatori.get(i).toString());
             }
@@ -101,10 +97,21 @@ public class Partita {
     }
         else{
             Scanner scan2 = new Scanner(file);
-            String[] str2=scan2.nextLine().split(",");
+            scan2.nextLine();
+            scan2.nextLine();
+            scan2.nextLine();
+            String[] vinco=scan2.nextLine().split(",");
+            this.vincitore=new Giocatore(vinco[0],Integer.parseInt(vinco[1]));
+
+            while(scan2.hasNextLine()){
+                String s = scan2.nextLine();
+
+                if(s != ""){
+                    String[] str2=s.split(",");
+                    this.giocatori.add(new Giocatore(str2[0],Integer.parseInt(str2[1])));
+                }
+            }
             this.codice=file.getName().substring(0,4);
-            this.vincitore=new Giocatore(str2[0],Integer.parseInt(str2[1]));
-            this.giocatori= new ArrayList<Giocatore>();
             this.carteInCampo=new ArrayList<Carta>();
             this.mazzo=new Mazzo();
         }
