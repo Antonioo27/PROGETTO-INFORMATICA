@@ -8,41 +8,41 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<Pane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="492.0" prefWidth="727.0" styleClass="pane" stylesheets="@Css/PaginaIniziale.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.provadefinitiva.PartitaSingolaOTorneoController">
+<Pane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="492.0" prefWidth="727.0" styleClass="pane" stylesheets="@../../../PaginaIniziale.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.provadefinitiva.PartitaSingolaOTorneoController">
    <children>
       <Text fill="#1aff00" layoutX="189.0" layoutY="46.0" lineSpacing="3.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="S.P.A.C.C.A" textAlignment="CENTER" wrappingWidth="342.0">
          <font>
             <Font name="System Bold" size="36.0" />
          </font>
       </Text>
-      <Button fx:id="PartitaSingolaButton" layoutX="254.0" layoutY="286.0" mnemonicParsing="false" onAction="#creaPartitaSingola" prefHeight="37.0" prefWidth="270.0" styleClass="button-comune" stylesheets="@Css/ProvaNick.css" text="Crea Partita Singola">
+      <Button fx:id="PartitaSingolaButton" layoutX="254.0" layoutY="286.0" mnemonicParsing="false" onAction="#creaPartitaSingola" prefHeight="37.0" prefWidth="270.0" styleClass="button-comune" stylesheets="@../../../ProvaNick.css" text="Crea Partita Singola">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </Button>
-      <Button fx:id="TorneoButton" layoutX="254.0" layoutY="359.0" mnemonicParsing="false" onAction="#creaTorneo" prefHeight="37.0" prefWidth="270.0" styleClass="button-comune" stylesheets="@Css/ProvaNick.css" text="Crea Torneo">
+      <Button fx:id="TorneoButton" layoutX="254.0" layoutY="359.0" mnemonicParsing="false" onAction="#creaTorneo" prefHeight="37.0" prefWidth="270.0" styleClass="button-comune" stylesheets="@../../../ProvaNick.css" text="Crea Torneo">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </Button>
-      <Button fx:id="buttonGestisciGiocatori" layoutX="254.0" layoutY="205.0" mnemonicParsing="false" onAction="#gestisciGiocatori" prefHeight="37.0" prefWidth="270.0" styleClass="button-comune" stylesheets="@Css/ProvaNick.css" text="Gestisci Giocatori">
+      <Button fx:id="buttonGestisciGiocatori" layoutX="254.0" layoutY="205.0" mnemonicParsing="false" onAction="#gestisciGiocatori" prefHeight="37.0" prefWidth="270.0" styleClass="button-comune" stylesheets="@../../../ProvaNick.css" text="Gestisci Giocatori">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </Button>
       <ImageView fitHeight="66.0" fitWidth="90.0" layoutX="174.0" layoutY="195.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@Immagini/2439618.png" />
+            <Image url="@../../../2439618.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="48.0" fitWidth="59.0" layoutX="174.0" layoutY="280.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@Immagini/Immagine%20WhatsApp%202023-10-09%20ore%2018.19.43_5b866caf.jpg" />
+            <Image url="@../../../Immagine%20WhatsApp%202023-10-09%20ore%2018.19.43_5b866caf.jpg" />
          </image>
       </ImageView>
       <ImageView fitHeight="48.0" fitWidth="59.0" layoutX="174.0" layoutY="355.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@Immagini/bilder_fussballstadion_20150103_1369804670.png" />
+            <Image url="@../../../bilder_fussballstadion_20150103_1369804670.png" />
          </image>
       </ImageView>
       <Label fx:id="loginLabel" layoutX="247.0" layoutY="70.0" prefHeight="13.0" prefWidth="227.0" text="BENVENUTO ADMIN" textFill="#1ce119">

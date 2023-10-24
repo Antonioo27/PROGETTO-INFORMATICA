@@ -23,12 +23,12 @@ public class Partita {
                 this.giocatori.get(i).pesca(this.mazzo);
         }
     }
+
     public Partita() {
         this.codice = null;
         this.mazzo = new Mazzo();
         this.giocatori = new ArrayList<Giocatore>();
     }
-
 
     public Partita(ArrayList<Giocatore> giocatori, String codice, LinkedList<Carta> mazzoRimanente) {
         this.codice = codice;
@@ -38,15 +38,15 @@ public class Partita {
 
     public void salvaPartita() throws FileNotFoundException {
         PrintWriter scrivo = new PrintWriter(codice + ".csv");
-        scrivo.println(".");
-        scrivo.println(mazzo.toString() + "\n");
-        if(vincitore!=null) { // se esiste vincitore
+        if(vincitore!=null){// se esiste vincitore
             scrivo.println(this.vincitore.getUsername()+","+this.vincitore.getTotalScore());
             for (int i = 0; i < giocatori.size(); i++) {
                 scrivo.println(giocatori.get(i).toString());
             }
         }
         else {
+            scrivo.println("."); // non c'è vincitore
+            scrivo.println(mazzo.toString() + "\n");
             for (int i = 0; i < giocatori.size(); i++) {
                 scrivo.println(giocatori.get(i).toString());
             }
@@ -55,65 +55,64 @@ public class Partita {
     }
 
     public void caricaPartita(File file) throws FileNotFoundException {
-        if(vincitore==null){
-        this.codice=file.getName().substring(0,4);
+        Scanner scan2 = new Scanner(file);
+           String su = scan2.nextLine();
+        if(su.equalsIgnoreCase(".")){//non c'e un vincitore
 
-        Scanner scan = new Scanner(file);
-        Mazzo nuovo = new Mazzo();
-        scan.nextLine();
+            this.codice=file.getName().substring(0,4);
+            File file2=file;
+            Scanner scan = new Scanner(file2);
+            Mazzo nuovo = new Mazzo();
+            scan.nextLine();
 
-        String[] RimanenzeFile = scan.nextLine().split(",");
+            String[] RimanenzeFile = scan.nextLine().split(",");
 
-        LinkedList<Carta> mazzoRimanente = new LinkedList<Carta>();
-        for (int i = 0; i < RimanenzeFile.length; i++) {
-            for (int j = 0; j < nuovo.getMazzo().size(); j++) {
-                Carta c = nuovo.getMazzo().get(j);
-                if (c.getNome().equalsIgnoreCase(RimanenzeFile[i])) {
-                    mazzoRimanente.add(c);
-                    nuovo.getMazzo().remove(c);
-                    break;
-                }
-            }
-        }
-
-        this.mazzo.setMazzo(mazzoRimanente);
-        scan.nextLine();
-        while (scan.hasNextLine()) {
-            String s = scan.nextLine();
-            if (s != "") {
-                String[] str = s.split(",");
-                ArrayList<Carta> mano = new ArrayList<Carta>();
-                for (int i = 2; i < str.length; i++) {
-                    for (int j = 0; j < nuovo.getMazzo().size(); j++) {
-                        Carta c = nuovo.getMazzo().get(j);
-                        if (c.getNome().equalsIgnoreCase(str[i])) {
-                            mano.add(c);
-                        }
+            LinkedList<Carta> mazzoRimanente = new LinkedList<Carta>();
+            for (int i = 0; i < RimanenzeFile.length; i++) {
+                for (int j = 0; j < nuovo.getMazzo().size(); j++) {
+                    Carta c = nuovo.getMazzo().get(j);
+                    if (c.getNome().equalsIgnoreCase(RimanenzeFile[i])) {
+                        mazzoRimanente.add(c);
+                        nuovo.getMazzo().remove(c);
+                        break;
                     }
                 }
-                this.giocatori.add(new Giocatore(str[0], Integer.parseInt(str[1]), mano));
             }
-        }
-    }
-        else{
-            Scanner scan2 = new Scanner(file);
-            scan2.nextLine();
-            scan2.nextLine();
-            scan2.nextLine();
-            String[] vinco=scan2.nextLine().split(",");
-            this.vincitore=new Giocatore(vinco[0],Integer.parseInt(vinco[1]));
 
-            while(scan2.hasNextLine()){
-                String s = scan2.nextLine();
-
-                if(s != ""){
-                    String[] str2=s.split(",");
-                    this.giocatori.add(new Giocatore(str2[0],Integer.parseInt(str2[1])));
+            this.mazzo.setMazzo(mazzoRimanente);
+            scan.nextLine();
+            while (scan.hasNextLine()) {
+                String s = scan.nextLine();
+                if (s != "") {
+                    String[] str = s.split(",");
+                    ArrayList<Carta> mano = new ArrayList<Carta>();
+                    for (int i = 2; i < str.length; i++) {
+                        for (int j = 0; j < nuovo.getMazzo().size(); j++) {
+                            Carta c = nuovo.getMazzo().get(j);
+                            if (c.getNome().equalsIgnoreCase(str[i])) {
+                                mano.add(c);
+                            }
+                        }
+                    }
+                    this.giocatori.add(new Giocatore(str[0], Integer.parseInt(str[1]), mano));
                 }
             }
+        }
+        else{ // se esiste vincitore
             this.codice=file.getName().substring(0,4);
-            this.carteInCampo=new ArrayList<Carta>();
-            this.mazzo=new Mazzo();
+           Scanner scan=new Scanner(file);
+           String riga = scan.nextLine();
+           String[] str=riga.split(",");
+           this.vincitore=new Giocatore(str[0],Integer.parseInt(str[1]));
+           while(scan.hasNextLine()){
+               String riga2 = scan.nextLine();
+               if (riga2 != "") {
+                    String[] str2 = riga2.split(",");
+                    Giocatore g = new Giocatore(str2[0], Integer.parseInt(str2[1]));
+                    //System.out.println(g.getUsername());
+                    this.giocatori.add(g);
+               }
+           }
         }
     }
 
@@ -123,10 +122,12 @@ public class Partita {
             turno=1;
         else
             turno++;
-      }
-      public int getTurno(){
+    }
+
+    public int getTurno(){
         return this.turno;
       }
+
     public void muoviCarta(int IndiceGiocatore, int IndiceCarta){ //indice partendo da 0
         this.carteInCampo.add(this.getCarteGiocatore(IndiceGiocatore).get(IndiceCarta));
         this.getCarteGiocatore(IndiceGiocatore).set(IndiceCarta,null);
@@ -145,12 +146,6 @@ public class Partita {
 
     public Mazzo getMazzo(){
         return this.mazzo;
-    }
-
-
-
-    public void setCarteInCampo(){
-
     }
 
     public ArrayList<Carta> getCarteInCampo(){

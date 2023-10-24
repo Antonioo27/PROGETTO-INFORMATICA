@@ -46,6 +46,8 @@ public class LoginGIocatoreController {
                     PartitaController partitaController = loader.getController();
                     partitaController.carica(file);
                     partitaController.visualizzaCodicePartita();
+                    if(Integer.parseInt(codiceControllo.substring(0,4))< 2000)
+                        partitaController.setCodiceTorneo(codiceControllo.substring(0,4));
                     stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
                     scene = new Scene(root);
                     stage.setScene(scene);
@@ -69,8 +71,9 @@ public class LoginGIocatoreController {
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("TorneoGioca.fxml"));
                 root = loader.load();
                 TorneoGiocaController torneoGiocaController = loader.getController();
-                torneoGiocaController.caricaQuarti(file);
+                torneoGiocaController.setFile(codiceControllo.substring(0,4));
                 torneoGiocaController.visualizzaCodiceTorneo(codiceControllo);
+                torneoGiocaController.inizializza();
                 stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
                 scene = new Scene(root);
                 stage.setScene(scene);

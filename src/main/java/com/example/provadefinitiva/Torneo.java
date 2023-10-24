@@ -35,6 +35,16 @@ public class Torneo {
         }
     }
 
+    public void creaSemifinali(ArrayList<String> giocatori, String codice){
+        this.codiceTorneo = codice;
+        for (int i = 0; i < giocatori.size(); i = i + 3) {
+            String codicePartita = String.valueOf((int) (Math.random() * (3000 - 2000 + 1) + 1000));
+            ArrayList<String> temp = new ArrayList<String>();
+            temp.addAll(Arrays.asList(giocatori.get(i), giocatori.get(i + 1), giocatori.get(i + 2)));
+            partite.add(new Partita(temp, codicePartita));
+        }
+    }
+
     public void caricaTorneo(File file) throws FileNotFoundException {
         Scanner scan = new Scanner(file);
         while (scan.hasNextLine()) {
@@ -87,9 +97,6 @@ public class Torneo {
                 partite.remove(i);
             }
         }
-
-
-
         return indiciPartiteFinite;
     }
 }

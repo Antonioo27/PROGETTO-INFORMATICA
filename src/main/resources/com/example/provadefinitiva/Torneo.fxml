@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.net.URL?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
@@ -8,7 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.Line?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="681.0" prefWidth="845.0" stylesheets="@Css/PaginaIniziale.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.provadefinitiva.TorneoController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="681.0" prefWidth="845.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.provadefinitiva.TorneoController">
    <children>
       <Label fx:id="LBLv1_1" alignment="CENTER" layoutX="174.0" layoutY="121.0" prefHeight="26.0" prefWidth="88.0" styleClass="label-custom" stylesheets="@Css/ProvaNick.css" text="Player" />
       <TextField fx:id="Lbl1_1_1" layoutX="20.0" layoutY="82.0" prefHeight="14.0" prefWidth="88.0" />
@@ -79,4 +80,8 @@
       <Label fx:id="LblCodiceTorneo" layoutX="175.0" layoutY="26.0" prefHeight="26.0" prefWidth="138.0" text="Label" />
       <Button layoutX="380.0" layoutY="52.0" mnemonicParsing="false" onAction="#creaTorneo" text="CREA TORNEO" />
    </children>
+   <stylesheets>
+      <URL value="@../../../PaginaIniziale.css" />
+      <URL value="@../../../ProvaNick.css" />
+   </stylesheets>
 </AnchorPane>
