@@ -12,7 +12,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="492.0" prefWidth="727.0" styleClass="root" stylesheets="@Css/PaginaIniziale.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.provadefinitiva.AddPlayerSingleGameController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="492.0" prefWidth="727.0" styleClass="root" stylesheets="@../../../PaginaIniziale.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.provadefinitiva.AddPlayerSingleGameController">
    <children>
       <Text layoutX="218.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PARTECIPANTI  PARTITA" textAlignment="CENTER" wrappingWidth="291.3726806640625">
          <font>
@@ -22,12 +22,12 @@
             <ColorAdjust brightness="1.0" contrast="1.0" hue="1.0" saturation="1.0" />
          </effect>
       </Text>
-      <TextField fx:id="giocatore_textField" layoutX="309.0" layoutY="131.0" prefHeight="40.0" prefWidth="196.0" promptText="Aggiungi nome giocatore..">
+      <TextField fx:id="giocatore_textField" layoutX="309.0" layoutY="131.0" prefHeight="40.0" prefWidth="196.0" promptText="Aggiungi nome giocatore.." stylesheets="@../../../ProvaNick.css">
          <font>
             <Font size="13.0" />
          </font></TextField>
-      <Button fx:id="aggiungi_button" layoutX="534.0" layoutY="137.0" mnemonicParsing="false" onAction="#aggiungiGiocatore" prefHeight="29.0" prefWidth="89.0" styleClass="button-comune" stylesheets="@Css/ProvaNick.css" text="AGGIUNGI" />
-      <Label fx:id="labelGiocatori" alignment="TOP_LEFT" layoutX="44.0" layoutY="272.0" prefHeight="206.0" prefWidth="189.0" textFill="WHITE">
+      <Button fx:id="aggiungi_button" layoutX="534.0" layoutY="137.0" mnemonicParsing="false" onAction="#aggiungiGiocatore" prefHeight="29.0" prefWidth="89.0" styleClass="button-comune" stylesheets="@../../../ProvaNick.css" text="AGGIUNGI" />
+      <Label fx:id="labelGiocatori" alignment="TOP_LEFT" layoutX="44.0" layoutY="272.0" prefHeight="206.0" prefWidth="189.0" stylesheets="@../../../ProvaNick.css" textFill="WHITE">
          <font>
             <Font name="System Bold" size="21.0" />
          </font>
@@ -47,9 +47,9 @@
             <Font size="16.0" />
          </font>
       </Label>
-      <ChoiceBox fx:id="ChoiceBox" layoutX="60.0" layoutY="131.0" prefHeight="40.0" prefWidth="174.0" />
-      <Button fx:id="createGameButton" layoutX="505.0" layoutY="428.0" mnemonicParsing="false" onAction="#createSingleGame" prefHeight="42.0" prefWidth="213.0" styleClass="button-salvaPartita" stylesheets="@Css/ProvaNick.css" text="CREA PARTITA" />
-      <Label layoutX="44.0" layoutY="213.0" prefHeight="42.0" prefWidth="213.0" styleClass="label-custom-punteggio" stylesheets="@Css/ProvaNick.css" text="GIOCATORI AGGIUNTI :">
+      <ChoiceBox fx:id="ChoiceBox" layoutX="60.0" layoutY="131.0" prefHeight="40.0" prefWidth="174.0" stylesheets="@../../../ProvaNick.css" />
+      <Button fx:id="createGameButton" layoutX="505.0" layoutY="428.0" mnemonicParsing="false" onAction="#createSingleGame" prefHeight="42.0" prefWidth="213.0" styleClass="button-salvaPartita" stylesheets="@../../../ProvaNick.css" text="CREA PARTITA" />
+      <Label layoutX="44.0" layoutY="213.0" prefHeight="42.0" prefWidth="213.0" styleClass="label-custom-punteggio" stylesheets="@../../../ProvaNick.css" text="GIOCATORI AGGIUNTI :">
          <font>
             <Font name="System Bold" size="17.0" />
          </font>

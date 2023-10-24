@@ -126,7 +126,7 @@
       </ImageView>
       <ImageView fx:id="ImmMazzo1" fitHeight="88.0" fitWidth="93.0" layoutX="245.0" layoutY="358.0" onMouseClicked="#muoviCarta1G3" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@Immagini/backCard2.jpeg" />
+            <Image url="@../../../backCard2.jpeg" />
          </image>
       </ImageView>
       <Label fx:id="labelCarteMazzo" alignment="CENTER" layoutX="238.0" layoutY="453.0" prefHeight="25.0" prefWidth="101.0" styleClass="label-custom-punteggio" stylesheets="@Css/ProvaNick.css" text="0">
@@ -140,9 +140,10 @@
          </font>
       </Label>
       <Button layoutX="784.0" layoutY="23.0" mnemonicParsing="false" onAction="#tornaIndietro" text="Torna indietro" />
+      <Label fx:id="LabelCodiceTorneo" layoutX="30.0" layoutY="52.0" prefHeight="42.0" prefWidth="88.0" visible="false" />
    </children>
    <stylesheets>
-      <URL value="@Css/giocoStylesheet.css" />
-      <URL value="@Css/ProvaNick.css" />
+      <URL value="@../../../giocoStylesheet.css" />
+      <URL value="@../../../ProvaNick.css" />
    </stylesheets>
 </AnchorPane>

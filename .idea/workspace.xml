@@ -4,13 +4,80 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a83edf22-57de-43e6-8a3f-681ebb786d0e" name="Changes" comment="push ultima versione che gira">
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="a83edf22-57de-43e6-8a3f-681ebb786d0e" name="Changes" comment="ultimo aggiornamento torneo">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/PaginaIniziale.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/giocoStylesheet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/cssdialects.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1148.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1179.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1457.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1611.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1617.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1654.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1857.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1926.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1973.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2080.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2377.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/3147.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeaderBoardFile.csv" beforeDir="false" afterPath="$PROJECT_DIR$/LeaderBoardFile.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/MainEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/MainEngine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/Mazzo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/Mazzo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/Partita.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/Partita.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/PartitaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/PartitaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/Torneo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/Torneo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/TorneoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/TorneoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/TorneoGiocaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/TorneoGiocaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/AggiungiNomi.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/AggiungiNomi.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/AmministratoreLogin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/AmministratoreLogin.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Css/PaginaIniziale.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Css/ProvaNick.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ProvaNick.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Css/giocoStylesheet.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/GestioneGiocatori.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/GestioneGiocatori.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/GiocatoreLogin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/GiocatoreLogin.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Home.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Immagini/2439618.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/2439618.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Immagini/Immagine WhatsApp 2023-10-09 ore 18.19.43_5b866caf.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Immagine WhatsApp 2023-10-09 ore 18.19.43_5b866caf.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Immagini/Screenshot 2023-10-16 163126.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Screenshot 2023-10-16 163126.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Immagini/backCard1.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/backCard1.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Immagini/backCard2.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/backCard2.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Immagini/bilder_fussballstadion_20150103_1369804670.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bilder_fussballstadion_20150103_1369804670.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Immagini/figurine_progetto/anonymous.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/anonymous.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Immagini/figurine_progetto/arianagrande.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/arianagrande.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Immagini/figurine_progetto/cruise.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/cruise.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Immagini/figurine_progetto/curry.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/curry.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Immagini/figurine_progetto/deniro.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/deniro.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Immagini/figurine_progetto/djokovic.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/djokovic.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Immagini/figurine_progetto/dualipa.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dualipa.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Immagini/figurine_progetto/ferragni.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ferragni.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Immagini/figurine_progetto/ibra.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ibra.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Immagini/figurine_progetto/james.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/james.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Immagini/figurine_progetto/leodicaprio.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/leodicaprio.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Immagini/figurine_progetto/messi.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/messi.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Immagini/figurine_progetto/musk.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/musk.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Immagini/figurine_progetto/obama.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/obama.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Immagini/figurine_progetto/pacino.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pacino.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Immagini/figurine_progetto/perdifollowers.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/perdifollowers.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Immagini/figurine_progetto/profilovirale.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/profilovirale.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Immagini/figurine_progetto/robbie.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/robbie.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Immagini/figurine_progetto/ronaldo.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ronaldo.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Immagini/figurine_progetto/smith.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/smith.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Immagini/figurine_progetto/williams.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/williams.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Immagini/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Immagini/sfondo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sfondo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Immagini/tavolodaPoker_cleanup.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/tavolodaPoker_cleanup.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/PagIniziale.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/PagIniziale.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Partita.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Partita.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Torneo.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Torneo.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/TorneoGioca.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/TorneoGioca.fxml" afterDir="false" />
     </list>
-    <list id="25592f24-e3d1-439f-9564-35d46712c479" name="Changes by Gabri" comment="" />
+    <list id="25592f24-e3d1-439f-9564-35d46712c479" name="Changes by Gabri" comment="Changes by Gabri">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/TorneoGiocaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/TorneoGiocaController.java" afterDir="false" />
+    </list>
+    <list id="872de755-c33f-4f5b-a7cf-647b7bbcd4d9" name="Changes by TINARI" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/LoginGIocatoreController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/LoginGIocatoreController.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,6 +107,49 @@
       </UrlAndAccount>
     </option>
   </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/TorneoGiocaController.java">
+      <ranges>
+        <range start1="5" end1="5" start2="5" end2="6" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
+        <range start1="16" end1="16" start2="17" end2="18" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
+        <range start1="19" end1="20" start2="21" end2="22" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
+        <range start1="137" end1="137" start2="139" end2="143" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
+        <range start1="148" end1="148" start2="154" end2="156" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
+        <range start1="163" end1="164" start2="171" end2="181" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
+        <range start1="170" end1="170" start2="187" end2="190" changelist="25592f24-e3d1-439f-9564-35d46712c479" />
+        <range start1="171" end1="171" start2="191" end2="194" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
+        <range start1="183" end1="184" start2="206" end2="207" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
+        <range start1="194" end1="195" start2="217" end2="218" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
+        <range start1="199" end1="200" start2="222" end2="223" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
+        <range start1="206" end1="208" start2="229" end2="229" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
+        <range start1="211" end1="213" start2="232" end2="244" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
+        <range start1="214" end1="214" start2="245" end2="246" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
+        <range start1="216" end1="218" start2="248" end2="260" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
+        <range start1="221" end1="223" start2="263" end2="275" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
+        <range start1="224" end1="225" start2="276" end2="276" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
+        <range start1="226" end1="228" start2="277" end2="289" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
+        <range start1="229" end1="230" start2="290" end2="290" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
+        <range start1="231" end1="233" start2="291" end2="303" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
+        <range start1="234" end1="235" start2="304" end2="304" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
+        <range start1="236" end1="238" start2="305" end2="317" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
+        <range start1="239" end1="240" start2="318" end2="318" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
+        <range start1="241" end1="243" start2="319" end2="331" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
+        <range start1="245" end1="247" start2="333" end2="346" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
+        <range start1="248" end1="248" start2="347" end2="359" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
+        <range start1="250" end1="253" start2="361" end2="373" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
+        <range start1="256" end1="258" start2="376" end2="388" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
+        <range start1="264" end1="264" start2="394" end2="548" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
+        <range start1="265" end1="265" start2="549" end2="558" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
+        <range start1="266" end1="271" start2="559" end2="569" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
+        <range start1="272" end1="272" start2="570" end2="613" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
+        <range start1="277" end1="278" start2="618" end2="619" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
+        <range start1="285" end1="288" start2="626" end2="626" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
+        <range start1="289" end1="291" start2="627" end2="629" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
+        <range start1="293" end1="297" start2="631" end2="632" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
+        <range start1="298" end1="305" start2="633" end2="633" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
+      </ranges>
+    </file>
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -50,9 +160,9 @@
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2QRFYLn1k4ynFOGO2SPvbippMqP" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -206,11 +316,12 @@
       <workItem from="1697788399755" duration="1720000" />
       <workItem from="1697812724133" duration="3492000" />
       <workItem from="1697873803445" duration="9272000" />
-      <workItem from="1697883113092" duration="4539000" />
-      <workItem from="1697983244422" duration="8021000" />
-      <workItem from="1697995518388" duration="1943000" />
-      <workItem from="1698158706220" duration="154000" />
-      <workItem from="1698159133709" duration="62000" />
+      <workItem from="1697883113092" duration="5017000" />
+      <workItem from="1697973546683" duration="4464000" />
+      <workItem from="1698052218259" duration="1143000" />
+      <workItem from="1698053372310" duration="1219000" />
+      <workItem from="1698065215476" duration="11864000" />
+      <workItem from="1698135311762" duration="5695000" />
     </task>
     <task id="LOCAL-00001" summary="added gitignore">
       <created>1685536664827</created>
@@ -341,7 +452,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="refactor" />
+                        <option value="origin/refactor" />
                       </list>
                     </value>
                   </entry>
@@ -372,7 +483,8 @@
     <MESSAGE value="push spazi in mazzo" />
     <MESSAGE value="ultima versione buona" />
     <MESSAGE value="push ultima versione che gira" />
-    <option name="LAST_COMMIT_MESSAGE" value="push ultima versione che gira" />
+    <MESSAGE value="ultimo aggiornamento torneo" />
+    <option name="LAST_COMMIT_MESSAGE" value="ultimo aggiornamento torneo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -380,6 +492,10 @@
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
           <option name="timeStamp" value="4" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.IndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="6" />
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>

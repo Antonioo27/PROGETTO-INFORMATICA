@@ -7,7 +7,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="492.0" prefWidth="727.0" stylesheets="@Css/PaginaIniziale.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.provadefinitiva.LoginAmministratoreController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="492.0" prefWidth="727.0" stylesheets="@../../../PaginaIniziale.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.provadefinitiva.LoginAmministratoreController">
    <children>
       <PasswordField fx:id="passwordLogin" alignment="CENTER" layoutX="266.0" layoutY="236.0" prefHeight="36.0" prefWidth="191.0" promptText="Type your password.." />
       <Text fill="#50d05e" layoutX="198.0" layoutY="41.0" stroke="#2a86b4" strokeType="OUTSIDE" text="LOGIN AMMINISTRATORE" textAlignment="CENTER" wrappingWidth="310.0">
@@ -20,7 +20,7 @@
          <font>
             <Font name="System Bold" size="14.0" />
          </font></Text>
-      <Button fx:id="Clear_Button" alignment="TOP_CENTER" layoutX="374.0" layoutY="304.0" mnemonicParsing="false" onAction="#clearLogin" prefHeight="33.0" prefWidth="114.0" styleClass="button-loginAmministratore" stylesheets="@Css/ProvaNick.css" text="CLEAR" textAlignment="RIGHT" textFill="#1ebad9">
+      <Button fx:id="Clear_Button" alignment="TOP_CENTER" layoutX="374.0" layoutY="304.0" mnemonicParsing="false" onAction="#clearLogin" prefHeight="33.0" prefWidth="114.0" styleClass="button-loginAmministratore" stylesheets="@../../../ProvaNick.css" text="CLEAR" textAlignment="RIGHT" textFill="#1ebad9">
          <font>
             <Font size="10.0" />
          </font>
@@ -30,7 +30,7 @@
             <Font name="System Bold" size="14.0" />
          </font>
       </Text>
-      <Button alignment="TOP_CENTER" layoutX="239.0" layoutY="304.0" mnemonicParsing="false" onAction="#checkLogin" prefHeight="19.0" prefWidth="114.0" styleClass="button-loginAmministratore" stylesheets="@Css/ProvaNick.css" text="LOGIN" textAlignment="RIGHT" textFill="#1ebad9">
+      <Button alignment="TOP_CENTER" layoutX="239.0" layoutY="304.0" mnemonicParsing="false" onAction="#checkLogin" prefHeight="19.0" prefWidth="114.0" styleClass="button-loginAmministratore" stylesheets="@../../../ProvaNick.css" text="LOGIN" textAlignment="RIGHT" textFill="#1ebad9">
          <font>
             <Font size="10.0" />
          </font>

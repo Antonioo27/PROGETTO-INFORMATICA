@@ -31,9 +31,44 @@ public class Torneo {
             String codicePartita = String.valueOf((int) (Math.random() * (3000 - 2000 + 1) + 1000));
             ArrayList<String> temp = new ArrayList<String>();
             temp.addAll(Arrays.asList(giocatori.get(i), giocatori.get(i + 1), giocatori.get(i + 2)));
-            partite.add(new Partita(temp, codicePartita));
+            Partita p = new Partita(temp, codicePartita);
+            for (int j = 0; j < this.partite.size(); j++) {
+                if (p.getCodice().equals(this.partite.get(j).getCodice())) {
+                    p.setCodice(String.valueOf((int) (Math.random() * (3000 - 2000 + 1) + 1000)));
+                    j=0;
+                }
+            }
+            partite.add(p);
         }
+    }
 
+    public void creaSemifinali(ArrayList<String> giocatori, String codice){
+        this.codiceTorneo = codice;
+        for (int i = 0; i < giocatori.size(); i = i + 3) {
+            String codicePartita = String.valueOf((int) (Math.random() * (3000 - 2000 + 1) + 1000));
+            ArrayList<String> temp = new ArrayList<String>();
+            temp.addAll(Arrays.asList(giocatori.get(i), giocatori.get(i + 1), giocatori.get(i + 2)));
+            Partita p = new Partita(temp, codicePartita);
+            for (int j = 0; j < this.partite.size(); j++) {
+                if (p.getCodice().equals(this.partite.get(j).getCodice())) {
+                    p.setCodice(String.valueOf((int) (Math.random() * (3000 - 2000 + 1) + 1000)));
+                    j=0;
+                }
+            }
+                partite.add(p);
+        }
+    }
+    public void creaFinale(ArrayList<String> finalisti, String codice){
+        this.codiceTorneo=codice;
+        String codFinale=String.valueOf((int) (Math.random() * (3000 - 2000 + 1) + 1000));
+        Partita p=new Partita(finalisti, codFinale);
+        for(int i=0; i<this.partite.size(); i++) {
+            if (p.getCodice().equalsIgnoreCase(this.partite.get(i).getCodice())) {
+                p.setCodice(String.valueOf((int) (Math.random() * (3000 - 2000 + 1) + 1000)));
+                i=0;
+            }
+        }
+        this.partite.add(p);
     }
 
     public void caricaTorneo(File file) throws FileNotFoundException {
@@ -88,9 +123,6 @@ public class Torneo {
                 partite.remove(i);
             }
         }
-
-
-
         return indiciPartiteFinite;
     }
 }

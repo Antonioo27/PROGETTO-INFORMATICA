@@ -189,7 +189,6 @@ public class TorneoController {
         PrintWriter scrivo = new PrintWriter(new File(LblCodiceTorneo.getText()+".csv"));
         for(int i=0; i<9; i++){
            scrivo.println(m.getPartitaTorneo(i).getCodice());
-
         }
         scrivo.close();
         FXMLLoader loader=new FXMLLoader(getClass().getResource("PagIniziale.fxml"));

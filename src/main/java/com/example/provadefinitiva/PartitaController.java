@@ -80,6 +80,8 @@ public class PartitaController {
     private Label labelCarteMazzo;
     @FXML
     private Label LabelVincitore;
+    @FXML
+    private Label LabelCodiceTorneo;
     private File fileTorneoo;
 
     private Stage stage;
@@ -118,11 +120,11 @@ public class PartitaController {
 
     public void copriCarte(ImageView carta1, ImageView carta2, ImageView carta3, int indiceGiocatore){
        if(m.getCarteGiocatore(indiceGiocatore).get(0)!=null)
-            carta1.setImage(new Image("C:\\Users\\HP\\Desktop\\PROGETTO-INFORMATICA\\src\\main\\resources\\com\\example\\provadefinitiva\\Immagini\\backCard2.jpeg"));
+            carta1.setImage(new Image(getClass().getClassLoader().getResourceAsStream("backCard2.jpeg")));
        if(m.getCarteGiocatore(indiceGiocatore).get(1)!=null)
-            carta2.setImage(new Image("C:\\Users\\HP\\Desktop\\PROGETTO-INFORMATICA\\src\\main\\resources\\com\\example\\provadefinitiva\\Immagini\\backCard2.jpeg"));
+            carta2.setImage(new Image(getClass().getClassLoader().getResourceAsStream("backCard2.jpeg")));
        if(m.getCarteGiocatore(indiceGiocatore).get(2)!=null)
-            carta3.setImage(new Image("C:\\Users\\HP\\Desktop\\PROGETTO-INFORMATICA\\src\\main\\resources\\com\\example\\provadefinitiva\\Immagini\\backCard2.jpeg"));
+            carta3.setImage(new Image(getClass().getClassLoader().getResourceAsStream("backCard2.jpeg")));
     }
 
     public void scopriCarte(ImageView carta1,ImageView carta2, ImageView carta3,int indiceGiocatore) {
@@ -443,7 +445,7 @@ public class PartitaController {
             case(1):{transition3.setToX(264);transition3.setToY(58);}break;
             case(2):{transition3.setToX(345);transition3.setToY(58);}break;
         }
-         transition1.setOnFinished(event -> {
+        transition1.setOnFinished(event -> {
              ImmMazzo1.setImage(null);
              ImmMazzo2.setImage(null);
              ImmMazzo3.setImage(null);
@@ -458,7 +460,7 @@ public class PartitaController {
                  labelCarteMazzo.setText(""+m.getMazzo().getMazzo().size());
                  labelCarteMazzo.setVisible(false);
              }
-         });
+        });
         // Avvia le animazioni
         transition1.play();
         transition2.play();
@@ -482,9 +484,9 @@ public class PartitaController {
         // Quando le animazioni di ritorno sono completate
         returnTransition1.setOnFinished(event -> {
             if(m.getMazzo().getMazzo().size()!=0) {
-                ImmMazzo1.setImage(new Image("C:\\Users\\HP\\Desktop\\PROGETTO-INFORMATICA\\src\\main\\resources\\com\\example\\provadefinitiva\\Immagini\\backCard2.jpeg"));
-                ImmMazzo2.setImage(new Image("C:\\Users\\HP\\Desktop\\PROGETTO-INFORMATICA\\src\\main\\resources\\com\\example\\provadefinitiva\\Immagini\\backCard2.jpeg"));
-                ImmMazzo3.setImage(new Image("C:\\Users\\HP\\Desktop\\PROGETTO-INFORMATICA\\src\\main\\resources\\com\\example\\provadefinitiva\\Immagini\\backCard2.jpeg"));
+                ImmMazzo1.setImage(new Image(getClass().getClassLoader().getResourceAsStream("backCard2.jpeg")));
+                ImmMazzo2.setImage(new Image(getClass().getClassLoader().getResourceAsStream("backCard2.jpeg")));
+                ImmMazzo3.setImage(new Image(getClass().getClassLoader().getResourceAsStream("backCard2.jpeg")));
             }
             else  ImmMazzo.setImage(null) ;
             });
@@ -520,6 +522,8 @@ public class PartitaController {
     public void tornaIndietro(ActionEvent event) throws IOException {
 
         if (Integer.parseInt(m.getPartita().getCodice()) < 2000) {
+
+
             String codiceee = m.getPartita().getCodice();
 
             if(m.getPartita().getVincitore()==null)  // se la partita non è ancora finita
@@ -528,7 +532,9 @@ public class PartitaController {
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("TorneoGioca.fxml"));
                 Parent root = loader.load();
                 TorneoGiocaController torneoGiocaController = loader.getController();
-                torneoGiocaController.caricaQuarti(fileTorneoo);
+                torneoGiocaController.setFile(this.LabelCodiceTorneo.getText());
+                torneoGiocaController.visualizzaCodiceTorneo(this.LabelCodiceTorneo.getText());
+                torneoGiocaController.inizializza();
                 stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
                 scene = new Scene(root);
                 stage.setScene(scene);
@@ -547,7 +553,7 @@ public class PartitaController {
         }
     }
 
-    public void caricaFileTorneo(File fileTorneo) {
-         fileTorneoo = fileTorneo;
+    public void setCodiceTorneo(String codiceTorneo){
+        this.LabelCodiceTorneo.setText(codiceTorneo);
     }
 }

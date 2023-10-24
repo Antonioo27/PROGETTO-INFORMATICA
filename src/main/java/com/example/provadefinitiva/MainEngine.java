@@ -35,6 +35,14 @@ public class MainEngine {
          this.torneo.creaQuarti(giocatori,codice);
          torneo.salvaTorneo();
     }
+    public void creaSemifinali(ArrayList<String> giocatori, String codice) throws IOException {
+        this.torneo.creaSemifinali(giocatori,codice);
+        torneo.salvaTorneo();
+    }
+    public void creaFinale(ArrayList<String> giocatori, String codice) throws IOException{
+         this.torneo.creaFinale(giocatori,codice);
+         this.torneo.salvaTorneo();
+    }
 
 
     public Partita getPartitaTorneo(int indice){
@@ -117,4 +125,5 @@ public class MainEngine {
     public HashMap<Integer,Giocatore> checkPartite() throws IOException{
            return  this.getTorneo().checkPartite();
     }
+
     }
