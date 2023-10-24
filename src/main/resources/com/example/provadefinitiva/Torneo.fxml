@@ -38,7 +38,7 @@
       <Label fx:id="LBLv3" alignment="CENTER" layoutX="432.0" layoutY="243.0" prefHeight="26.0" prefWidth="88.0" styleClass="label-custom" stylesheets="@Css/ProvaNick.css" text="Player" />
       <ImageView fitHeight="108.0" fitWidth="130.0" layoutX="375.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@Immagini/Screenshot%202023-10-16%20163126.png" />
+            <Image url="@../../../../../../../Screenshot%202023-10-16%20163126.png" />
          </image>
       </ImageView>
       <Label fx:id="LBLv2_2" alignment="CENTER" layoutX="387.0" layoutY="473.0" prefHeight="26.0" prefWidth="88.0" styleClass="label-custom" stylesheets="@Css/ProvaNick.css" text="Player" />

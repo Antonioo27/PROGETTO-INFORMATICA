@@ -5,39 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a83edf22-57de-43e6-8a3f-681ebb786d0e" name="Changes" comment="push ultima versione che gira">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/LeaderBoardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/cssdialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/cssdialects.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2248.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/AggGiocatoriPartitaSingola.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/AddPlayerSingleGameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/Carta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/Carta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/CartaImprevisto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/CartaImprevisto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/CartaInfluencer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/CartaInfluencer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/Giocatore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/Giocatore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/LeaderBoard.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/LoginAmministratoreController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/LoginAmministratoreController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/LoginGIocatore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/LoginGIocatoreController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/Mazzo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/Mazzo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/PaginaInizialeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/PaginaInizialeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/Partita.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/PartitaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/PartitaSingolaOTorneo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/PartitaSingolaOTorneoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/Prova.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/Prova.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/AggiungiNomi.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/AggiungiNomi.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/AmministratoreLogin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/AmministratoreLogin.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Css/PaginaIniziale.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Css/PaginaIniziale.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Css/ProvaNick.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Css/ProvaNick.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/GiocatoreLogin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/GiocatoreLogin.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Home.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Immagini/figurine_progetto/musk.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Immagini/figurine_progetto/musk.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Immagini/figurine_progetto/vedicarte.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/LeaderBoard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/LeaderBoard.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/PagIniziale.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/PagIniziale.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Partita.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Partita.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Torneo.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Torneo.fxml" afterDir="false" />
     </list>
-    <list id="25592f24-e3d1-439f-9564-35d46712c479" name="Changes by Gabri" comment="">
-      <change beforePath="$PROJECT_DIR$/ListaInfluencer.txt" beforeDir="false" />
-    </list>
+    <list id="25592f24-e3d1-439f-9564-35d46712c479" name="Changes by Gabri" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,13 +44,15 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="mavenHome" value="Use Maven wrapper" />
-        <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
     </option>
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
   <component name="ProjectId" id="2QRFYLn1k4ynFOGO2SPvbippMqP" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -129,6 +104,17 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -221,6 +207,10 @@
       <workItem from="1697812724133" duration="3492000" />
       <workItem from="1697873803445" duration="9272000" />
       <workItem from="1697883113092" duration="4539000" />
+      <workItem from="1697983244422" duration="8021000" />
+      <workItem from="1697995518388" duration="1943000" />
+      <workItem from="1698158706220" duration="154000" />
+      <workItem from="1698159133709" duration="62000" />
     </task>
     <task id="LOCAL-00001" summary="added gitignore">
       <created>1685536664827</created>
