@@ -91,12 +91,13 @@
       <Button fx:id="buttonGiocaSemi1" layoutX="281.0" layoutY="244.0" mnemonicParsing="false" onAction="#buttonGiocaSemi1" text="Gioca" visible="false" />
       <Button fx:id="buttonGiocaSemi2" layoutX="408.0" layoutY="424.0" mnemonicParsing="false" onAction="#buttonGiocaSemi2" text="Gioca" visible="false" />
       <Button fx:id="buttonGiocaSemi3" layoutX="548.0" layoutY="245.0" mnemonicParsing="false" onAction="#buttonGiocaSemi3" text="Gioca" visible="false" />
-      <Label fx:id="LBVINCITORE" alignment="CENTER" layoutX="345.0" layoutY="82.0" prefHeight="47.0" prefWidth="156.0" styleClass="label-vincitore" stylesheets="@../../../ProvaNick.css"  visible="false">
+      <Label fx:id="LBVINCITORE" alignment="CENTER" layoutX="345.0" layoutY="82.0" prefHeight="47.0" prefWidth="156.0" styleClass="label-vincitore" stylesheets="@../../../ProvaNick.css" visible="false">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <Button fx:id="buttonTornaIndietro" layoutX="19.0" layoutY="15.0" mnemonicParsing="false" onAction="#tornaIndietro" text="Torna indietro" />
+      <Button fx:id="buttonTornaIndietro" layoutX="732.0" layoutY="15.0" mnemonicParsing="false" onAction="#tornaIndietro" text="Torna indietro" />
+      <Button fx:id="buttonVisualizzaLeaderBoard" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#visualizzaLeaderBoard" prefHeight="22.0" prefWidth="141.0" text="Visualizza LeaderBoard" />
    </children>
    <stylesheets>
       <URL value="@../../../ProvaNick.css" />

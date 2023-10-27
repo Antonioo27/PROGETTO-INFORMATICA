@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.Line?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="681.0" prefWidth="845.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.provadefinitiva.AggiungiGiocatoreTorneoController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="681.0" prefWidth="845.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.provadefinitiva.AggiungiGiocatoriTorneoController">
    <children>
       <Label fx:id="LBLv1_1" alignment="CENTER" layoutX="174.0" layoutY="121.0" prefHeight="26.0" prefWidth="88.0" styleClass="label-custom" stylesheets="@Css/ProvaNick.css" text="Player" />
       <TextField fx:id="Lbl1_1_1" layoutX="20.0" layoutY="82.0" prefHeight="14.0" prefWidth="88.0" />
@@ -77,8 +77,9 @@
       <Line endX="19.199981689453125" endY="-269.79998779296875" fill="WHITE" layoutX="260.0" layoutY="648.0" startX="1.999969482421875" startY="-269.79998779296875" stroke="#fffcfc" strokeWidth="3.0" />
       <Line endX="17.800048828125" endY="-269.79998779296875" fill="WHITE" layoutX="586.0" layoutY="640.0" startX="1.999969482421875" startY="-269.79998779296875" stroke="#fffcfc" strokeWidth="3.0" />
       <Line endX="17.800048828125" endY="-269.79998779296875" fill="WHITE" layoutX="585.0" layoutY="402.0" startX="1.999969482421875" startY="-269.79998779296875" stroke="#fffcfc" strokeWidth="3.0" />
-      <Label fx:id="LblCodiceTorneo" layoutX="175.0" layoutY="26.0" prefHeight="26.0" prefWidth="138.0" text="Label" />
-      <Button layoutX="380.0" layoutY="52.0" mnemonicParsing="false" onAction="#creaTorneo" text="CREA TORNEO" />
+      <Label fx:id="LblCodiceTorneo" alignment="CENTER" layoutX="291.0" layoutY="14.0" prefHeight="26.0" prefWidth="270.0" styleClass="label-custom-punteggio" stylesheets="@../../../ProvaNick.css" />
+      <Button layoutX="379.0" layoutY="78.0" mnemonicParsing="false" onAction="#creaTorneo" prefHeight="44.0" prefWidth="103.0" styleClass="button-salvaPartita" stylesheets="@../../../ProvaNick.css" text="CREA TORNEO" />
+      <Button layoutX="718.0" layoutY="14.0" mnemonicParsing="false" onAction="#tornaAllaHome" text="Torna alla Home" />
    </children>
    <stylesheets>
       <URL value="@../../../PaginaIniziale.css" />

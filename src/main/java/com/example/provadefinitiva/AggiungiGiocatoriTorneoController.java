@@ -11,11 +11,12 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 
-public class AggiungiGiocatoreTorneoController {
+public class AggiungiGiocatoriTorneoController {
 
     @FXML
     private Label LBLv1;
@@ -137,6 +138,7 @@ public class AggiungiGiocatoreTorneoController {
     @FXML
     private Label LblCodiceTorneo;
 
+
     private Stage stage;
     private Scene scene;
 
@@ -181,6 +183,17 @@ public class AggiungiGiocatoreTorneoController {
            botCount++;
             }
         }
+        File file = new File("PartiteETornei.csv");
+        if(file.exists()){
+            FileWriter fw = new FileWriter(file,true);
+            fw.append(LblCodiceTorneo.getText() + System.lineSeparator());
+            fw.close();
+        }
+        else{
+            PrintWriter pw=new PrintWriter(file);
+            pw.println(LblCodiceTorneo.getText());
+            pw.close();
+        }
         for(int i=0; i<this.nomiGiocatori.size(); i++)
             new ModificaLeaderBoard().aggiungiGiocatoreLeaderBoard(this.nomiGiocatori.get(i));
 
@@ -193,7 +206,7 @@ public class AggiungiGiocatoreTorneoController {
            scrivo.println(m.getPartitaTorneo(i).getCodice());
         }
         scrivo.close();
-        FXMLLoader loader=new FXMLLoader(getClass().getResource("PagIniziale.fxml"));
+        FXMLLoader loader=new FXMLLoader(getClass().getResource("PaginaIniziale.fxml"));
         Parent root=loader.load();
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
@@ -204,8 +217,16 @@ public class AggiungiGiocatoreTorneoController {
 
 
     public void visualizzaCodiceTorneo(String codicePartita) {
-        LblCodiceTorneo.setText(codicePartita);
+        LblCodiceTorneo.setText("Codice Torneo : "+codicePartita);
     }
 
+    public void tornaAllaHome(ActionEvent event) throws IOException {
+        FXMLLoader loader=new FXMLLoader(getClass().getResource("Home.fxml"));
+        Parent root=loader.load();
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
 }
 

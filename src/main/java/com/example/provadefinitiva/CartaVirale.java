@@ -11,8 +11,7 @@ public class CartaVirale extends CartaImprevisto{
 
     @Override
     public void calcolaEffetto(ArrayList<Giocatore> giocatori, int indice, ArrayList<Carta> carteInCampo){
-        giocatori.get(indice).setTotalScore(giocatori.get(indice).getTotalScore()+100);
-
+        giocatori.get(indice).setTotalScore(giocatori.get(indice).getTotalScore()+80);
     }
 
 }

@@ -9,8 +9,6 @@ import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
-import javafx.scene.paint.Color;
-import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -35,7 +33,7 @@ public class LoginAmministratoreController {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("Home.fxml"));
         root= loader.load();
 
-        PartitaSingolaOTorneoController homeController = loader.getController();
+        HomeController homeController = loader.getController();
         homeController.displayName(username);
 
         if(passwordLogin.getText().equals(this.password) && username_field.getText().equalsIgnoreCase(username)){

@@ -16,7 +16,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class PartitaSingolaOTorneoController {
+public class HomeController {
 
     private Stage stage;
     private Scene scene;
@@ -36,7 +36,7 @@ public class PartitaSingolaOTorneoController {
 
     public void creaPartitaSingola(ActionEvent event) throws IOException {
         String codicePartita = String.valueOf((int)(Math.random() * (3000 - 2000 + 1) + 2000));
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("AggiungiNomi.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("AggiungiGiocatoriPartitaSingola.fxml"));
         root= loader.load();
         AggiungiGiocatoriPartitaSingolaController addPlayerSingleGameController = loader.getController();
         addPlayerSingleGameController.visualizzaCodicePartita(codicePartita);
@@ -51,9 +51,9 @@ public class PartitaSingolaOTorneoController {
     public void creaTorneo(ActionEvent event) throws IOException {
         String codicePartita = String.valueOf((int)(Math.random() * (2000 - 1000 + 1) + 3000));
 
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("Torneo.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("AggiungiGiocatoriTorneo.fxml"));
         root= loader.load();
-        AggiungiGiocatoreTorneoController torneoController = loader.getController();
+        AggiungiGiocatoriTorneoController torneoController = loader.getController();
         torneoController.visualizzaCodiceTorneo(codicePartita);
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
@@ -61,22 +61,18 @@ public class PartitaSingolaOTorneoController {
         stage.show();
     }
 
-    public void gestisciGiocatori(ActionEvent event) throws IOException{
-        File file = new File("LeaderBoardFile.csv");
-        if(file.exists()) {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("GestioneGiocatori.fxml"));
-            root = loader.load();
-            stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-            scene = new Scene(root);
-            stage.setScene(scene);
-            stage.show();
-        }
-        else
-            Allert.showAlert(Alert.AlertType.INFORMATION, "Titolo dell'alert", "Messaggio di esempio.");
+    public void gestisciGiocatori(ActionEvent event) throws IOException {
+
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("GestioneGiocatori.fxml"));
+        root = loader.load();
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
     }
 
     public void logout(ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("PagIniziale.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("PaginaIniziale.fxml"));
         root = loader.load();
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
@@ -86,5 +82,14 @@ public class PartitaSingolaOTorneoController {
 
     public void nomiTorneo(ArrayList<String> nomiGiocatori) {
        this.nomigiocatori = nomiGiocatori;
+    }
+
+    public void eliminaPartiteTornei(ActionEvent event) throws IOException{
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("EliminaPartiteTornei.fxml"));
+        root = loader.load();
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
     }
 }

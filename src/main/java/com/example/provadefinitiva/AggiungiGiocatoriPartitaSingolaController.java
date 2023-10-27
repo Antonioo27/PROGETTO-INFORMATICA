@@ -10,9 +10,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.stage.Stage;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.IOException;
+import java.io.*;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -98,8 +96,20 @@ public class AggiungiGiocatoriPartitaSingolaController implements Initializable 
             case(1) : nomiGiocatori.addAll(Arrays.asList("bot1","bot2"));
             case(2) : nomiGiocatori.addAll(Arrays.asList("bot1"));
         }
+
         MainEngine.creaPartita(this.nomiGiocatori, labelCodicePartita.getText());
-        Parent root = FXMLLoader.load(getClass().getResource("PagIniziale.fxml"));
+        File file = new File("PartiteETornei.csv");
+        if(file.exists()){
+            FileWriter fw = new FileWriter(file,true);
+            fw.append(labelCodicePartita.getText() + System.lineSeparator());
+            fw.close();
+        }
+        else{
+            PrintWriter pw=new PrintWriter(file);
+            pw.println(labelCodicePartita.getText());
+            pw.close();
+        }
+        Parent root = FXMLLoader.load(getClass().getResource("PaginaIniziale.fxml"));
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);

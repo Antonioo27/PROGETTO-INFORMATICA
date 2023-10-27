@@ -84,5 +84,12 @@ public class LoginGIocatoreController {
         else
             Allert.showAlert(Alert.AlertType.INFORMATION, "Errore", "Codice torneo non valido");
     }
-
+   @FXML
+    public void tornaIndietro(ActionEvent event) throws IOException {
+        Parent root=FXMLLoader.load(getClass().getResource("PaginaIniziale.fxml"));
+        scene =new Scene(root);
+        stage.setScene(scene);
+        stage.setTitle("Pagina iniziale");
+        stage.show();
+   }
 }

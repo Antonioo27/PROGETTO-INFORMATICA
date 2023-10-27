@@ -16,8 +16,6 @@
             <Font name="System Bold" size="20.0" />
          </font>
       </Label>
-      <Label fx:id="labelVisualizzaGiocatore" layoutX="334.0" layoutY="168.0" prefHeight="26.0" prefWidth="181.0" style="-fx-background-color: white;" stylesheets="@../../../ProvaNick.css">
-      </Label>
       <Label alignment="CENTER" layoutX="86.0" layoutY="125.0" prefHeight="30.0" prefWidth="195.0" stylesheets="@../../../ProvaNick.css" text="GIOCATORI" textAlignment="CENTER" textFill="#91c422">
          <font>
             <Font name="System Bold" size="13.0" />
@@ -35,9 +33,11 @@
          </content>
       </ScrollPane>
       <Button fx:id="buttonGiocatore" layoutX="334.0" layoutY="209.0" mnemonicParsing="false" onAction="#modificaGiocatore" prefHeight="27.0" prefWidth="75.0" styleClass="button-comune" stylesheets="@../../../ProvaNick.css" text="Modifica" />
-      <Button fx:id="buttonElimina" layoutX="446.0" layoutY="209.0" mnemonicParsing="false" onAction="#eliminaGiocatore" prefHeight="27.0" prefWidth="68.0" styleClass="button-comune" stylesheets="@../../../ProvaNick.css" text="Elimina" />
+      <Button fx:id="buttonElimina" layoutX="421.0" layoutY="209.0" mnemonicParsing="false" onAction="#eliminaGiocatore" prefHeight="27.0" prefWidth="68.0" styleClass="button-comune" stylesheets="@../../../ProvaNick.css" text="Elimina" />
       <TextField fx:id="textNuovoGiocatore" layoutX="335.0" layoutY="253.0" stylesheets="@../../../ProvaNick.css" visible="false" />
-      <Button fx:id="buttonConferma" layoutX="380.0" layoutY="286.0" mnemonicParsing="false" onAction="#confermaGiocatore" prefHeight="26.0" prefWidth="82.0" styleClass="button-comune" stylesheets="@../../../ProvaNick.css" text="Conferma " />
+      <Button fx:id="buttonConferma" layoutX="409.0" layoutY="288.0" mnemonicParsing="false" onAction="#confermaGiocatore" prefHeight="26.0" prefWidth="82.0" styleClass="button-comune" stylesheets="@../../../ProvaNick.css" text="Conferma " />
       <Button fx:id="buttonTornaIndietro" layoutX="606.0" layoutY="14.0" mnemonicParsing="false" onAction="#tornaIndietro" prefHeight="26.0" prefWidth="106.0" text="Torna alla Home" />
+      <Button fx:id="buttonAggiungi" layoutX="505.0" layoutY="209.0" mnemonicParsing="false" onAction="#aggiungiGiocatore" prefHeight="27.0" prefWidth="75.0" styleClass="button-comune" stylesheets="@../../../ProvaNick.css" text="Aggiungi" />
+      <TextField fx:id="textFieldVisualizzaGiocatore" layoutX="336.0" layoutY="168.0" prefHeight="26.0" prefWidth="238.0" />
    </children>
 </AnchorPane>

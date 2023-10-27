@@ -86,6 +86,8 @@ public class PartitaController {
     private Label LabelVincitore;
     @FXML
     private Label LabelCodiceTorneo;
+    @FXML
+    private Button buttonVisualizzaLeaderBoard;
     private File fileTorneoo;
 
     private Stage stage;
@@ -93,7 +95,6 @@ public class PartitaController {
     private Scene scene;
 
     private Parent root;
-    private boolean condizionePartita=false;
     private String vincitore;
     MainEngine m = new MainEngine();
 
@@ -512,13 +513,13 @@ public class PartitaController {
             PauseTransition pause=new PauseTransition(Duration.seconds(1));
             pause.setOnFinished(event -> {
                 LabelVincitore.setVisible(true);
+                buttonVisualizzaLeaderBoard.fire();
             });
 
             m.trovaVincitore();
-            condizionePartita=true;
             LabelVincitore.setText("VINCITORE : "+ m.getVincitore().getUsername());
             vincitore = m.getVincitore().getUsername();
-            System.out.println(m.getVincitore());
+
             m.salvaPartita();
             pause.play();
         }
@@ -528,14 +529,13 @@ public class PartitaController {
 
         if (Integer.parseInt(m.getPartita().getCodice()) < 2000) {
 
-
-            String codiceee = m.getPartita().getCodice();
-
             if(m.getPartita().getVincitore()==null)  // se la partita non è ancora finita
                 m.salvaPartita();
-            File file=new File("LeaderBoardFile.csv");
-            if(file.exists()) {
-                ModificaLeaderBoard.aggiornaLeaderBoard(m.getPartita());
+            else {
+                File file = new File("LeaderBoardFile.csv");
+                if (file.exists()) {
+                    ModificaLeaderBoard.aggiornaLeaderBoard(m.getPartita());
+                }
             }
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("TorneoGioca.fxml"));
                 Parent root = loader.load();
@@ -552,7 +552,13 @@ public class PartitaController {
         {
             if(m.getPartita().getVincitore()==null)
                 m.salvaPartita();
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("PagIniziale.fxml"));
+            else {
+                File file = new File("LeaderBoardFile.csv");
+                if (file.exists()) {
+                    ModificaLeaderBoard.aggiornaLeaderBoard(m.getPartita());
+                }
+            }
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("PaginaIniziale.fxml"));
             Parent root = loader.load();
             stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             scene = new Scene(root);

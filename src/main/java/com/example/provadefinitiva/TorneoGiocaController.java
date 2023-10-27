@@ -11,6 +11,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.shape.Path;
 import javafx.scene.text.Font;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 import java.io.File;
@@ -183,6 +184,9 @@ public class TorneoGiocaController   {
     private Button buttonGiocaFinale;
     @FXML
     private Button buttonTornaIndietro;
+    @FXML
+    private Button buttonVisualizzaLeaderBoard;
+
     private Stage stage;
     private Scene scene;
 
@@ -196,11 +200,6 @@ public class TorneoGiocaController   {
     ArrayList<Label> labelArrayList =  new ArrayList<>();
 
 
-
-    @FXML
-    void buttonGioca1(ActionEvent event) {
-
-    }
 
     @FXML
     void buttonGioca1_1(ActionEvent event) throws IOException {
@@ -486,7 +485,7 @@ public class TorneoGiocaController   {
       buttonGiocaSemi2.setVisible(true);
       buttonGiocaSemi3.setVisible(true);
 
-        ArrayList<Button> arrayBottoni = new ArrayList<Button>();
+      ArrayList<Button> arrayBottoni = new ArrayList<Button>();
         arrayBottoni.addAll(Arrays.asList(buttonGiocaSemi1,buttonGiocaSemi2,buttonGiocaSemi3));
         for(int i=9; i<12; i++) {
             if (m.getPartitaTorneo(i).getMazzo().getMazzo().size() < 12 && m.getPartitaTorneo(i).getVincitore() == null){
@@ -604,13 +603,14 @@ public class TorneoGiocaController   {
         if(m.getPartiteTorneo().get(m.getPartiteTorneo().size()-1).getVincitore()!=null){
             this.LBVINCITORE.setVisible(true);
             this.LBVINCITORE.setText(m.getPartiteTorneo().get(m.getPartiteTorneo().size()-1).getVincitore().getUsername());
-       this.buttonGiocaFinale.setVisible(false);
+            this.buttonGiocaFinale.setVisible(false);
+            buttonVisualizzaLeaderBoard.fire();
         }
 
     }
     @FXML
     public void tornaIndietro(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("PagIniziale.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("PaginaIniziale.fxml"));
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
@@ -678,6 +678,14 @@ public class TorneoGiocaController   {
         }
 
 
+    public void visualizzaLeaderBoard(ActionEvent event) throws IOException {
+        Stage stage = new Stage();
+        Parent root = FXMLLoader.load(getClass().getResource("LeaderBoard.fxml"));
+        stage.setTitle("LeaderBoard");
+        stage.setScene(new Scene(root));
+        stage.initModality(Modality.APPLICATION_MODAL);
+        stage.show();
+    }
 }
 
 
