@@ -9,6 +9,8 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.shape.Path;
+import javafx.scene.text.Font;
 import javafx.stage.Stage;
 
 import java.io.File;
@@ -16,6 +18,8 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.net.URL;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.*;
 
 
@@ -398,7 +402,14 @@ public class TorneoGiocaController   {
 
     public void caricaQuarti() throws IOException {
         boolean quartiFiniti=true;
-
+        ArrayList<Button> arrayBottoni = new ArrayList<Button>();
+        arrayBottoni.addAll(Arrays.asList(buttonGiocaQuarti1,buttonGiocaQuarti2,buttonGiocaQuarti3,buttonGiocaQuarti4,buttonGiocaQuarti5,buttonGiocaQuarti6,buttonGiocaQuarti7,buttonGiocaQuarti8,buttonGiocaQuarti9));
+        for(int i=0; i<9; i++) {
+            if (m.getPartitaTorneo(i).getMazzo().getMazzo().size() < 12 && m.getPartitaTorneo(i).getVincitore() == null) {
+                arrayBottoni.get(i).setText("Riprendi");
+                arrayBottoni.get(i).setFont(new Font("Arial", 10));
+            }
+        }
           for(int i=0; i<m.getPartiteTorneo().size(); i++) {
               if (m.getPartitaTorneo(i).getVincitore() == null)
                   quartiFiniti = false;
@@ -452,15 +463,7 @@ public class TorneoGiocaController   {
                   }
               }
           }
-             /* if(quartiFiniti==true) {
-                  try {
-                      this.caricaSemi();
-                  } catch (IOException e) {
-                      throw new RuntimeException(e);
-                  }
-              }
 
-              */
         ArrayList<Label> labelSemi = new ArrayList<Label>();
         labelSemi.addAll(Arrays.asList(LBLv1_1,LBLv2_1,LBLv3_1,LBLv1_2,LBLv2_2,LBLv3_2,LBLv1_3,LBLv2_3,LBLv3_3));
 
@@ -482,6 +485,15 @@ public class TorneoGiocaController   {
       buttonGiocaSemi1.setVisible(true);
       buttonGiocaSemi2.setVisible(true);
       buttonGiocaSemi3.setVisible(true);
+
+        ArrayList<Button> arrayBottoni = new ArrayList<Button>();
+        arrayBottoni.addAll(Arrays.asList(buttonGiocaSemi1,buttonGiocaSemi2,buttonGiocaSemi3));
+        for(int i=9; i<12; i++) {
+            if (m.getPartitaTorneo(i).getMazzo().getMazzo().size() < 12 && m.getPartitaTorneo(i).getVincitore() == null){
+                arrayBottoni.get(i).setText("Riprendi");
+            arrayBottoni.get(i).setFont(new Font("Arial", 10));
+        }
+        }
 
       Scanner scan=new Scanner(this.fileTorneo);
       int countRighe=0;
@@ -549,6 +561,11 @@ public class TorneoGiocaController   {
 
     private void caricaFinale() throws IOException {
         buttonGiocaFinale.setVisible(true);
+
+        if (m.getPartitaTorneo(12).getMazzo().getMazzo().size() < 12 && m.getPartitaTorneo(12).getVincitore() == null){
+            buttonGiocaFinale.setText("Riprendi");
+        buttonGiocaFinale.setFont(new Font("Arial", 10));
+    }
         Scanner scan=new Scanner(new File(this.LblCodiceTorneo.getText()+".csv"));
         int countRighe=0;
         while(scan.hasNextLine()){
@@ -593,15 +610,46 @@ public class TorneoGiocaController   {
     }
     @FXML
     public void tornaIndietro(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("PaginaIniziale.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("PagIniziale.fxml"));
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
+        if(LBVINCITORE.getText().length()>0) {
+            for (int i = 0; i < 13; i++) {
+                String filePath = m.getPartitaTorneo(i).getCodice() + ".csv";
+
+                try {
+                    File file = new File(filePath);
+
+                    if (file.delete()) {
+                        System.out.println("File eliminato con successo.");
+                    } else {
+                        System.out.println("Impossibile eliminare il file. Controlla che esista e che tu abbia le autorizzazioni necessarie.");
+                    }
+                } catch (Exception e) {
+                    System.err.println("Si è verificato un errore durante l'eliminazione del file: " + e.getMessage());
+                }
+            }
+            String filePath2 = m.getTorneo().codiceTorneo + ".csv";
+
+            try {
+                File file = new File(filePath2);
+
+                if (file.delete()) {
+                    System.out.println("File eliminato con successo.");
+                } else {
+                    System.out.println("Impossibile eliminare il file. Controlla che esista e che tu abbia le autorizzazioni necessarie.");
+                }
+            } catch (Exception e) {
+                System.err.println("Si è verificato un errore durante l'eliminazione del file: " + e.getMessage());
+            }
+        }
     }
 
     public void visualizzaCodiceTorneo(String codice) {
         LblCodiceTorneo.setText(codice.substring(0,4));
+
     }
 
 
@@ -625,6 +673,7 @@ public class TorneoGiocaController   {
                 indiceGiocatore = 0;
                 indicePartitaTorneo++;
             }
+
         this.caricaQuarti();
         }
 

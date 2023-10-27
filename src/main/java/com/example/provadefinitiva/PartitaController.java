@@ -12,9 +12,13 @@ import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.shape.Path;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.util.Duration;
+
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.Timer;
 import java.util.TimerTask;
 import java.io.*;
@@ -168,6 +172,7 @@ public class PartitaController {
 
     public void muoviCarta1G1(MouseEvent mouseEvent) {
         if(m.getTurno()==1) {
+            //metodo per non cliccare carta in mano al giocatore nulla
             traslaCartaDaGiocatoreAlCampo(Imm1G1, 0, cartaSelG1);
             m.muoviCarta(0, 0);
             scopriCarte(Imm1G2, Imm2G2, Imm3G2, 1);
@@ -550,6 +555,21 @@ public class PartitaController {
             scene = new Scene(root);
             stage.setScene(scene);
             stage.show();
+            if(m.getPartita().getVincitore()!=null){
+                String filePath = m.getPartita().getCodice()+".csv";
+
+            try {
+                File file = new File(filePath);
+
+                if (file.delete()) {
+                    System.out.println("File eliminato con successo.");
+                } else {
+                    System.out.println("Impossibile eliminare il file. Controlla che esista e che tu abbia le autorizzazioni necessarie.");
+                }
+            } catch (Exception e) {
+                System.err.println("Si è verificato un errore durante l'eliminazione del file: " + e.getMessage());
+            }
+        }
         }
     }
 
