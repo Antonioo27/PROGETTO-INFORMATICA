@@ -6,8 +6,30 @@
   <component name="ChangeListManager">
     <list default="true" id="a83edf22-57de-43e6-8a3f-681ebb786d0e" name="Changes" comment="ultimo aggiornamento torneo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
     </list>
     <list id="25592f24-e3d1-439f-9564-35d46712c479" name="Changes by Gabri" comment="Changes by Gabri" />
+=======
+      <change beforePath="$PROJECT_DIR$/1041.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1042.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1074.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1183.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1238.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1288.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1299.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1348.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1351.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1383.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1654.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1697.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1730.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/3808.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeaderBoardFile.csv" beforeDir="false" afterPath="$PROJECT_DIR$/LeaderBoardFile.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/PartitaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/PartitaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/TorneoGiocaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/TorneoGiocaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/TorneoGioca.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/TorneoGioca.fxml" afterDir="false" />
+    </list>
+>>>>>>> 8a8aeef98a183342502616ab4e0bf44f3d0fab6d
     <list id="872de755-c33f-4f5b-a7cf-647b7bbcd4d9" name="Changes by TINARI" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -210,9 +232,15 @@
       <workItem from="1698053372310" duration="1219000" />
       <workItem from="1698065215476" duration="11864000" />
       <workItem from="1698135311762" duration="5695000" />
+<<<<<<< HEAD
       <workItem from="1698219623330" duration="25000" />
       <workItem from="1698220781055" duration="9000" />
       <workItem from="1698304540320" duration="266000" />
+=======
+      <workItem from="1698238809272" duration="531000" />
+      <workItem from="1698305102447" duration="5626000" />
+      <workItem from="1698337109828" duration="228000" />
+>>>>>>> 8a8aeef98a183342502616ab4e0bf44f3d0fab6d
     </task>
     <task id="LOCAL-00001" summary="added gitignore">
       <created>1685536664827</created>
