@@ -134,13 +134,20 @@ public class GestioneGiocatoriController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         buttonConferma.setVisible(false);
-        Scanner scan = null;
+
         File file = new File("LeaderBoardFile.csv");
-        if(file.exists() && !(nomi.size()==0)) {
+        if(file.exists()) {
+            Scanner scan = null;
+            try {
+                scan = new Scanner(file);
+            } catch (FileNotFoundException e) {
+                throw new RuntimeException(e);
+            }
             while (scan.hasNextLine()) {
-                String riga = scan.nextLine();
-                String[] str = riga.split(",");
-                giocatori.add(new Giocatore(str[0], Integer.parseInt(str[1])));
+                    String riga = scan.nextLine();
+                    String[] str = riga.split(",");
+                    giocatori.add(new Giocatore(str[0], Integer.parseInt(str[1])));
+                }
             }
             for (int i = 0; i < giocatori.size(); i++)
                 nomi.add(giocatori.get(i).getUsername());
@@ -151,7 +158,7 @@ public class GestioneGiocatoriController implements Initializable {
                 listView.setItems(FXCollections.observableArrayList(nomi));
             }
         }
-    }
+
 
 
     public void selezionaGiocatore(MouseEvent mouseEvent) {
@@ -167,21 +174,22 @@ public class GestioneGiocatoriController implements Initializable {
         if (textFieldVisualizzaGiocatore.getText().length() > 0) {
             File file = new File("LeaderBoardFile.csv");
             if (file.exists()) {
-                /*Scanner scan = new Scanner(file);
-                while (scan.hasNextLine()) {
-                    String riga = scan.nextLine();
-                    String[] str = riga.split(",");
-                    nomi.add(str[0]);
-                }
 
-                 */
                 if(nomi.contains(textFieldVisualizzaGiocatore.getText())){
                     Allert.showAlert(Alert.AlertType.INFORMATION, "Errore", "Non puoi aggiungere un giocatore già esistente");
                 }
                 else{
-                    FileWriter fw = new FileWriter(file,true);
-                    fw.append(textFieldVisualizzaGiocatore.getText() + System.lineSeparator());
-                    fw.close();
+                    FileWriter fileWriter = new FileWriter(file,true);
+
+                    BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+
+                    // Scrive il contenuto nel file
+                    bufferedWriter.write(textFieldVisualizzaGiocatore.getText()+",0");
+
+                    // Vai a capo
+                    bufferedWriter.newLine();
+
+                    bufferedWriter.close();
                     giocatori.add(new Giocatore(textFieldVisualizzaGiocatore.getText(),0));
                     nomi.add(textFieldVisualizzaGiocatore.getText());
                 }
@@ -190,7 +198,7 @@ public class GestioneGiocatoriController implements Initializable {
             }
             else{
                 PrintWriter scrivo = new PrintWriter(file);
-                scrivo.println(textFieldVisualizzaGiocatore.getText());
+                scrivo.println(textFieldVisualizzaGiocatore.getText()+",0");
                 scrivo.close();
                 nomi.add(textFieldVisualizzaGiocatore.getText());
                 giocatori.add(new Giocatore(textFieldVisualizzaGiocatore.getText(),0));

@@ -88,8 +88,10 @@ public class LoginGIocatoreController {
     public void tornaIndietro(ActionEvent event) throws IOException {
         Parent root=FXMLLoader.load(getClass().getResource("PaginaIniziale.fxml"));
         scene =new Scene(root);
-        stage.setScene(scene);
-        stage.setTitle("Pagina iniziale");
-        stage.show();
+       stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+       scene = new Scene(root);
+       stage.setScene(scene);
+       stage.setTitle("PaginaIniziale");
+       stage.show();
    }
 }

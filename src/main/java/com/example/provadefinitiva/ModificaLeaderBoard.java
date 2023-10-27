@@ -22,6 +22,7 @@ public class ModificaLeaderBoard {
                 while (scan.hasNextLine()) {
                     String riga = scan.nextLine();
                     String[] str = riga.split(",");
+                    if(str[0]!=null)
                     giocatoriFile.add(new Giocatore(str[0], Integer.parseInt(str[1])));
                 }
                 for (int i = 0; i < giocatoriFile.size(); i++) {
@@ -66,18 +67,6 @@ public class ModificaLeaderBoard {
             scrivo.close();
     }
 
-   /* public void salvaSuLeaderBoard() throws IOException{
-        FileWriter scrivo = new FileWriter(this.LeaderBoardFile, true);
-        scrivo.close();
-    }
-
-
-
-    public FileWriter getLeaderBoardFile() throws IOException {
-        return new FileWriter(this.LeaderBoardFile, true);
-    }
-
-    */
 
 }
 

@@ -6,74 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="a83edf22-57de-43e6-8a3f-681ebb786d0e" name="Changes" comment="ultimo aggiornamento torneo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1021.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1023.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1027.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1071.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1081.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1093.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1113.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1182.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1191.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1196.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1209.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1250.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1309.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1319.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1329.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1384.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1409.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1425.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1437.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1451.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1459.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1467.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1488.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1493.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1505.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1536.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1542.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1560.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1611.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1670.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1746.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1803.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1887.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1929.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1940.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1974.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3204.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3544.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3702.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3822.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/LeaderBoardFile.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/AggiungiGiocatoreTorneoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/AggiungiGiocatoriTorneoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/AggiungiGiocatoriPartitaSingolaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/AggiungiGiocatoriPartitaSingolaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/CartaVirale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/CartaVirale.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/GestioneGiocatoriController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/GestioneGiocatoriController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/LoginAmministratoreController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/LoginAmministratoreController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/PaginaInizialeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/PaginaInizialeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/PartitaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/PartitaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/PartitaSingolaOTorneoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/Prova.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/Prova.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/TorneoGiocaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/TorneoGiocaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/AggiungiNomi.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/AggiungiGiocatoriPartitaSingola.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/GestioneGiocatori.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/GestioneGiocatori.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/GiocatoreLogin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/LoginGiocatore.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Home.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/PagIniziale.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/PaginaIniziale.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Partita.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Partita.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Torneo.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/AggiungiGiocatoriTorneo.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/TorneoGioca.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/TorneoGioca.fxml" afterDir="false" />
-    </list>
-    <list id="872de755-c33f-4f5b-a7cf-647b7bbcd4d9" name="Changes by TINARI" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/AggiungiGiocatoreTorneoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/AggiungiGiocatoriTorneoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/AggiungiGiocatoriPartitaSingolaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/AggiungiGiocatoriPartitaSingolaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/EliminaPartiteTorneiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/EliminaPartiteTorneiController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/GestioneGiocatoriController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/GestioneGiocatoriController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/LoginGIocatoreController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/LoginGIocatoreController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/PartitaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/PartitaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/TorneoGiocaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/TorneoGiocaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/ModificaLeaderBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/ModificaLeaderBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/AggiungiGiocatoriPartitaSingola.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/AggiungiGiocatoriPartitaSingola.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/EliminaPartiteTornei.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/EliminaPartiteTornei.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Home.fxml" afterDir="false" />
     </list>
+    <list id="872de755-c33f-4f5b-a7cf-647b7bbcd4d9" name="Changes by TINARI" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -103,69 +45,6 @@
       </UrlAndAccount>
     </option>
   </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/GestioneGiocatoriController.java">
-      <ranges>
-        <range start1="19" end1="23" start2="19" end2="20" changelist="872de755-c33f-4f5b-a7cf-647b7bbcd4d9" />
-        <range start1="44" end1="45" start2="41" end2="42" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
-        <range start1="46" end1="46" start2="43" end2="45" changelist="872de755-c33f-4f5b-a7cf-647b7bbcd4d9" />
-        <range start1="48" end1="49" start2="47" end2="48" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
-        <range start1="63" end1="84" start2="62" end2="83" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
-        <range start1="90" end1="95" start2="89" end2="94" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
-        <range start1="96" end1="105" start2="95" end2="104" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
-        <range start1="106" end1="107" start2="105" end2="106" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
-        <range start1="108" end1="111" start2="107" end2="110" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
-        <range start1="115" end1="116" start2="114" end2="115" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
-        <range start1="117" end1="117" start2="116" end2="117" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
-        <range start1="118" end1="119" start2="118" end2="119" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
-        <range start1="136" end1="142" start2="136" end2="139" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
-        <range start1="149" end1="154" start2="146" end2="152" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
-        <range start1="161" end1="163" start2="159" end2="161" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
-        <range start1="164" end1="166" start2="162" end2="203" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/TorneoGiocaController.java">
-      <ranges>
-        <range start1="13" end1="13" start2="13" end2="14" changelist="872de755-c33f-4f5b-a7cf-647b7bbcd4d9" />
-        <range start1="185" end1="185" start2="186" end2="189" changelist="872de755-c33f-4f5b-a7cf-647b7bbcd4d9" />
-        <range start1="199" end1="204" start2="203" end2="203" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
-        <range start1="488" end1="489" start2="487" end2="488" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
-        <range start1="606" end1="607" start2="605" end2="607" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
-        <range start1="612" end1="613" start2="612" end2="613" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
-        <range start1="680" end1="680" start2="680" end2="688" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/PartitaController.java">
-      <ranges>
-        <range start1="88" end1="88" start2="88" end2="90" changelist="872de755-c33f-4f5b-a7cf-647b7bbcd4d9" />
-        <range start1="95" end1="96" start2="97" end2="97" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
-        <range start1="514" end1="514" start2="515" end2="516" changelist="872de755-c33f-4f5b-a7cf-647b7bbcd4d9" />
-        <range start1="517" end1="518" start2="519" end2="519" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
-        <range start1="520" end1="521" start2="521" end2="522" changelist="872de755-c33f-4f5b-a7cf-647b7bbcd4d9" />
-        <range start1="530" end1="533" start2="531" end2="531" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
-        <range start1="535" end1="538" start2="533" end2="538" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
-        <range start1="554" end1="555" start2="554" end2="561" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/AggiungiGiocatoriTorneoController.java">
-      <ranges>
-        <range start1="13" end1="13" start2="13" end2="14" changelist="872de755-c33f-4f5b-a7cf-647b7bbcd4d9" />
-        <range start1="17" end1="18" start2="18" end2="19" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
-        <range start1="139" end1="139" start2="140" end2="141" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
-        <range start1="183" end1="183" start2="185" end2="196" changelist="872de755-c33f-4f5b-a7cf-647b7bbcd4d9" />
-        <range start1="195" end1="196" start2="208" end2="209" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
-        <range start1="206" end1="207" start2="219" end2="220" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
-        <range start1="209" end1="209" start2="222" end2="230" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/AggiungiGiocatoriPartitaSingolaController.java">
-      <ranges>
-        <range start1="12" end1="15" start2="12" end2="13" changelist="872de755-c33f-4f5b-a7cf-647b7bbcd4d9" />
-        <range start1="100" end1="100" start2="98" end2="99" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
-        <range start1="101" end1="102" start2="100" end2="112" changelist="a83edf22-57de-43e6-8a3f-681ebb786d0e" />
-      </ranges>
-    </file>
-  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -187,31 +66,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;19&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/HP/Desktop/PROGETTO-INFORMATICA&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.tabs&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "19",
+    "last_opened_file_path": "C:/Users/HP/Desktop/PROGETTO-INFORMATICA",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "editor.preferences.tabs",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.example.provadefinitiva" />
@@ -356,7 +235,8 @@
       <workItem from="1698238809272" duration="531000" />
       <workItem from="1698305102447" duration="5626000" />
       <workItem from="1698337109828" duration="228000" />
-      <workItem from="1698418178284" duration="6515000" />
+      <workItem from="1698418178284" duration="6719000" />
+      <workItem from="1698436288341" duration="2589000" />
     </task>
     <task id="LOCAL-00001" summary="added gitignore">
       <created>1685536664827</created>
