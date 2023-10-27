@@ -533,7 +533,10 @@ public class PartitaController {
 
             if(m.getPartita().getVincitore()==null)  // se la partita non è ancora finita
                 m.salvaPartita();
-
+            File file=new File("LeaderBoardFile.csv");
+            if(file.exists()) {
+                ModificaLeaderBoard.aggiornaLeaderBoard(m.getPartita());
+            }
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("TorneoGioca.fxml"));
                 Parent root = loader.load();
                 TorneoGiocaController torneoGiocaController = loader.getController();

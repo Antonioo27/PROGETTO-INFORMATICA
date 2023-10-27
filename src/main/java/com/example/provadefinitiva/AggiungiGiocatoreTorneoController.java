@@ -9,12 +9,13 @@ import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+
 import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 
-public class TorneoController {
+public class AggiungiGiocatoreTorneoController {
 
     @FXML
     private Label LBLv1;
@@ -180,7 +181,8 @@ public class TorneoController {
            botCount++;
             }
         }
-
+        for(int i=0; i<this.nomiGiocatori.size(); i++)
+            new ModificaLeaderBoard().aggiungiGiocatoreLeaderBoard(this.nomiGiocatori.get(i));
 
         m.creaQuarti(nomiGiocatori, LblCodiceTorneo.getText());
         for(int i=0; i<9; i++){

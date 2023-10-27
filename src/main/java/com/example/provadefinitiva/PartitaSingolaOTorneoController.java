@@ -38,7 +38,7 @@ public class PartitaSingolaOTorneoController {
         String codicePartita = String.valueOf((int)(Math.random() * (3000 - 2000 + 1) + 2000));
         FXMLLoader loader = new FXMLLoader(getClass().getResource("AggiungiNomi.fxml"));
         root= loader.load();
-        AddPlayerSingleGameController addPlayerSingleGameController = loader.getController();
+        AggiungiGiocatoriPartitaSingolaController addPlayerSingleGameController = loader.getController();
         addPlayerSingleGameController.visualizzaCodicePartita(codicePartita);
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
@@ -53,7 +53,7 @@ public class PartitaSingolaOTorneoController {
 
         FXMLLoader loader = new FXMLLoader(getClass().getResource("Torneo.fxml"));
         root= loader.load();
-        TorneoController torneoController = loader.getController();
+        AggiungiGiocatoreTorneoController torneoController = loader.getController();
         torneoController.visualizzaCodiceTorneo(codicePartita);
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);

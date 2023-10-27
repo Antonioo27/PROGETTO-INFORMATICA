@@ -14,27 +14,29 @@ public class ModificaLeaderBoard {
         ArrayList<Giocatore> giocatoriFile = new ArrayList<Giocatore>();
         boolean presente = false;
 
-        Scanner scan = new Scanner(file);
-        if(scan.hasNextLine()==false){
-            scrivo.append(giocatore + "," + 0 + "\n");
-        }
-        else {
-            while (scan.hasNextLine()) {
-                String riga = scan.nextLine();
-                String[] str = riga.split(",");
-                giocatoriFile.add(new Giocatore(str[0], Integer.parseInt(str[1])));
-            }
-            for (int i = 0; i < giocatoriFile.size(); i++) {
-                if (giocatoriFile.get(i).getUsername().equalsIgnoreCase(giocatore)) {
-                    presente = true;
-                    break;
-                }
-            }
-            if (presente == false)
+        if(!(giocatore.substring(0,3).equalsIgnoreCase("bot"))) {
+            Scanner scan = new Scanner(file);
+            if (scan.hasNextLine() == false) {
                 scrivo.append(giocatore + "," + 0 + "\n");
+            } else {
+                while (scan.hasNextLine()) {
+                    String riga = scan.nextLine();
+                    String[] str = riga.split(",");
+                    giocatoriFile.add(new Giocatore(str[0], Integer.parseInt(str[1])));
+                }
+                for (int i = 0; i < giocatoriFile.size(); i++) {
+                    if (giocatoriFile.get(i).getUsername().equalsIgnoreCase(giocatore)) {
+                        presente = true;
+                        break;
+                    }
+                }
+                if (presente == false)
+                    scrivo.append(giocatore + "," + 0 + "\n");
 
+            }
+            scrivo.close();
         }
-        scrivo.close();
+
     }
 
 

@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.Line?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="681.0" prefWidth="845.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.provadefinitiva.TorneoController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="681.0" prefWidth="845.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.provadefinitiva.AggiungiGiocatoreTorneoController">
    <children>
       <Label fx:id="LBLv1_1" alignment="CENTER" layoutX="174.0" layoutY="121.0" prefHeight="26.0" prefWidth="88.0" styleClass="label-custom" stylesheets="@Css/ProvaNick.css" text="Player" />
       <TextField fx:id="Lbl1_1_1" layoutX="20.0" layoutY="82.0" prefHeight="14.0" prefWidth="88.0" />
