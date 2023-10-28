@@ -26,6 +26,9 @@ public class EliminaPartiteTorneiController implements Initializable {
     private Button buttonElimina;
 
     @FXML
+    private Button buttonTornaAllaHome;
+
+    @FXML
     private Label labelVisualizzaPartitaTorneo;
 
     @FXML
@@ -38,26 +41,26 @@ public class EliminaPartiteTorneiController implements Initializable {
         if(labelVisualizzaPartitaTorneo.getText().length()>0){
             String delete=labelVisualizzaPartitaTorneo.getText();
             if(Integer.parseInt(labelVisualizzaPartitaTorneo.getText())>=3000) {//torneo
-                File file=new File(delete+".csv");
-                Scanner scan=new Scanner(file);
-                while(scan.hasNextLine()){
-                    String filePath=scan.nextLine();
-                    try {
-                        File file2 = new File(filePath+".csv");
+            File file=new File(delete+".csv");
+            Scanner scan=new Scanner(file);
+            while(scan.hasNextLine()){
+                String filePath=scan.nextLine();
+                try {
+                    File file2 = new File(filePath+".csv");
 
-                        if (file2.delete()) {
-                            System.out.println("File eliminato con successo.");
-                        } else {
-                            System.out.println("Impossibile eliminare il file. Controlla che esista e che tu abbia le autorizzazioni necessarie.");
-                        }
-                    } catch (Exception e) {
-                        System.err.println("Si è verificato un errore durante l'eliminazione del file: " + e.getMessage());
+                    if (file2.delete()) {
+                        System.out.println("File eliminato con successo.");
+                    } else {
+                        System.out.println("Impossibile eliminare il file. Controlla che esista e che tu abbia le autorizzazioni necessarie.");
                     }
+                } catch (Exception e) {
+                    System.err.println("Si è verificato un errore durante l'eliminazione del file: " + e.getMessage());
                 }
-                scan.close();
-                System.out.println(file.delete()?"file eliminato":"Non eliminato");
+            }
+            scan.close();
+            System.out.println(file.delete()?"file eliminato":"Non eliminato");
 
-                codici.remove(codici.indexOf(delete));
+            codici.remove(codici.indexOf(delete));
                 listView.setItems(FXCollections.observableArrayList(codici));
             }
             else if(Integer.parseInt(labelVisualizzaPartitaTorneo.getText())<3000 && Integer.parseInt(labelVisualizzaPartitaTorneo.getText())>=2000){//partita singola
@@ -80,20 +83,20 @@ public class EliminaPartiteTorneiController implements Initializable {
         }else
             Allert.showAlert(Alert.AlertType.INFORMATION, "Errore", "Devi prima selezionare il codice da eliminare");
 
-        PrintWriter pw=new PrintWriter(new File("PartiteETornei.csv"));
-        for(int i=0; i<codici.size(); i++)
-            pw.println(codici.get(i));
-        pw.close();
-        labelVisualizzaPartitaTorneo.setText("");
+   PrintWriter pw=new PrintWriter(new File("PartiteETornei.csv"));
+   for(int i=0; i<codici.size(); i++)
+       pw.println(codici.get(i));
+   pw.close();
+   labelVisualizzaPartitaTorneo.setText("");
     }
     public void selezionaCodice(MouseEvent mouseEvent) {
 
-        listView.getSelectionModel().selectedItemProperty().addListener(
-                (observable, oldValue, newValue) -> {
-                    if (newValue != null) {
-                        labelVisualizzaPartitaTorneo.setText(newValue);
-                    }
-                });
+            listView.getSelectionModel().selectedItemProperty().addListener(
+                    (observable, oldValue, newValue) -> {
+                        if (newValue != null) {
+                            labelVisualizzaPartitaTorneo.setText(newValue);
+                        }
+                    });
 
     }
 
@@ -102,25 +105,30 @@ public class EliminaPartiteTorneiController implements Initializable {
         File file=new File("PartiteETornei.csv");
 
         Scanner scan=null;
-        if(file.exists()){
-            try {
-                scan = new Scanner(file);
-            }catch(FileNotFoundException e){
-                System.out.println(e.toString());
-            }
-            while(scan.hasNextLine())
-                codici.add(scan.nextLine());
-            listView.setItems(FXCollections.observableArrayList(codici));
-            if(codici.size()>0)
-                labelVisualizzaPartitaTorneo.setText(codici.get(0));
-        }
+if(file.exists()){
+    try {
+        scan = new Scanner(file);
+    }catch(FileNotFoundException e){
+        System.out.println(e.toString());
     }
-    public void tornaIndietro(ActionEvent event) throws IOException {
-        Parent root= FXMLLoader.load(getClass().getResource("Home.fxml"));
-        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        scene=new Scene(root);
-        stage.setScene(scene);
-        stage.setTitle("PAGINA INIZIALE");
-        stage.show();
+    while(scan.hasNextLine()) {
+        String s=scan.nextLine();
+        File file2=new File(s+".csv");
+        if(file2.exists())
+            codici.add(s);
+
+    }
+    listView.setItems(FXCollections.observableArrayList(codici));
+    if(codici.size()>0)
+    labelVisualizzaPartitaTorneo.setText(codici.get(0));
 }
+    }
+      public void tornaIndietro(ActionEvent event) throws IOException {
+          Parent root= FXMLLoader.load(getClass().getResource("PaginaIniziale.fxml"));
+          stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+          scene=new Scene(root);
+          stage.setScene(scene);
+          stage.setTitle("PAGINA INIZIALE");
+          stage.show();
+    }
 }

@@ -92,9 +92,9 @@ public class AggiungiGiocatoriPartitaSingolaController implements Initializable 
         for(int i=0; i<this.nomiGiocatori.size(); i++)
         new ModificaLeaderBoard().aggiungiGiocatoreLeaderBoard(this.nomiGiocatori.get(i));
         switch(nomiGiocatori.size()){
-            case(0) : nomiGiocatori.addAll(Arrays.asList("bot1","bot2", "bot3"));
-            case(1) : nomiGiocatori.addAll(Arrays.asList("bot1","bot2"));
-            case(2) : nomiGiocatori.addAll(Arrays.asList("bot1"));
+            case(0) : nomiGiocatori.addAll(Arrays.asList("bot1","bot2", "bot3"));break;
+            case(1) : nomiGiocatori.addAll(Arrays.asList("bot1","bot2"));break;
+            case(2) : nomiGiocatori.addAll(Arrays.asList("bot1"));break;
         }
 
         MainEngine.creaPartita(this.nomiGiocatori, labelCodicePartita.getText());

@@ -92,7 +92,12 @@ public class Partita {
                             if (c.getNome().equalsIgnoreCase(str[i])) {
                                 mano.add(c);
                             }
+
                         }
+                    }
+                    if(mano.size()<3){
+                        for(int i=0; i<3-mano.size(); i++)
+                        mano.add(null);
                     }
                     this.giocatori.add(new Giocatore(str[0], Integer.parseInt(str[1]), mano));
                 }

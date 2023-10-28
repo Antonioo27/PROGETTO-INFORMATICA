@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="492.0" prefWidth="727.0" stylesheets="@../../../PaginaIniziale.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.provadefinitiva.EliminaPartiteTorneiController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="552.0" prefWidth="780.0" stylesheets="@../../../PaginaIniziale.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.provadefinitiva.EliminaPartiteTorneiController">
    <children>
       <ScrollPane hmax="0.0" layoutX="109.0" layoutY="178.0" prefHeight="200.0" prefWidth="200.0" stylesheets="@../../../ProvaNick.css" vmax="0.0">
          <content>
@@ -25,7 +25,7 @@
             <Font name="System Bold" size="12.0" />
          </font>
       </Label>
-      <Label layoutX="170.0" layoutY="48.0" prefHeight="64.0" prefWidth="474.0" style="-fx-background-color: null;" styleClass="label-custom-punteggio" stylesheets="@../../../ProvaNick.css" text="DECIDI QUALE PARTITA O TORNEO VUOI ELIMINARE" textFill="#222222">
+      <Label layoutX="153.0" layoutY="36.0" prefHeight="64.0" prefWidth="474.0" style="-fx-background-color: null;" styleClass="label-custom-punteggio" stylesheets="@../../../ProvaNick.css" text="DECIDI QUALE PARTITA O TORNEO VUOI ELIMINARE" textFill="#222222">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>

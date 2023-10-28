@@ -186,12 +186,12 @@ public class AggiungiGiocatoriTorneoController {
         File file = new File("PartiteETornei.csv");
         if(file.exists()){
             FileWriter fw = new FileWriter(file,true);
-            fw.append(LblCodiceTorneo.getText() + System.lineSeparator());
+            fw.append(LblCodiceTorneo.getText().substring(LblCodiceTorneo.getText().length()-4) + System.lineSeparator());
             fw.close();
         }
         else{
             PrintWriter pw=new PrintWriter(file);
-            pw.println(LblCodiceTorneo.getText());
+            pw.println(LblCodiceTorneo.getText().substring(LblCodiceTorneo.getText().length()-4));
             pw.close();
         }
         for(int i=0; i<this.nomiGiocatori.size(); i++)
@@ -201,7 +201,7 @@ public class AggiungiGiocatoriTorneoController {
         for(int i=0; i<9; i++){
             m.getPartitaTorneo(i).salvaPartita();
         }
-        PrintWriter scrivo = new PrintWriter(new File(LblCodiceTorneo.getText()+".csv"));
+        PrintWriter scrivo = new PrintWriter(new File(LblCodiceTorneo.getText().substring(LblCodiceTorneo.getText().length()-4)+".csv"));
         for(int i=0; i<9; i++){
            scrivo.println(m.getPartitaTorneo(i).getCodice());
         }

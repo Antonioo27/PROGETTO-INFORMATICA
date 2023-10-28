@@ -19,6 +19,7 @@ import javafx.util.Duration;
 
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.ArrayList;
 import java.util.Timer;
 import java.util.TimerTask;
 import java.io.*;
@@ -135,12 +136,18 @@ public class PartitaController {
     public void scopriCarte(ImageView carta1,ImageView carta2, ImageView carta3,int indiceGiocatore) {
         if (m.getCarteGiocatore(indiceGiocatore).get(0) != null)
             carta1.setImage(m.getCarteGiocatore(indiceGiocatore).get(0).getImage());
-
+else
+            carta1.setImage(null);
         if (m.getCarteGiocatore(indiceGiocatore).get(1) != null)
             carta2.setImage(m.getCarteGiocatore(indiceGiocatore).get(1).getImage());
+        else
+            carta2.setImage(null);
 
         if (m.getCarteGiocatore(indiceGiocatore).get(2) != null)
             carta3.setImage(m.getCarteGiocatore(indiceGiocatore).get(2).getImage());
+        else
+            carta3.setImage(null);
+
 
     }
 
