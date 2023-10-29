@@ -45,7 +45,7 @@ public class AggiungiGiocatoriPartitaSingolaController implements Initializable 
     public void aggiungiGiocatore(ActionEvent event) throws IOException {
 
             if (giocatore_textField.getText().length()>0) {
-                if (!(giocatore_textField.getText().equalsIgnoreCase("bot0")) || !(giocatore_textField.getText().equalsIgnoreCase("bot1")) || !(giocatore_textField.getText().equalsIgnoreCase("bot2"))) {
+                if (giocatore_textField.getText().length()<3 || (giocatore_textField.getText().length()>2 && !(giocatore_textField.getText().substring(0,3).equalsIgnoreCase("bot")))) {
                     if (nomiGiocatori.contains(giocatore_textField.getText())==false)
                         this.nomiGiocatori.add(giocatore_textField.getText());
                     else
@@ -63,8 +63,8 @@ public class AggiungiGiocatoriPartitaSingolaController implements Initializable 
                 aggiungi_button.setDisable(true);
                 giocatore_textField.setText("");
                 giocatore_textField.setDisable(true);
-            }
-            String visualizzaGiocatori = "";
+             }
+             String visualizzaGiocatori = "";
 
             for(int i=0; i<this.nomiGiocatori.size(); i++)
                 visualizzaGiocatori = visualizzaGiocatori+"\n"+(i+1)+")" + nomiGiocatori.get(i);
@@ -83,14 +83,13 @@ public class AggiungiGiocatoriPartitaSingolaController implements Initializable 
     }
 
 
-
-    public void visualizzaCodicePartita(String codicePartita) throws IOException {
+    public void visualizzaCodicePartita(String codicePartita) {
         labelCodicePartita.setText(codicePartita);
     }
 
     public void createSingleGame(ActionEvent event) throws IOException {
         for(int i=0; i<this.nomiGiocatori.size(); i++)
-        new ModificaLeaderBoard().aggiungiGiocatoreLeaderBoard(this.nomiGiocatori.get(i));
+            new ModificaLeaderBoard().aggiungiGiocatoreLeaderBoard(this.nomiGiocatori.get(i));
         switch(nomiGiocatori.size()){
             case(0) : nomiGiocatori.addAll(Arrays.asList("bot1","bot2", "bot3"));break;
             case(1) : nomiGiocatori.addAll(Arrays.asList("bot1","bot2"));break;
@@ -116,14 +115,24 @@ public class AggiungiGiocatoriPartitaSingolaController implements Initializable 
         stage.show();
     }
 
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         Scanner scan = null;
         labelGiocatori.setText("");
         File file = new File("LeaderBoardFile.csv");
 
-        if (!file.exists())
+        if (!file.exists()) {
             ChoiceBox = new ChoiceBox<>();
+            ChoiceBox.getItems().add("amdin");
+            try {
+                PrintWriter pw = new PrintWriter(file);
+                pw.println("admin,0");
+                pw.close();
+            }catch(IOException e){
+                System.out.println(e.toString());
+            }
+        }
         else {
         try {
             scan = new Scanner(file);

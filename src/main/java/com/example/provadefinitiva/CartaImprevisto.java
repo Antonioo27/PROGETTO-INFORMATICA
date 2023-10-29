@@ -14,16 +14,19 @@ public abstract class CartaImprevisto implements Carta {
         this.immagine=null;
         this.id="";
     }
+
     public CartaImprevisto(Image imm){
         this.frase=null;
         this.immagine=imm;
         this.id="";
     }
+
     public CartaImprevisto(String frase, String id){
         this.frase=frase;
         this.immagine=null;
         this.id=id;
     }
+
    public CartaImprevisto(String id, Image imm,String frase){
         this.frase=frase;
         this.immagine=imm;
