@@ -5,20 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a83edf22-57de-43e6-8a3f-681ebb786d0e" name="Changes" comment="ultimo aggiornamento torneo">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_31_05_2023_15_47__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_31_05_2023_15_47__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2766.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2799.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LeaderBoardFile.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PartiteETornei.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/AggiungiGiocatoriPartitaSingolaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/AggiungiGiocatoriPartitaSingolaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/AggiungiGiocatoriTorneoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/AggiungiGiocatoriTorneoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/CartaImprevisto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/CartaImprevisto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/EliminaPartiteTorneiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/EliminaPartiteTorneiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/Giocatore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/Giocatore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/LoginAmministratoreController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/LoginAmministratoreController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/LoginGIocatoreController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/LoginGiocatoreController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/ModificaLeaderBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/ModificaLeaderBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/PaginaInizialeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/PaginaInizialeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/Partita.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/Partita.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/PartitaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/PartitaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/Prova.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/provadefinitiva/Prova.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/2439618.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Immagine WhatsApp 2023-10-09 ore 18.19.43_5b866caf.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/PaginaIniziale.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/PaginaIniziale.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Screenshot 2023-10-16 163126.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Screenshot 2023-10-27 220726.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/bilder_fussballstadion_20150103_1369804670.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/EliminaPartiteTornei.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/EliminaPartiteTornei.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Home.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/LoginGiocatore.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/LoginGiocatore.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Partita.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/provadefinitiva/Partita.fxml" afterDir="false" />
     </list>
-    <list id="872de755-c33f-4f5b-a7cf-647b7bbcd4d9" name="Changes by TINARI" comment="" />
+    <list id="74ad59ef-d36e-441c-90ac-8bf5effe3f09" name="Changes by Gabri" comment="" />
+    <list id="7f34a534-7f2e-44a8-8824-b5ca4fffc7ca" name="Changes by TINARI" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -234,6 +246,7 @@
       <workItem from="1698490022093" duration="3266000" />
       <workItem from="1698494327700" duration="2578000" />
       <workItem from="1698569687776" duration="14055000" />
+      <workItem from="1698604700801" duration="942000" />
     </task>
     <task id="LOCAL-00001" summary="added gitignore">
       <created>1685536664827</created>

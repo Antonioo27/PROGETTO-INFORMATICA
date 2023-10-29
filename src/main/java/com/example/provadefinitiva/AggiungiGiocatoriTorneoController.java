@@ -186,12 +186,12 @@ public class AggiungiGiocatoriTorneoController {
         File file = new File("PartiteETornei.csv");
         if(file.exists()){
             FileWriter fw = new FileWriter(file,true);
-            fw.append(LblCodiceTorneo.getText().substring(LblCodiceTorneo.getText().length()-4) + System.lineSeparator());
+            fw.append(LblCodiceTorneo.getText());
             fw.close();
         }
         else{
             PrintWriter pw=new PrintWriter(file);
-            pw.println(LblCodiceTorneo.getText().substring(LblCodiceTorneo.getText().length()-4));
+            pw.println(LblCodiceTorneo.getText());
             pw.close();
         }
         for(int i=0; i<this.nomiGiocatori.size(); i++)
@@ -201,11 +201,15 @@ public class AggiungiGiocatoriTorneoController {
         for(int i=0; i<9; i++){
             m.getPartitaTorneo(i).salvaPartita();
         }
-        PrintWriter scrivo = new PrintWriter(new File(LblCodiceTorneo.getText().substring(LblCodiceTorneo.getText().length()-4)+".csv"));
+        /*
+        PrintWriter scrivo = new PrintWriter(LblCodiceTorneo.getText());
         for(int i=0; i<9; i++){
            scrivo.println(m.getPartitaTorneo(i).getCodice());
         }
         scrivo.close();
+
+         */
+
         FXMLLoader loader=new FXMLLoader(getClass().getResource("PaginaIniziale.fxml"));
         Parent root=loader.load();
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -217,7 +221,7 @@ public class AggiungiGiocatoriTorneoController {
 
 
     public void visualizzaCodiceTorneo(String codicePartita) {
-        LblCodiceTorneo.setText("Codice Torneo : "+codicePartita);
+        LblCodiceTorneo.setText(codicePartita);
     }
 
     public void tornaAllaHome(ActionEvent event) throws IOException {

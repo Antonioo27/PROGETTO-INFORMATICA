@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class ModificaLeaderBoard {
 
-    public void aggiungiGiocatoreLeaderBoard(String giocatore) throws IOException, FileNotFoundException {
+    public void aggiungiGiocatoreLeaderBoard(String giocatore) throws IOException {
         File file = new File("LeaderBoardFile.csv");
         FileWriter scrivo = new FileWriter(file, true);
         ArrayList<Giocatore> giocatoriFile = new ArrayList<Giocatore>();
@@ -42,7 +42,7 @@ public class ModificaLeaderBoard {
 
 
 
-    public static void aggiornaLeaderBoard(Partita partita) throws FileNotFoundException,IOException {
+    public static void aggiornaLeaderBoard(Partita partita)throws IOException {
         File file = new File("LeaderBoardFile.csv");
         Scanner scan = new Scanner(file);
         ArrayList<Giocatore> giocatoriFile=new ArrayList<Giocatore>();

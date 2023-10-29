@@ -2,6 +2,10 @@
     -fx-background-image: url('sfondo.png');
     -fx-background-size: cover;
 }
+.root2{
+    -fx-background-image: url('sfondonero.png');
+    -fx-background-size: cover;
+}
 
 
 
