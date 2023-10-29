@@ -8,11 +8,12 @@ public class  Giocatore implements Comparable {
 
         private int punteggio;
 
-        private ArrayList<Carta> carte=new ArrayList<Carta>(3); //carte che giocatore ha in mano
+        private ArrayList<Carta> carte=new ArrayList<Carta>(); //carte che giocatore ha in mano
 
        public Giocatore(String nome,int punteggio,ArrayList<Carta> mazzo){
            this.username = nome;
            this.punteggio = punteggio;
+
            this.carte = mazzo;
        }
 

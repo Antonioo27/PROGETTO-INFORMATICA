@@ -34,5 +34,7 @@ build/
 ### VS Code ###
 .vscode/
 
+Codice Torneo
+
 ### Mac OS ###
 .DS_Store

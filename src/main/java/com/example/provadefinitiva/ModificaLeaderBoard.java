@@ -14,7 +14,7 @@ public class ModificaLeaderBoard {
         ArrayList<Giocatore> giocatoriFile = new ArrayList<Giocatore>();
         boolean presente = false;
 
-        if(!(giocatore.substring(0,3).equalsIgnoreCase("bot"))) {
+        if(giocatore.length()<3||!(giocatore.substring(0,3).equalsIgnoreCase("bot"))) {
             Scanner scan = new Scanner(file);
             if (scan.hasNextLine() == false) {
                 scrivo.append(giocatore + "," + 0 + "\n");

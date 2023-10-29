@@ -64,8 +64,9 @@ public class Partita {
             Scanner scan = new Scanner(file2);
             Mazzo nuovo = new Mazzo();
             scan.nextLine();
+String riga=scan.nextLine();
 
-            String[] RimanenzeFile = scan.nextLine().split(",");
+            String[] RimanenzeFile = riga.split(",");
 
             LinkedList<Carta> mazzoRimanente = new LinkedList<Carta>();
             for (int i = 0; i < RimanenzeFile.length; i++) {
@@ -90,15 +91,20 @@ public class Partita {
                         for (int j = 0; j < nuovo.getMazzo().size(); j++) {
                             Carta c = nuovo.getMazzo().get(j);
                             if (c.getNome().equalsIgnoreCase(str[i])) {
-                                mano.add(c);
+                                System.out.println("mano aggiunta"+mano.add(c)+"\nmisura: "+mano.size());
+
                             }
 
                         }
                     }
-                    if(mano.size()<3){
-                        for(int i=0; i<3-mano.size(); i++)
-                        mano.add(null);
-                    }
+                             if(mano.size()==2) {
+                             mano.add(null);
+                             }
+                             else if(mano.size()==1){
+                                 mano.add(null);
+                                 mano.add(null);
+                             }
+                    System.out.println("mentre ora "+mano.size());
                     this.giocatori.add(new Giocatore(str[0], Integer.parseInt(str[1]), mano));
                 }
             }

@@ -88,6 +88,10 @@ public class EliminaPartiteTorneiController implements Initializable {
        pw.println(codici.get(i));
    pw.close();
    labelVisualizzaPartitaTorneo.setText("");
+   if(codici.size()==0) {
+       File file = new File("PartiteETornei.csv");
+       file.delete();
+   }
     }
     public void selezionaCodice(MouseEvent mouseEvent) {
 
@@ -124,6 +128,15 @@ if(file.exists()){
 }
     }
       public void tornaIndietro(ActionEvent event) throws IOException {
+          PrintWriter pw=new PrintWriter(new File("PartiteETornei.csv"));
+          for(int i=0; i<codici.size(); i++)
+              pw.println(codici.get(i));
+          pw.close();
+          labelVisualizzaPartitaTorneo.setText("");
+          if(codici.size()==0) {
+              File file = new File("PartiteETornei.csv");
+              file.delete();
+          }
           Parent root= FXMLLoader.load(getClass().getResource("PaginaIniziale.fxml"));
           stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
           scene=new Scene(root);

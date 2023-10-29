@@ -125,11 +125,11 @@ public class PartitaController {
     }
 
     public void copriCarte(ImageView carta1, ImageView carta2, ImageView carta3, int indiceGiocatore){
-       if(m.getCarteGiocatore(indiceGiocatore).get(0)!=null)
+        if(m.getCarteGiocatore(indiceGiocatore).get(0)!=null)
             carta1.setImage(new Image(getClass().getClassLoader().getResourceAsStream("backCard2.jpeg")));
-       if(m.getCarteGiocatore(indiceGiocatore).get(1)!=null)
+        if(m.getCarteGiocatore(indiceGiocatore).get(1)!=null)
             carta2.setImage(new Image(getClass().getClassLoader().getResourceAsStream("backCard2.jpeg")));
-       if(m.getCarteGiocatore(indiceGiocatore).get(2)!=null)
+        if(m.getCarteGiocatore(indiceGiocatore).get(2)!=null)
             carta3.setImage(new Image(getClass().getClassLoader().getResourceAsStream("backCard2.jpeg")));
     }
 
@@ -137,19 +137,15 @@ public class PartitaController {
         if (m.getCarteGiocatore(indiceGiocatore).get(0) != null)
             carta1.setImage(m.getCarteGiocatore(indiceGiocatore).get(0).getImage());
 else
-            carta1.setImage(null);
+    carta1.setImage(null);
         if (m.getCarteGiocatore(indiceGiocatore).get(1) != null)
             carta2.setImage(m.getCarteGiocatore(indiceGiocatore).get(1).getImage());
-        else
-            carta2.setImage(null);
-
+       else carta2.setImage(null);
         if (m.getCarteGiocatore(indiceGiocatore).get(2) != null)
             carta3.setImage(m.getCarteGiocatore(indiceGiocatore).get(2).getImage());
-        else
-            carta3.setImage(null);
-
-
+        else carta3.setImage(null);
     }
+
 
     public void visualizzaCodicePartita() {
         labelCodicePartita.setText("Codice Partita : "+MainEngine.getPartita().getCodice());
@@ -179,7 +175,7 @@ else
     }
 
     public void muoviCarta1G1(MouseEvent mouseEvent) {
-        if(m.getTurno()==1) {
+        if(m.getTurno()==1  && m.getCarteGiocatore(0).get(0)!=null) {
             //metodo per non cliccare carta in mano al giocatore nulla
             traslaCartaDaGiocatoreAlCampo(Imm1G1, 0, cartaSelG1);
             m.muoviCarta(0, 0);
@@ -193,7 +189,7 @@ else
     }
 
     public void muoviCarta2G1(MouseEvent mouseEvent) {
-        if(m.getTurno()==1) {
+        if(m.getTurno()==1&& m.getCarteGiocatore(0).get(1)!=null) {
             traslaCartaDaGiocatoreAlCampo(Imm2G1, 0, cartaSelG1);
             m.muoviCarta(0, 1);
             scopriCarte(Imm1G2, Imm2G2, Imm3G2, 1);
@@ -205,7 +201,7 @@ else
     }
 
     public void muoviCarta3G1(MouseEvent mouseEvent) {
-        if(m.getTurno()==1) {
+        if(m.getTurno()==1&& m.getCarteGiocatore(0).get(2)!=null) {
             traslaCartaDaGiocatoreAlCampo(Imm3G1, 0, cartaSelG1);
             m.muoviCarta(0, 2);
             scopriCarte(Imm1G2, Imm2G2, Imm3G2, 1);
@@ -217,7 +213,7 @@ else
     }
 
     public void muoviCarta1G2(MouseEvent mouseEvent) {
-        if (m.getTurno() == 2){
+        if (m.getTurno() == 2&& m.getCarteGiocatore(1).get(0)!=null){
             traslaCartaDaGiocatoreAlCampo(Imm1G2, 1, cartaSelG2);
             m.muoviCarta(1, 0);
             scopriCarte(Imm1G3, Imm2G3, Imm3G3, 2);
@@ -229,7 +225,7 @@ else
     }
 
     public void muoviCarta2G2(MouseEvent mouseEvent) {
-        if(m.getTurno()==2) {
+        if(m.getTurno()==2&&m.getCarteGiocatore(1).get(1)!=null) {
             traslaCartaDaGiocatoreAlCampo(Imm2G2, 1, cartaSelG2);
             m.muoviCarta(1, 1);
             scopriCarte(Imm1G3, Imm2G3, Imm3G3, 2);
@@ -241,7 +237,7 @@ else
     }
 
     public void muoviCarta3G2(MouseEvent mouseEvent) {
-        if (m.getTurno() == 2){
+        if (m.getTurno() == 2&&m.getCarteGiocatore(1).get(2)!=null){
             traslaCartaDaGiocatoreAlCampo(Imm3G2, 1, cartaSelG2);
         m.muoviCarta(1, 2);
         scopriCarte(Imm1G3, Imm2G3, Imm3G3, 2);
@@ -254,7 +250,7 @@ else
 
 
     public void muoviCarta1G3(MouseEvent mouseEvent) throws FileNotFoundException, IOException{
-        if(m.getTurno()==3) {
+        if(m.getTurno()==3&&m.getCarteGiocatore(2).get(0)!=null) {
             traslaCartaDaGiocatoreAlCampo(Imm1G3, 2, cartaSelG3);
             m.muoviCarta(2, 0);
             m.CalcolaPunteggio();
@@ -276,7 +272,7 @@ else
     }
 
     public void muoviCarta2G3(MouseEvent mouseEvent) throws FileNotFoundException,IOException{
-        if(m.getTurno()==3) {
+        if(m.getTurno()==3&&m.getCarteGiocatore(2).get(1)!=null) {
             traslaCartaDaGiocatoreAlCampo(Imm2G3, 2, cartaSelG3);
             m.muoviCarta(2, 1);
             m.CalcolaPunteggio();
@@ -300,7 +296,7 @@ else
 
 
     public void muoviCarta3G3(MouseEvent mouseEvent) throws FileNotFoundException,IOException {
-        if(m.getTurno()==3){
+        if(m.getTurno()==3&&m.getCarteGiocatore(2).get(2)!=null){
         traslaCartaDaGiocatoreAlCampo(Imm3G3, 2, cartaSelG3);
         m.muoviCarta(2, 2);
         m.CalcolaPunteggio();
@@ -330,7 +326,7 @@ else
     }
 
     public void checkBot(int giocatoredopo){
-        if(m.getGiocatori().get(giocatoredopo).getUsername().substring(0,3).equalsIgnoreCase("bot") ) {
+        if(m.getGiocatori().get(giocatoredopo).getUsername().length()>3&&m.getGiocatori().get(giocatoredopo).getUsername().substring(0,3).equalsIgnoreCase("bot") ) {
             PauseTransition pause = new PauseTransition(Duration.seconds(1.7));
             pause.setOnFinished(event -> {
                 int indice = -1;
@@ -524,9 +520,10 @@ else
             });
 
             m.trovaVincitore();
+
             LabelVincitore.setText("VINCITORE : "+ m.getVincitore().getUsername());
             vincitore = m.getVincitore().getUsername();
-
+            System.out.println(m.getVincitore());
             m.salvaPartita();
             pause.play();
         }
@@ -559,12 +556,8 @@ else
         {
             if(m.getPartita().getVincitore()==null)
                 m.salvaPartita();
-            else {
-                File file = new File("LeaderBoardFile.csv");
-                if (file.exists()) {
-                    ModificaLeaderBoard.aggiornaLeaderBoard(m.getPartita());
-                }
-            }
+
+
             FXMLLoader loader = new FXMLLoader(getClass().getResource("PaginaIniziale.fxml"));
             Parent root = loader.load();
             stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
