@@ -7,7 +7,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
@@ -90,7 +89,6 @@ public class PartitaController {
     private Label LabelCodiceTorneo;
     @FXML
     private Button buttonVisualizzaLeaderBoard;
-
     private File fileTorneoo;
 
     private Stage stage;
@@ -138,16 +136,14 @@ public class PartitaController {
     public void scopriCarte(ImageView carta1,ImageView carta2, ImageView carta3,int indiceGiocatore) {
         if (m.getCarteGiocatore(indiceGiocatore).get(0) != null)
             carta1.setImage(m.getCarteGiocatore(indiceGiocatore).get(0).getImage());
-        else
-            carta1.setImage(null);
+else
+    carta1.setImage(null);
         if (m.getCarteGiocatore(indiceGiocatore).get(1) != null)
             carta2.setImage(m.getCarteGiocatore(indiceGiocatore).get(1).getImage());
-        else
-            carta2.setImage(null);
+       else carta2.setImage(null);
         if (m.getCarteGiocatore(indiceGiocatore).get(2) != null)
             carta3.setImage(m.getCarteGiocatore(indiceGiocatore).get(2).getImage());
-        else
-            carta3.setImage(null);
+        else carta3.setImage(null);
     }
 
 
@@ -535,17 +531,16 @@ public class PartitaController {
 
     public void tornaIndietro(ActionEvent event) throws IOException {
 
-        if(m.getPartita().getCarteInCampo().size()==0) {
-            if (Integer.parseInt(m.getPartita().getCodice()) < 2000) {
+        if (Integer.parseInt(m.getPartita().getCodice()) < 2000) {
 
-                if (m.getPartita().getVincitore() == null)  // se la partita non è ancora finita
-                    m.salvaPartita();
-                else {
-                    File file = new File("LeaderBoardFile.csv");
-                    if (file.exists()) {
-                        ModificaLeaderBoard.aggiornaLeaderBoard(m.getPartita());
-                    }
+            if(m.getPartita().getVincitore()==null)  // se la partita non è ancora finita
+                m.salvaPartita();
+            else {
+                File file = new File("LeaderBoardFile.csv");
+                if (file.exists()) {
+                    ModificaLeaderBoard.aggiornaLeaderBoard(m.getPartita());
                 }
+            }
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("TorneoGioca.fxml"));
                 Parent root = loader.load();
                 TorneoGiocaController torneoGiocaController = loader.getController();
@@ -556,36 +551,35 @@ public class PartitaController {
                 scene = new Scene(root);
                 stage.setScene(scene);
                 stage.show();
-            } else {
-                if (m.getPartita().getVincitore() == null)
-                    m.salvaPartita();
-
-
-                FXMLLoader loader = new FXMLLoader(getClass().getResource("PaginaIniziale.fxml"));
-                Parent root = loader.load();
-                stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-                scene = new Scene(root);
-                stage.setScene(scene);
-                stage.show();
-                if (m.getPartita().getVincitore() != null) {
-                    String filePath = m.getPartita().getCodice() + ".csv";
-
-                    try {
-                        File file = new File(filePath);
-
-                        if (file.delete()) {
-                            System.out.println("File eliminato con successo.");
-                        } else {
-                            System.out.println("Impossibile eliminare il file. Controlla che esista e che tu abbia le autorizzazioni necessarie.");
-                        }
-                    } catch (Exception e) {
-                        System.err.println("Si è verificato un errore durante l'eliminazione del file: " + e.getMessage());
-                    }
-                }
-            }
         }
         else
-            Allert.showAlert(Alert.AlertType.INFORMATION, "Errore", "Non puoi tornare indietro e salvare se prima non termina la mano");
+        {
+            if(m.getPartita().getVincitore()==null)
+                m.salvaPartita();
+
+
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("PaginaIniziale.fxml"));
+            Parent root = loader.load();
+            stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            scene = new Scene(root);
+            stage.setScene(scene);
+            stage.show();
+            if(m.getPartita().getVincitore()!=null){
+                String filePath = m.getPartita().getCodice()+".csv";
+
+            try {
+                File file = new File(filePath);
+
+                if (file.delete()) {
+                    System.out.println("File eliminato con successo.");
+                } else {
+                    System.out.println("Impossibile eliminare il file. Controlla che esista e che tu abbia le autorizzazioni necessarie.");
+                }
+            } catch (Exception e) {
+                System.err.println("Si è verificato un errore durante l'eliminazione del file: " + e.getMessage());
+            }
+        }
+        }
     }
 
     public void setCodiceTorneo(String codiceTorneo){

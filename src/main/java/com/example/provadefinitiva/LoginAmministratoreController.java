@@ -21,8 +21,8 @@ public class LoginAmministratoreController {
     private TextField username_field;
 
 
-    private String password = "admin";
-    private String username = "admin";
+    private String password = "1";
+    private String username="1";
     private Stage stage;
     private Scene scene;
     private Parent root;

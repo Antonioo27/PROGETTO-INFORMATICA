@@ -64,7 +64,7 @@ public class Partita {
             Scanner scan = new Scanner(file2);
             Mazzo nuovo = new Mazzo();
             scan.nextLine();
-            String riga=scan.nextLine();
+String riga=scan.nextLine();
 
             String[] RimanenzeFile = riga.split(",");
 
@@ -91,7 +91,8 @@ public class Partita {
                         for (int j = 0; j < nuovo.getMazzo().size(); j++) {
                             Carta c = nuovo.getMazzo().get(j);
                             if (c.getNome().equalsIgnoreCase(str[i])) {
-                                mano.add(c);
+                                System.out.println("mano aggiunta"+mano.add(c)+"\nmisura: "+mano.size());
+
                             }
 
                         }
@@ -103,6 +104,7 @@ public class Partita {
                                  mano.add(null);
                                  mano.add(null);
                              }
+                    System.out.println("mentre ora "+mano.size());
                     this.giocatori.add(new Giocatore(str[0], Integer.parseInt(str[1]), mano));
                 }
             }
@@ -118,6 +120,7 @@ public class Partita {
                if (riga2 != "") {
                     String[] str2 = riga2.split(",");
                     Giocatore g = new Giocatore(str2[0], Integer.parseInt(str2[1]));
+                    //System.out.println(g.getUsername());
                     this.giocatori.add(g);
                }
            }

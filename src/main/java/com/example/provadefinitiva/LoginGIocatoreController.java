@@ -8,15 +8,16 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Scanner;
 
-public class LoginGiocatoreController {
+public class LoginGIocatoreController {
 
 
     @FXML
@@ -93,14 +94,4 @@ public class LoginGiocatoreController {
        stage.setTitle("PaginaIniziale");
        stage.show();
    }
-
-    public void visualizzaLeaderBoard(ActionEvent event) throws IOException {
-        Stage stage = new Stage();
-        Parent root = FXMLLoader.load(getClass().getResource("LeaderBoard.fxml"));
-
-        stage.setTitle("LeaderBoard");
-        stage.setScene(new Scene(root));
-        stage.initModality(Modality.APPLICATION_MODAL);
-        stage.show();
-    }
 }
