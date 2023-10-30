@@ -3,24 +3,18 @@ package com.example.provadefinitiva;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.shape.Path;
 import javafx.scene.text.Font;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
-
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.net.URL;
-import java.nio.file.Files;
-import java.nio.file.Paths;
+
 import java.util.*;
 
 
@@ -146,32 +140,25 @@ public class TorneoGiocaController   {
     @FXML
     private Label LBVINCITORE;
 
-
     @FXML
     private Label LblCodiceTorneo;
+
     @FXML
     private Button buttonGiocaQuarti1;
-
     @FXML
     private Button buttonGiocaQuarti2;
-
     @FXML
     private Button buttonGiocaQuarti3;
     @FXML
     private Button buttonGiocaQuarti4;
-
     @FXML
     private Button buttonGiocaQuarti5;
-
     @FXML
     private Button buttonGiocaQuarti6;
-
     @FXML
     private Button buttonGiocaQuarti7;
-
     @FXML
     private Button buttonGiocaQuarti8;
-
     @FXML
     private Button buttonGiocaQuarti9;
     @FXML
@@ -189,13 +176,11 @@ public class TorneoGiocaController   {
 
     private Stage stage;
     private Scene scene;
-
     private File fileTorneo;
 
     private MainEngine m = new MainEngine();
 
     ArrayList<String> finalisti=new ArrayList<String>();
-
 
     ArrayList<Label> labelArrayList =  new ArrayList<>();
 
@@ -220,6 +205,7 @@ public class TorneoGiocaController   {
     @FXML
     void buttonGioca2_1(ActionEvent event) throws IOException {
         Partita partita = m.getPartitaTorneo(1);
+
         FXMLLoader loader=new FXMLLoader(getClass().getResource("Partita.fxml"));
         Parent root=loader.load();
         PartitaController partitaController = loader.getController();
@@ -235,6 +221,7 @@ public class TorneoGiocaController   {
     @FXML
     void buttonGioca3_1(ActionEvent event) throws IOException {
         Partita partita = m.getPartitaTorneo(2);
+
         FXMLLoader loader=new FXMLLoader(getClass().getResource("Partita.fxml"));
         Parent root=loader.load();
         PartitaController partitaController = loader.getController();
@@ -251,6 +238,7 @@ public class TorneoGiocaController   {
     @FXML
     void buttonGioca1_2(ActionEvent event) throws IOException {
         Partita partita = m.getPartitaTorneo(3);
+
         FXMLLoader loader=new FXMLLoader(getClass().getResource("Partita.fxml"));
         Parent root=loader.load();
         PartitaController partitaController = loader.getController();
@@ -266,6 +254,7 @@ public class TorneoGiocaController   {
     @FXML
     void buttonGioca2_2(ActionEvent event) throws IOException {
         Partita partita = m.getPartitaTorneo(4);
+
         FXMLLoader loader=new FXMLLoader(getClass().getResource("Partita.fxml"));
         Parent root=loader.load();
         PartitaController partitaController = loader.getController();
@@ -280,6 +269,7 @@ public class TorneoGiocaController   {
     @FXML
     void buttonGioca3_2(ActionEvent event) throws IOException{
         Partita partita = m.getPartitaTorneo(5);
+
         FXMLLoader loader=new FXMLLoader(getClass().getResource("Partita.fxml"));
         Parent root=loader.load();
         PartitaController partitaController = loader.getController();
@@ -294,6 +284,7 @@ public class TorneoGiocaController   {
     @FXML
     void buttonGioca1_3(ActionEvent event) throws IOException {
         Partita partita = m.getPartitaTorneo(6);
+
         FXMLLoader loader=new FXMLLoader(getClass().getResource("Partita.fxml"));
         Parent root=loader.load();
         PartitaController partitaController = loader.getController();
@@ -308,6 +299,7 @@ public class TorneoGiocaController   {
     @FXML
     void buttonGioca2_3(ActionEvent event) throws IOException {
         Partita partita = m.getPartitaTorneo(7);
+
         FXMLLoader loader=new FXMLLoader(getClass().getResource("Partita.fxml"));
         Parent root=loader.load();
         PartitaController partitaController = loader.getController();
@@ -322,6 +314,7 @@ public class TorneoGiocaController   {
     @FXML
     void buttonGioca3_3(ActionEvent event) throws IOException {
         Partita partita = m.getPartitaTorneo(8);
+
         FXMLLoader loader=new FXMLLoader(getClass().getResource("Partita.fxml"));
         Parent root=loader.load();
         PartitaController partitaController = loader.getController();
@@ -336,6 +329,7 @@ public class TorneoGiocaController   {
 
     public void buttonGiocaSemi1(ActionEvent event) throws IOException {
         Partita partita = m.getPartitaTorneo(9);
+
         FXMLLoader loader=new FXMLLoader(getClass().getResource("Partita.fxml"));
         Parent root=loader.load();
         PartitaController partitaController = loader.getController();
@@ -350,6 +344,7 @@ public class TorneoGiocaController   {
 
     public void buttonGiocaSemi2(ActionEvent event) throws IOException {
         Partita partita = m.getPartitaTorneo(10);
+
         FXMLLoader loader=new FXMLLoader(getClass().getResource("Partita.fxml"));
         Parent root=loader.load();
         PartitaController partitaController = loader.getController();
@@ -481,17 +476,20 @@ public class TorneoGiocaController   {
     }
 
     private void caricaSemi() throws IOException {
+
       buttonGiocaSemi1.setVisible(true);
       buttonGiocaSemi2.setVisible(true);
       buttonGiocaSemi3.setVisible(true);
 
       ArrayList<Button> arrayBottoni = new ArrayList<Button>();
         arrayBottoni.addAll(Arrays.asList(buttonGiocaSemi1,buttonGiocaSemi2,buttonGiocaSemi3));
-        for(int i=9; i<12; i++) {
-            if (m.getPartitaTorneo(i).getMazzo().getMazzo().size() < 12 && m.getPartitaTorneo(i).getVincitore() == null){
-                arrayBottoni.get(i).setText("Riprendi");
-            arrayBottoni.get(i).setFont(new Font("Arial", 10));
-        }
+        if(m.getPartiteTorneo().size()==12) {
+            for (int i = 9; i < 12; i++) {
+                if (m.getPartitaTorneo(i).getMazzo().getMazzo().size() < 12 && m.getPartitaTorneo(i).getVincitore() == null) {
+                    arrayBottoni.get(i).setText("Riprendi");
+                    arrayBottoni.get(i).setFont(new Font("Arial", 10));
+                }
+            }
         }
 
       Scanner scan=new Scanner(this.fileTorneo);
@@ -503,6 +501,7 @@ public class TorneoGiocaController   {
       }
 
 
+
       if(countRighe<12){
           ArrayList<String> semifinalisti = new ArrayList<String>();
 
@@ -512,9 +511,14 @@ public class TorneoGiocaController   {
           }
 
           m.creaSemifinali(semifinalisti, this.LblCodiceTorneo.getText());
+          PrintWriter pw=new PrintWriter(LblCodiceTorneo.getText()+".csv");
+
+          System.out.println(m.getPartiteTorneo().size());
           for (int i = 0; i < m.getPartiteTorneo().size(); i++) {
               m.getPartitaTorneo(i).salvaPartita();
+              pw.println(m.getPartitaTorneo(i).getCodice());
           }
+          pw.close();
       }
       else{
           Scanner scan2=new Scanner(new File(LblCodiceTorneo.getText()+".csv"));
@@ -524,8 +528,8 @@ public class TorneoGiocaController   {
               codici.add(scan2.nextLine());
               for(int k=9; k<codici.size(); k++){
                   String riga=codici.get(k);
-              Partita p=new Partita();
-              p.caricaPartita(new File(riga+".csv"));
+                  Partita p=new Partita();
+                  p.caricaPartita(new File(riga+".csv"));
           }
       }
       boolean semiFinite=true;
@@ -560,11 +564,12 @@ public class TorneoGiocaController   {
 
     private void caricaFinale() throws IOException {
         buttonGiocaFinale.setVisible(true);
-
-        if (m.getPartitaTorneo(12).getMazzo().getMazzo().size() < 12 && m.getPartitaTorneo(12).getVincitore() == null){
+        if(m.getPartiteTorneo().size()==13) {
+          if (m.getPartitaTorneo(12).getMazzo().getMazzo().size() < 12 && m.getPartitaTorneo(12).getVincitore() == null) {
             buttonGiocaFinale.setText("Riprendi");
-        buttonGiocaFinale.setFont(new Font("Arial", 10));
-    }
+            buttonGiocaFinale.setFont(new Font("Arial", 10));
+          }
+        }
         Scanner scan=new Scanner(new File(this.LblCodiceTorneo.getText()+".csv"));
         int countRighe=0;
         while(scan.hasNextLine()){
@@ -576,7 +581,8 @@ public class TorneoGiocaController   {
         if(countRighe<13){
         finalisti.addAll(Arrays.asList(LBLv1.getText(), LBLv2.getText(), LBLv3.getText()));
         m.creaFinale(finalisti, LblCodiceTorneo.getText());
-        PrintWriter scrivo = new PrintWriter(new File(this.LblCodiceTorneo.getText() + ".csv"));
+
+        PrintWriter scrivo = new PrintWriter(this.LblCodiceTorneo.getText() + ".csv");
         for (int j = 0; j < m.getPartiteTorneo().size(); j++) {
             m.getPartitaTorneo(j).salvaPartita();
         }
@@ -600,10 +606,36 @@ public class TorneoGiocaController   {
                 i++;
             }
         }
+
         if(m.getPartiteTorneo().get(m.getPartiteTorneo().size()-1).getVincitore()!=null){
             this.LBVINCITORE.setVisible(true);
             this.LBVINCITORE.setText(m.getPartiteTorneo().get(m.getPartiteTorneo().size()-1).getVincitore().getUsername());
             this.buttonGiocaFinale.setVisible(false);
+
+            ArrayList<Giocatore> giocatori = new ArrayList<Giocatore>();
+
+            Scanner scan3 = new Scanner(new File("LeaderBoardFile.csv"));
+            while(scan3.hasNextLine()){
+                String riga=scan3.nextLine();
+                String[] str = riga.split(",");
+                Giocatore g = new Giocatore(str[0], Integer.parseInt(str[1]));
+                giocatori.add(g);
+            }
+            for(int i=0; i<giocatori.size(); i++){
+                if(giocatori.get(i).getUsername().equalsIgnoreCase(m.getPartiteTorneo().get(m.getPartiteTorneo().size()-1).getVincitore().getUsername()))
+                    giocatori.get(i).setTotalScore(giocatori.get(i).getTotalScore()+200);
+            }
+
+            scan3.close();
+
+            Collections.sort(giocatori);
+            PrintWriter scrivo = new PrintWriter("LeaderBoardFile.csv");
+
+            for(int j=0; j<giocatori.size(); j++)
+                scrivo.println(giocatori.get(j).getUsername()+","+giocatori.get(j).getTotalScore());
+
+            scrivo.close();
+
             buttonVisualizzaLeaderBoard.fire();
         }
 
@@ -615,6 +647,7 @@ public class TorneoGiocaController   {
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
+
         if(LBVINCITORE.getText().length()>0) {
             for (int i = 0; i < 13; i++) {
                 String filePath = m.getPartitaTorneo(i).getCodice() + ".csv";
@@ -622,7 +655,8 @@ public class TorneoGiocaController   {
                 try {
                     File file = new File(filePath);
 
-                    if (file.delete()) {
+                    if (file.exists()) {
+                        file.delete();
                         System.out.println("File eliminato con successo.");
                     } else {
                         System.out.println("Impossibile eliminare il file. Controlla che esista e che tu abbia le autorizzazioni necessarie.");
@@ -631,12 +665,13 @@ public class TorneoGiocaController   {
                     System.err.println("Si è verificato un errore durante l'eliminazione del file: " + e.getMessage());
                 }
             }
-            String filePath2 = m.getTorneo().codiceTorneo + ".csv";
+            String filePath2 = LblCodiceTorneo.getText() + ".csv";
 
             try {
                 File file = new File(filePath2);
 
-                if (file.delete()) {
+                if (file.exists()) {
+                    file.delete();
                     System.out.println("File eliminato con successo.");
                 } else {
                     System.out.println("Impossibile eliminare il file. Controlla che esista e che tu abbia le autorizzazioni necessarie.");
@@ -644,12 +679,26 @@ public class TorneoGiocaController   {
             } catch (Exception e) {
                 System.err.println("Si è verificato un errore durante l'eliminazione del file: " + e.getMessage());
             }
+            Scanner scan = new Scanner(new File("PartiteETornei.csv"));
+
+            ArrayList<String> codici=new ArrayList<String>();
+            while(scan.hasNextLine()){
+                String riga = scan.nextLine();
+                codici.add(riga);
+            }
+            codici.remove(LblCodiceTorneo.getText());
+
+            PrintWriter scrivo = new PrintWriter("PartiteETornei.csv");
+            for(int i=0; i<codici.size(); i++) {
+                scrivo.println(codici.get(i));
+            }
+            scrivo.close();
         }
+
     }
 
     public void visualizzaCodiceTorneo(String codice) {
         LblCodiceTorneo.setText(codice.substring(0,4));
-
     }
 
 
@@ -675,7 +724,7 @@ public class TorneoGiocaController   {
             }
 
         this.caricaQuarti();
-        }
+    }
 
 
     public void visualizzaLeaderBoard(ActionEvent event) throws IOException {
@@ -686,7 +735,5 @@ public class TorneoGiocaController   {
         stage.initModality(Modality.APPLICATION_MODAL);
         stage.show();
     }
+
 }
-
-
-

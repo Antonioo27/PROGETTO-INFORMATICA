@@ -32,7 +32,7 @@
             </Lighting>
          </effect>
       </Label>
-      <Label fx:id="labelCodicePartita" layoutX="277.0" layoutY="81.0" prefHeight="29.0" prefWidth="174.0" styleClass="label-custom-punteggio" stylesheets="@../../../ProvaNick.css" textFill="#dc0b38">
+      <Label fx:id="labelCodicePartita" alignment="CENTER" layoutX="277.0" layoutY="81.0" prefHeight="29.0" prefWidth="174.0" styleClass="label-custom-punteggio" stylesheets="@../../../ProvaNick.css" textFill="#dc0b38">
          <font>
             <Font size="16.0" />
          </font>

@@ -21,6 +21,7 @@ import javafx.util.Duration;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.Scanner;
 import java.util.Timer;
 import java.util.TimerTask;
 import java.io.*;
@@ -540,12 +541,8 @@ public class PartitaController {
 
                 if (m.getPartita().getVincitore() == null)  // se la partita non è ancora finita
                     m.salvaPartita();
-                else {
-                    File file = new File("LeaderBoardFile.csv");
-                    if (file.exists()) {
-                        ModificaLeaderBoard.aggiornaLeaderBoard(m.getPartita());
-                    }
-                }
+
+
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("TorneoGioca.fxml"));
                 Parent root = loader.load();
                 TorneoGiocaController torneoGiocaController = loader.getController();
@@ -556,7 +553,8 @@ public class PartitaController {
                 scene = new Scene(root);
                 stage.setScene(scene);
                 stage.show();
-            } else {
+            }
+            else {
                 if (m.getPartita().getVincitore() == null)
                     m.salvaPartita();
 
@@ -569,11 +567,12 @@ public class PartitaController {
                 stage.show();
                 if (m.getPartita().getVincitore() != null) {
                     String filePath = m.getPartita().getCodice() + ".csv";
-
-                    try {
+                      System.out.println("cidice partita"+m.getPartita().getCodice());
+                      try {
                         File file = new File(filePath);
 
-                        if (file.delete()) {
+                        if (file.exists()) {
+                            file.delete();
                             System.out.println("File eliminato con successo.");
                         } else {
                             System.out.println("Impossibile eliminare il file. Controlla che esista e che tu abbia le autorizzazioni necessarie.");
@@ -582,6 +581,21 @@ public class PartitaController {
                         System.err.println("Si è verificato un errore durante l'eliminazione del file: " + e.getMessage());
                     }
                 }
+
+                Scanner scan = new Scanner(new File("PartiteETornei.csv"));
+                 ArrayList<String> codici=new ArrayList<String>();
+                 while(scan.hasNextLine()){
+                      String riga = scan.nextLine();
+                      codici.add(riga);
+                  }
+                 System.out.println(codici.remove(m.getPartita().getCodice()));
+
+                  PrintWriter scrivo = new PrintWriter("PartiteETornei.csv");
+                    for(int i=0; i<codici.size(); i++) {
+                        System.out.println(codici.get(i));
+                        scrivo.println(codici.get(i));
+                    }
+                    scrivo.close();
             }
         }
         else

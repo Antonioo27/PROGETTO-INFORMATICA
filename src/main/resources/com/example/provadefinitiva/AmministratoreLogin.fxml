@@ -35,5 +35,6 @@
             <Font size="10.0" />
          </font>
       </Button>
+      <Button layoutX="622.0" layoutY="18.0" mnemonicParsing="false" onAction="#tornaIndietro" text="Torna indietro" />
    </children>
 </Pane>

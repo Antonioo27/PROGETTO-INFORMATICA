@@ -40,7 +40,6 @@ import java.util.Scanner;
         private TableColumn<Giocatore, Integer> totalScore;
 
 
-
         private ObservableList<Giocatore> giocatori;
         private Stage stage;
         private Scene scene;

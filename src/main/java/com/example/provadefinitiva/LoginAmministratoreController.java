@@ -20,7 +20,6 @@ public class LoginAmministratoreController {
     @FXML
     private TextField username_field;
 
-
     private String password = "admin";
     private String username = "admin";
     private Stage stage;
@@ -48,7 +47,6 @@ public class LoginAmministratoreController {
         }
         else {
             Allert.showAlert(Alert.AlertType.INFORMATION, "Errore", "Password o nome utente non corretti");
-
         }
 
     }
@@ -57,4 +55,14 @@ public class LoginAmministratoreController {
         passwordLogin.setText("");
         username_field.setText("");
     }
+
+    public void tornaIndietro(ActionEvent event) throws IOException {
+        FXMLLoader loader=new FXMLLoader(getClass().getResource("PaginaIniziale.fxml"));
+        Parent root=loader.load();
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
 }

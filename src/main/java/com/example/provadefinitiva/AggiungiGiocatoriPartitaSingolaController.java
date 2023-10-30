@@ -34,10 +34,12 @@ public class AggiungiGiocatoriPartitaSingolaController implements Initializable 
     @FXML
     private Label labelGiocatori;
 
-
     private Stage stage;
+
     private Scene scene;
+
     private ArrayList<String> nomiGiocatori = new ArrayList<String>();
+
     private ArrayList<String> stringheChoicebox = new ArrayList<>();
 
 
@@ -108,7 +110,7 @@ public class AggiungiGiocatoriPartitaSingolaController implements Initializable 
             pw.println(labelCodicePartita.getText());
             pw.close();
         }
-        Parent root = FXMLLoader.load(getClass().getResource("PaginaIniziale.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("Home.fxml"));
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
@@ -124,7 +126,7 @@ public class AggiungiGiocatoriPartitaSingolaController implements Initializable 
 
         if (!file.exists()) {
             ChoiceBox = new ChoiceBox<>();
-            ChoiceBox.getItems().add("amdin");
+            ChoiceBox.getItems().add("admin");
             try {
                 PrintWriter pw = new PrintWriter(file);
                 pw.println("admin,0");
@@ -138,12 +140,14 @@ public class AggiungiGiocatoriPartitaSingolaController implements Initializable 
             scan = new Scanner(file);
         }catch(FileNotFoundException e){
             e.toString();
-         }
+        }
+
             while (scan != null && scan.hasNextLine()) {
                 String riga = scan.nextLine();
                 String[] str = riga.split(",");
                 stringheChoicebox.add(str[0]);
             }
+
             ChoiceBox.getItems().addAll(stringheChoicebox);
             ChoiceBox.getSelectionModel().selectFirst();
 

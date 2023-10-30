@@ -13,7 +13,6 @@ import java.io.IOException;
 
 public class RegoleController {
 
-
     public void tornaIndietro(ActionEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("PaginaIniziale.fxml"));
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -21,4 +20,5 @@ public class RegoleController {
         stage.setScene(scene);
         stage.show();
     }
+
 }

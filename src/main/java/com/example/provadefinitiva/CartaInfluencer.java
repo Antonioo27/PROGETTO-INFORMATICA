@@ -34,6 +34,7 @@ public class CartaInfluencer  implements Carta{
     public Image getImage() {
         return immagine;
     }
+
     public int getFollower(){ return this.follower;}
 
     @Override

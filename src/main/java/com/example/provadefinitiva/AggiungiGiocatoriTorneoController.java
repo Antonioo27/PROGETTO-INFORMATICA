@@ -148,6 +148,7 @@ public class AggiungiGiocatoriTorneoController {
 
     @FXML
     void creaTorneo(ActionEvent event) throws IOException {
+
         nomiGiocatori.add(Lbl1_1_1.getText());
         nomiGiocatori.add(Lbl2_1_1.getText());
         nomiGiocatori.add(Lbl3_1_1.getText());
@@ -183,10 +184,11 @@ public class AggiungiGiocatoriTorneoController {
            botCount++;
             }
         }
+
         File file = new File("PartiteETornei.csv");
         if(file.exists()){
             FileWriter fw = new FileWriter(file,true);
-            fw.append(LblCodiceTorneo.getText());
+            fw.append(LblCodiceTorneo.getText()+System.lineSeparator());
             fw.close();
         }
         else{
@@ -194,23 +196,24 @@ public class AggiungiGiocatoriTorneoController {
             pw.println(LblCodiceTorneo.getText());
             pw.close();
         }
+
         for(int i=0; i<this.nomiGiocatori.size(); i++)
             new ModificaLeaderBoard().aggiungiGiocatoreLeaderBoard(this.nomiGiocatori.get(i));
 
         m.creaQuarti(nomiGiocatori, LblCodiceTorneo.getText());
+
         for(int i=0; i<9; i++){
             m.getPartitaTorneo(i).salvaPartita();
         }
-        /*
-        PrintWriter scrivo = new PrintWriter(LblCodiceTorneo.getText());
+
+        PrintWriter scrivo = new PrintWriter(LblCodiceTorneo.getText()+".csv");
         for(int i=0; i<9; i++){
            scrivo.println(m.getPartitaTorneo(i).getCodice());
         }
+
         scrivo.close();
 
-         */
-
-        FXMLLoader loader=new FXMLLoader(getClass().getResource("PaginaIniziale.fxml"));
+        FXMLLoader loader=new FXMLLoader(getClass().getResource("Home.fxml"));
         Parent root=loader.load();
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
@@ -232,5 +235,6 @@ public class AggiungiGiocatoriTorneoController {
         stage.setScene(scene);
         stage.show();
     }
+
 }
 

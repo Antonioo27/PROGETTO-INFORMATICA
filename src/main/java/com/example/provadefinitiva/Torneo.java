@@ -58,6 +58,7 @@ public class Torneo {
                 partite.add(p);
         }
     }
+
     public void creaFinale(ArrayList<String> finalisti, String codice){
         this.codiceTorneo=codice;
         String codFinale=String.valueOf((int) (Math.random() * (3000 - 2000 + 1) + 1000));
@@ -125,4 +126,5 @@ public class Torneo {
         }
         return indiciPartiteFinite;
     }
+
 }
