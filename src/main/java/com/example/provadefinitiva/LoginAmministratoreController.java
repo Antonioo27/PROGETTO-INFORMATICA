@@ -29,26 +29,22 @@ public class LoginAmministratoreController {
 
     public void checkLogin(ActionEvent event) throws IOException {
         String username = username_field.getText();
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("Home.fxml"));
-        root= loader.load();
-
-        HomeController homeController = loader.getController();
-        homeController.displayName(username);
 
         if(passwordLogin.getText().equals(this.password) && username_field.getText().equalsIgnoreCase(username)){
 
-            //Andiamo nella home
-             // Parent root = FXMLLoader.load(getClass().getResource("Home.fxml"));
-              stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-              scene = new Scene(root);
-              stage.setScene(scene);
-              stage.setTitle("HOME PAGE");
-              stage.show();
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("Home.fxml"));
+                root= loader.load();
+                HomeController homeController = loader.getController();
+                homeController.displayName(username);
+                stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+                scene = new Scene(root);
+                stage.setScene(scene);
+                stage.setTitle("HOME PAGE");
+                stage.show();
         }
         else {
             Allert.showAlert(Alert.AlertType.INFORMATION, "Errore", "Password o nome utente non corretti");
         }
-
     }
 
     public void clearLogin(ActionEvent event) {

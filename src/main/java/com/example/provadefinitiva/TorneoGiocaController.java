@@ -396,6 +396,7 @@ public class TorneoGiocaController   {
 
     public void caricaQuarti() throws IOException {
         boolean quartiFiniti=true;
+
         ArrayList<Button> arrayBottoni = new ArrayList<Button>();
         arrayBottoni.addAll(Arrays.asList(buttonGiocaQuarti1,buttonGiocaQuarti2,buttonGiocaQuarti3,buttonGiocaQuarti4,buttonGiocaQuarti5,buttonGiocaQuarti6,buttonGiocaQuarti7,buttonGiocaQuarti8,buttonGiocaQuarti9));
         for(int i=0; i<9; i++) {
@@ -405,9 +406,8 @@ public class TorneoGiocaController   {
             }
         }
           for(int i=0; i<m.getPartiteTorneo().size(); i++) {
-              if (m.getPartitaTorneo(i).getVincitore() == null)
-                  quartiFiniti = false;
-              else {
+              if (m.getPartitaTorneo(i).getVincitore() != null){
+
                   switch (i) {
                       case (0): {
                           LBLv1_1.setText(m.getPartitaTorneo(i).getVincitore().getUsername());
@@ -457,21 +457,17 @@ public class TorneoGiocaController   {
                   }
               }
           }
-
-        ArrayList<Label> labelSemi = new ArrayList<Label>();
-        labelSemi.addAll(Arrays.asList(LBLv1_1,LBLv2_1,LBLv3_1,LBLv1_2,LBLv2_2,LBLv3_2,LBLv1_3,LBLv2_3,LBLv3_3));
-
+        labelArrayList.addAll(Arrays.asList(LBLv1_1,LBLv2_1,LBLv3_1,LBLv1_2,LBLv2_2,LBLv3_2,LBLv1_3,LBLv2_3,LBLv3_3));
 
         boolean temp = true;
-              for(int i=0; i<labelSemi.size(); i++){
-                  if(labelSemi.get(i).getText().equalsIgnoreCase(""))
-                      temp = false;
-              }
+        //Controlliamo se tutti i quarti sono finiti
+        for(int i=0; i<labelArrayList.size(); i++){
+            if(labelArrayList.get(i).getText().equalsIgnoreCase(""))
+                temp = false;
+        }
 
-              if(temp == true)
-                  caricaSemi();
-
-
+        if(temp == true)
+            caricaSemi();
 
     }
 
@@ -482,24 +478,23 @@ public class TorneoGiocaController   {
       buttonGiocaSemi3.setVisible(true);
 
       ArrayList<Button> arrayBottoni = new ArrayList<Button>();
-        arrayBottoni.addAll(Arrays.asList(buttonGiocaSemi1,buttonGiocaSemi2,buttonGiocaSemi3));
-        if(m.getPartiteTorneo().size()==12) {
-            for (int i = 9; i < 12; i++) {
-                if (m.getPartitaTorneo(i).getMazzo().getMazzo().size() < 12 && m.getPartitaTorneo(i).getVincitore() == null) {
+      arrayBottoni.addAll(Arrays.asList(buttonGiocaSemi1,buttonGiocaSemi2,buttonGiocaSemi3));
+      if(m.getPartiteTorneo().size()==12) {
+          for (int i = 0; i < 3; i++) {
+              if (m.getPartitaTorneo(i).getMazzo().getMazzo().size() < 12 && m.getPartitaTorneo(i).getVincitore() == null) {
                     arrayBottoni.get(i).setText("Riprendi");
                     arrayBottoni.get(i).setFont(new Font("Arial", 10));
-                }
-            }
-        }
+              }
+          }
+      }
 
       Scanner scan=new Scanner(this.fileTorneo);
       int countRighe=0;
       while(scan.hasNextLine()){
           String s=scan.nextLine();
           if(s.equalsIgnoreCase("")==false)
-          countRighe++;
+             countRighe++;
       }
-
 
 
       if(countRighe<12){
@@ -513,25 +508,13 @@ public class TorneoGiocaController   {
           m.creaSemifinali(semifinalisti, this.LblCodiceTorneo.getText());
           PrintWriter pw=new PrintWriter(LblCodiceTorneo.getText()+".csv");
 
-          System.out.println(m.getPartiteTorneo().size());
           for (int i = 0; i < m.getPartiteTorneo().size(); i++) {
               m.getPartitaTorneo(i).salvaPartita();
               pw.println(m.getPartitaTorneo(i).getCodice());
           }
           pw.close();
       }
-      else{
-          Scanner scan2=new Scanner(new File(LblCodiceTorneo.getText()+".csv"));
-          int i=0;
-          ArrayList<String> codici=new ArrayList<String>();
-          while(scan2.hasNextLine())
-              codici.add(scan2.nextLine());
-              for(int k=9; k<codici.size(); k++){
-                  String riga=codici.get(k);
-                  Partita p=new Partita();
-                  p.caricaPartita(new File(riga+".csv"));
-          }
-      }
+
       boolean semiFinite=true;
 
       for(int i=9; i<12; i++) {
@@ -557,55 +540,44 @@ public class TorneoGiocaController   {
                     }
                 }
       }
+
         if(semiFinite==true) {
             this.caricaFinale();
         }
+
     }
 
     private void caricaFinale() throws IOException {
         buttonGiocaFinale.setVisible(true);
-        if(m.getPartiteTorneo().size()==13) {
-          if (m.getPartitaTorneo(12).getMazzo().getMazzo().size() < 12 && m.getPartitaTorneo(12).getVincitore() == null) {
-            buttonGiocaFinale.setText("Riprendi");
-            buttonGiocaFinale.setFont(new Font("Arial", 10));
-          }
+        if (m.getPartiteTorneo().size() == 13) {
+            if (m.getPartitaTorneo(12).getMazzo().getMazzo().size() < 12 && m.getPartitaTorneo(12).getVincitore() == null) {
+                buttonGiocaFinale.setText("Riprendi");
+                buttonGiocaFinale.setFont(new Font("Arial", 10));
+            }
         }
-        Scanner scan=new Scanner(new File(this.LblCodiceTorneo.getText()+".csv"));
-        int countRighe=0;
-        while(scan.hasNextLine()){
-            String s=scan.nextLine();
-            if(s.equalsIgnoreCase("")==false)
+        Scanner scan = new Scanner(new File(this.LblCodiceTorneo.getText() + ".csv"));
+        int countRighe = 0;
+        while (scan.hasNextLine()) {
+            String s = scan.nextLine();
+            if (s.equalsIgnoreCase("") == false)
                 countRighe++;
         }
 
-        if(countRighe<13){
-        finalisti.addAll(Arrays.asList(LBLv1.getText(), LBLv2.getText(), LBLv3.getText()));
-        m.creaFinale(finalisti, LblCodiceTorneo.getText());
+        if (countRighe < 13) {
+            finalisti.addAll(Arrays.asList(LBLv1.getText(), LBLv2.getText(), LBLv3.getText()));
+            m.creaFinale(finalisti, LblCodiceTorneo.getText());
 
-        PrintWriter scrivo = new PrintWriter(this.LblCodiceTorneo.getText() + ".csv");
-        for (int j = 0; j < m.getPartiteTorneo().size(); j++) {
-            m.getPartitaTorneo(j).salvaPartita();
-        }
-        for (int i = 0; i < m.getPartiteTorneo().size(); i++) {
-            scrivo.println(m.getPartitaTorneo(i).getCodice());
-        }
-
-        scrivo.close();
-    }
-        else{
-            Scanner scan2=new Scanner(new File(LblCodiceTorneo.getText()+".csv"));
-            int i=0;
-            while(scan2.hasNextLine()){
-                for(int j=0; j<12; j++)
-                    scan2.nextLine();
-                String riga=scan2.nextLine();
-                Partita p=new Partita();
-                p.caricaPartita(new File(riga+".csv"));
-                m.aggiungiPartitaTorneo(p);
-                m.getPartiteTorneo().get(i).salvaPartita();
-                i++;
+            PrintWriter scrivo = new PrintWriter(this.LblCodiceTorneo.getText() + ".csv");
+            for (int j = 0; j < m.getPartiteTorneo().size(); j++) {
+                m.getPartitaTorneo(j).salvaPartita();
             }
+            for (int i = 0; i < m.getPartiteTorneo().size(); i++) {
+                scrivo.println(m.getPartitaTorneo(i).getCodice());
+            }
+
+            scrivo.close();
         }
+
 
         if(m.getPartiteTorneo().get(m.getPartiteTorneo().size()-1).getVincitore()!=null){
             this.LBVINCITORE.setVisible(true);

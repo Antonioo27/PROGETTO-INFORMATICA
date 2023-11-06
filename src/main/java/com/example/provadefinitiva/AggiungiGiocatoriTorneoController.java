@@ -9,12 +9,12 @@ import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class AggiungiGiocatoriTorneoController {
 
@@ -55,85 +55,85 @@ public class AggiungiGiocatoriTorneoController {
     private Label LBLv3_3;
 
     @FXML
-    private TextField Lbl1_1_1;
+    private TextField TxtF1_1_1;
 
     @FXML
-    private TextField Lbl1_1_2;
+    private TextField TxtF1_1_2;
 
     @FXML
-    private TextField Lbl1_1_3;
+    private TextField TxtF1_1_3;
 
     @FXML
-    private TextField Lbl1_2_1;
+    private TextField TxtF1_2_1;
 
     @FXML
-    private TextField Lbl1_2_2;
+    private TextField TxtF1_2_2;
 
     @FXML
-    private TextField Lbl1_2_3;
+    private TextField TxtF1_2_3;
 
     @FXML
-    private TextField Lbl1_3_1;
+    private TextField TxtF1_3_1;
 
     @FXML
-    private TextField Lbl1_3_2;
+    private TextField TxtF1_3_2;
 
     @FXML
-    private TextField Lbl1_3_3;
+    private TextField TxtF1_3_3;
 
     @FXML
-    private TextField Lbl2_1_1;
+    private TextField TxtF2_1_1;
 
     @FXML
-    private TextField Lbl2_1_2;
+    private TextField TxtF2_1_2;
 
     @FXML
-    private TextField Lbl2_1_3;
+    private TextField TxtF2_1_3;
 
     @FXML
-    private TextField Lbl2_2_1;
+    private TextField TxtF2_2_1;
 
     @FXML
-    private TextField Lbl2_2_2;
+    private TextField TxtF2_2_2;
 
     @FXML
-    private TextField Lbl2_2_3;
+    private TextField TxtF2_2_3;
 
     @FXML
-    private TextField Lbl2_3_1;
+    private TextField TxtF2_3_1;
 
     @FXML
-    private TextField Lbl2_3_2;
+    private TextField TxtF2_3_2;
 
     @FXML
-    private TextField Lbl2_3_3;
+    private TextField TxtF2_3_3;
 
     @FXML
-    private TextField Lbl3_1_1;
+    private TextField TxtF3_1_1;
 
     @FXML
-    private TextField Lbl3_1_2;
+    private TextField TxtF3_1_2;
 
     @FXML
-    private TextField Lbl3_1_3;
+    private TextField TxtF3_1_3;
 
     @FXML
-    private TextField Lbl3_2_1;
+    private TextField TxtF3_2_1;
 
     @FXML
-    private TextField Lbl3_2_2;
+    private TextField TxtF3_2_2;
 
     @FXML
-    private TextField Lbl3_2_3;
+    private TextField TxtF3_2_3;
 
     @FXML
-    private TextField Lbl3_3_1;
+    private TextField TxtF3_3_1;
 
     @FXML
-    private TextField Lbl3_3_2;
+    private TextField TxtF3_3_2;
 
     @FXML
-    private TextField Lbl3_3_3;
+    private TextField TxtF3_3_3;
 
     @FXML
     private Label LblCodiceTorneo;
@@ -149,34 +149,14 @@ public class AggiungiGiocatoriTorneoController {
     @FXML
     void creaTorneo(ActionEvent event) throws IOException {
 
-        nomiGiocatori.add(Lbl1_1_1.getText());
-        nomiGiocatori.add(Lbl2_1_1.getText());
-        nomiGiocatori.add(Lbl3_1_1.getText());
-        nomiGiocatori.add(Lbl1_2_1.getText());
-        nomiGiocatori.add(Lbl2_2_1.getText());
-        nomiGiocatori.add(Lbl3_2_1.getText());
-        nomiGiocatori.add(Lbl1_3_1.getText());
-        nomiGiocatori.add(Lbl2_3_1.getText());
-        nomiGiocatori.add(Lbl3_3_1.getText());
-        nomiGiocatori.add(Lbl1_1_2.getText());
-        nomiGiocatori.add(Lbl2_1_2.getText());
-        nomiGiocatori.add(Lbl3_1_2.getText());
-        nomiGiocatori.add(Lbl1_2_2.getText());
-        nomiGiocatori.add(Lbl2_2_2.getText());
-        nomiGiocatori.add(Lbl3_2_2.getText());
-        nomiGiocatori.add(Lbl1_3_2.getText());
-        nomiGiocatori.add(Lbl2_3_2.getText());
-        nomiGiocatori.add(Lbl3_3_2.getText());
-        nomiGiocatori.add(Lbl1_1_3.getText());
-        nomiGiocatori.add(Lbl2_1_3.getText());
-        nomiGiocatori.add(Lbl3_1_3.getText());
-        nomiGiocatori.add(Lbl1_2_3.getText());
-        nomiGiocatori.add(Lbl2_2_3.getText());
-        nomiGiocatori.add(Lbl3_2_3.getText());
-        nomiGiocatori.add(Lbl1_3_3.getText());
-        nomiGiocatori.add(Lbl2_3_3.getText());
-        nomiGiocatori.add(Lbl3_3_3.getText());
+        ArrayList<TextField> campiGiocatoriTorneo = new ArrayList<TextField>();
+        campiGiocatoriTorneo.addAll(Arrays.asList(TxtF1_1_1,TxtF2_1_1,TxtF3_1_1, TxtF1_2_1,TxtF2_2_1,TxtF3_2_1,TxtF1_3_1,TxtF2_3_1,TxtF3_3_1,TxtF1_1_2,TxtF2_1_2,TxtF3_1_2,TxtF1_2_2,TxtF2_2_2,TxtF3_2_2,TxtF1_3_2,TxtF2_3_2,TxtF3_3_2,TxtF1_1_3,TxtF2_1_3,TxtF3_1_3,TxtF1_2_3,TxtF2_2_3,TxtF3_2_3,TxtF1_3_3,TxtF2_3_3,TxtF3_3_3));
 
+        for(int i=0; i<campiGiocatoriTorneo.size(); i++){
+            nomiGiocatori.add(campiGiocatoriTorneo.get(i).getText());
+        }
+
+        //Riempimento della partita con dei bot
         int botCount=1;
         for(int i=0; i<nomiGiocatori.size(); i++){
             if(nomiGiocatori.get(i).length()==0){

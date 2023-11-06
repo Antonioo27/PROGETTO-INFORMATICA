@@ -12,27 +12,27 @@
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="681.0" prefWidth="845.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.provadefinitiva.AggiungiGiocatoriTorneoController">
    <children>
       <Label fx:id="LBLv1_1" alignment="CENTER" layoutX="174.0" layoutY="121.0" prefHeight="26.0" prefWidth="88.0" styleClass="label-custom" stylesheets="@Css/ProvaNick.css" text="Player" />
-      <TextField fx:id="Lbl1_1_1" layoutX="20.0" layoutY="82.0" prefHeight="14.0" prefWidth="88.0" />
-      <TextField fx:id="Lbl2_1_1" layoutX="20.0" layoutY="118.0" prefHeight="14.0" prefWidth="88.0" />
-      <TextField fx:id="Lbl3_1_1" layoutX="20.0" layoutY="154.0" prefHeight="14.0" prefWidth="88.0" />
-      <TextField fx:id="Lbl1_2_1" layoutX="20.0" layoutY="208.0" prefHeight="14.0" prefWidth="88.0" />
-      <TextField fx:id="Lbl2_2_1" layoutX="20.0" layoutY="244.0" prefHeight="14.0" prefWidth="88.0" />
-      <TextField fx:id="Lbl3_2_1" layoutX="20.0" layoutY="280.0" prefHeight="14.0" prefWidth="88.0" />
-      <TextField fx:id="Lbl1_3_1" layoutX="20.0" layoutY="330.0" prefHeight="14.0" prefWidth="88.0" />
-      <TextField fx:id="Lbl2_3_1" layoutX="20.0" layoutY="366.0" prefHeight="14.0" prefWidth="88.0" />
-      <TextField fx:id="Lbl3_3_1" layoutX="20.0" layoutY="402.0" prefHeight="14.0" prefWidth="88.0" />
+      <TextField fx:id="TxtF1_1_1" layoutX="20.0" layoutY="82.0" prefHeight="14.0" prefWidth="88.0" />
+      <TextField fx:id="TxtF2_1_1" layoutX="20.0" layoutY="118.0" prefHeight="14.0" prefWidth="88.0" />
+      <TextField fx:id="TxtF3_1_1" layoutX="20.0" layoutY="154.0" prefHeight="14.0" prefWidth="88.0" />
+      <TextField fx:id="TxtF1_2_1" layoutX="20.0" layoutY="208.0" prefHeight="14.0" prefWidth="88.0" />
+      <TextField fx:id="TxtF2_2_1" layoutX="20.0" layoutY="244.0" prefHeight="14.0" prefWidth="88.0" />
+      <TextField fx:id="TxtF3_2_1" layoutX="20.0" layoutY="280.0" prefHeight="14.0" prefWidth="88.0" />
+      <TextField fx:id="TxtF1_3_1" layoutX="20.0" layoutY="330.0" prefHeight="14.0" prefWidth="88.0" />
+      <TextField fx:id="TxtF2_3_1" layoutX="20.0" layoutY="366.0" prefHeight="14.0" prefWidth="88.0" />
+      <TextField fx:id="TxtF3_3_1" layoutX="20.0" layoutY="402.0" prefHeight="14.0" prefWidth="88.0" />
       <Label fx:id="LBLv2_1" alignment="CENTER" layoutX="179.0" layoutY="241.0" prefHeight="26.0" prefWidth="88.0" styleClass="label-custom" stylesheets="@Css/ProvaNick.css" text="Player" />
       <Label fx:id="LBLv3_1" alignment="CENTER" layoutX="174.0" layoutY="363.0" prefHeight="26.0" prefWidth="88.0" styleClass="label-custom" stylesheets="@Css/ProvaNick.css" text="Player" />
       <Label fx:id="LBLv3_3" alignment="CENTER" layoutX="596.0" layoutY="119.0" prefHeight="26.0" prefWidth="88.0" styleClass="label-custom" stylesheets="@Css/ProvaNick.css" text="Player" />
-      <TextField fx:id="Lbl3_3_3" layoutX="740.0" layoutY="84.0" prefHeight="14.0" prefWidth="88.0" />
-      <TextField fx:id="Lbl2_3_3" layoutX="740.0" layoutY="120.0" prefHeight="14.0" prefWidth="88.0" />
-      <TextField fx:id="Lbl1_3_3" layoutX="740.0" layoutY="156.0" prefHeight="14.0" prefWidth="88.0" />
-      <TextField fx:id="Lbl3_2_3" layoutX="740.0" layoutY="202.0" prefHeight="14.0" prefWidth="88.0" />
-      <TextField fx:id="Lbl2_2_3" layoutX="740.0" layoutY="238.0" prefHeight="14.0" prefWidth="88.0" />
-      <TextField fx:id="Lbl1_2_3" layoutX="740.0" layoutY="274.0" prefHeight="14.0" prefWidth="88.0" />
-      <TextField fx:id="Lbl3_1_3" layoutX="740.0" layoutY="321.0" prefHeight="14.0" prefWidth="88.0" />
-      <TextField fx:id="Lbl2_1_3" layoutX="740.0" layoutY="357.0" prefHeight="14.0" prefWidth="88.0" />
-      <TextField fx:id="Lbl1_1_3" layoutX="740.0" layoutY="393.0" prefHeight="14.0" prefWidth="88.0" />
+      <TextField fx:id="TxtF3_3_3" layoutX="740.0" layoutY="84.0" prefHeight="14.0" prefWidth="88.0" />
+      <TextField fx:id="TxtF2_3_3" layoutX="740.0" layoutY="120.0" prefHeight="14.0" prefWidth="88.0" />
+      <TextField fx:id="TxtF1_3_3" layoutX="740.0" layoutY="156.0" prefHeight="14.0" prefWidth="88.0" />
+      <TextField fx:id="TxtF3_2_3" layoutX="740.0" layoutY="202.0" prefHeight="14.0" prefWidth="88.0" />
+      <TextField fx:id="TxtF2_2_3" layoutX="740.0" layoutY="238.0" prefHeight="14.0" prefWidth="88.0" />
+      <TextField fx:id="TxtF1_2_3" layoutX="740.0" layoutY="274.0" prefHeight="14.0" prefWidth="88.0" />
+      <TextField fx:id="TxtF3_1_3" layoutX="740.0" layoutY="321.0" prefHeight="14.0" prefWidth="88.0" />
+      <TextField fx:id="TxtF2_1_3" layoutX="740.0" layoutY="357.0" prefHeight="14.0" prefWidth="88.0" />
+      <TextField fx:id="TxtF1_1_3" layoutX="740.0" layoutY="393.0" prefHeight="14.0" prefWidth="88.0" />
       <Label fx:id="LBLv2_3" alignment="CENTER" layoutX="596.0" layoutY="241.0" prefHeight="26.0" prefWidth="88.0" styleClass="label-custom" stylesheets="@Css/ProvaNick.css" text="Player" />
       <Label fx:id="LBLv1_3" alignment="CENTER" layoutX="596.0" layoutY="357.0" prefHeight="26.0" prefWidth="88.0" styleClass="label-custom" stylesheets="@Css/ProvaNick.css" text="Player" />
       <Label fx:id="LBLv1" alignment="CENTER" layoutX="335.0" layoutY="243.0" prefHeight="26.0" prefWidth="88.0" styleClass="label-custom" stylesheets="@Css/ProvaNick.css" text="Player" />
@@ -43,15 +43,15 @@
          </image>
       </ImageView>
       <Label fx:id="LBLv2_2" alignment="CENTER" layoutX="387.0" layoutY="473.0" prefHeight="26.0" prefWidth="88.0" styleClass="label-custom" stylesheets="@Css/ProvaNick.css" text="Player" />
-      <TextField fx:id="Lbl1_3_2" layoutX="627.0" layoutY="633.0" prefHeight="14.0" prefWidth="88.0" />
-      <TextField fx:id="Lbl2_3_2" layoutX="682.0" layoutY="595.0" prefHeight="14.0" prefWidth="88.0" />
-      <TextField fx:id="Lbl3_3_2" layoutX="726.0" layoutY="633.0" prefHeight="14.0" prefWidth="88.0" />
-      <TextField fx:id="Lbl2_1_2" layoutX="108.0" layoutY="595.0" prefHeight="14.0" prefWidth="88.0" />
-      <TextField fx:id="Lbl1_1_2" layoutX="52.0" layoutY="630.0" prefHeight="14.0" prefWidth="88.0" />
-      <TextField fx:id="Lbl3_1_2" layoutX="160.0" layoutY="630.0" prefHeight="14.0" prefWidth="88.0" />
-      <TextField fx:id="Lbl2_2_2" layoutX="388.0" layoutY="595.0" prefHeight="14.0" prefWidth="88.0" />
-      <TextField fx:id="Lbl1_2_2" layoutX="323.0" layoutY="630.0" prefHeight="14.0" prefWidth="88.0" />
-      <TextField fx:id="Lbl3_2_2" layoutX="448.0" layoutY="630.0" prefHeight="14.0" prefWidth="88.0" />
+      <TextField fx:id="TxtF1_3_2" layoutX="627.0" layoutY="633.0" prefHeight="14.0" prefWidth="88.0" />
+      <TextField fx:id="TxtF2_3_2" layoutX="682.0" layoutY="595.0" prefHeight="14.0" prefWidth="88.0" />
+      <TextField fx:id="TxtF3_3_2" layoutX="726.0" layoutY="633.0" prefHeight="14.0" prefWidth="88.0" />
+      <TextField fx:id="TxtF2_1_2" layoutX="108.0" layoutY="595.0" prefHeight="14.0" prefWidth="88.0" />
+      <TextField fx:id="TxtF1_1_2" layoutX="52.0" layoutY="630.0" prefHeight="14.0" prefWidth="88.0" />
+      <TextField fx:id="TxtF3_1_2" layoutX="160.0" layoutY="630.0" prefHeight="14.0" prefWidth="88.0" />
+      <TextField fx:id="TxtF2_2_2" layoutX="388.0" layoutY="595.0" prefHeight="14.0" prefWidth="88.0" />
+      <TextField fx:id="TxtF1_2_2" layoutX="323.0" layoutY="630.0" prefHeight="14.0" prefWidth="88.0" />
+      <TextField fx:id="TxtF3_2_2" layoutX="448.0" layoutY="630.0" prefHeight="14.0" prefWidth="88.0" />
       <Label fx:id="LBLv3_2" alignment="CENTER" layoutX="681.0" layoutY="473.0" prefHeight="26.0" prefWidth="88.0" styleClass="label-custom" stylesheets="@Css/ProvaNick.css" text="Player" />
       <Label fx:id="LBLv1_2" alignment="CENTER" layoutX="130.0" layoutY="473.0" prefHeight="26.0" prefWidth="88.0" styleClass="label-custom" stylesheets="@Css/ProvaNick.css" text="Player" />
       <Label fx:id="LBLv2" alignment="CENTER" layoutX="383.0" layoutY="272.0" prefHeight="26.0" prefWidth="88.0" styleClass="label-custom" stylesheets="@Css/ProvaNick.css" text="Player" />

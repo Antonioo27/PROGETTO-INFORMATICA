@@ -4,7 +4,6 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.HashMap;
 
 public class MainEngine {
 
@@ -16,18 +15,12 @@ public class MainEngine {
          this.torneo = new Torneo();
      }
 
-
-     public static void creaPartita(ArrayList<String> nomiGiocatori, String codicepartita) throws FileNotFoundException {
-         partita = new Partita(nomiGiocatori,codicepartita);
-         partita.salvaPartita();
-     }
-
-    public ArrayList<Partita> getPartiteTorneo(){
+     //METODI PER IL TORNEO
+     public ArrayList<Partita> getPartiteTorneo(){
         return this.torneo.getPartiteTorneo();
     }
 
      public void aggiungiPartitaTorneo(Partita partita){
-
          this.torneo.aggiungiPartitaTorneo(partita);
      }
 
@@ -44,22 +37,23 @@ public class MainEngine {
          this.torneo.salvaTorneo();
     }
 
-
     public Partita getPartitaTorneo(int indice){
             return  this.torneo.getPartita(indice);
     }
 
-    public static Partita getPartita() {
-        return partita;
+    public Torneo getTorneo(){
+         return this.torneo;
     }
 
+    public void caricaTorneo(File file) throws FileNotFoundException {
+         this.torneo.caricaTorneo(file);
 
-    public int getTurno(){
-             return this.partita.getTurno();
     }
 
-    public void prossimoTurno(){
-             this.partita.prossimoTurno();
+    //METODI PER LA PARTITA
+    public static void creaPartita(ArrayList<String> nomiGiocatori, String codicepartita) throws FileNotFoundException {
+        partita = new Partita(nomiGiocatori,codicepartita);
+        partita.salvaPartita();
     }
 
     public void caricaPartita(File file)  {
@@ -69,14 +63,20 @@ public class MainEngine {
             throw new RuntimeException(e);
         }
     }
+    public static Partita getPartita() {
+        return partita;
+    }
 
-    public void caricaTorneo(File file) throws FileNotFoundException {
-         this.torneo.caricaTorneo(file);
-
+    public void prossimoTurno(){
+        this.partita.prossimoTurno();
     }
 
     public ArrayList<Giocatore> getGiocatori() {
          return this.partita.getGiocatori();
+    }
+
+    public int getTurno(){
+        return this.partita.getTurno();
     }
 
     public ArrayList<Carta> getCarteGiocatore(int numeroGiocatore){ //partendo da zero
@@ -118,12 +118,4 @@ public class MainEngine {
     public Giocatore getVincitore(){
              return this.partita.getVincitore();
     }
-    public Torneo getTorneo(){
-             return this.torneo;
-    }
-
-    public HashMap<Integer,Giocatore> checkPartite() throws IOException{
-           return  this.getTorneo().checkPartite();
-    }
-
     }

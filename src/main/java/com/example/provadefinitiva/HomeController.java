@@ -6,13 +6,10 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
-
-import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 
@@ -36,6 +33,7 @@ public class HomeController {
 
     public void creaPartitaSingola(ActionEvent event) throws IOException {
         String codicePartita = String.valueOf((int)(Math.random() * (3000 - 2000 + 1) + 2000));
+
         FXMLLoader loader = new FXMLLoader(getClass().getResource("AggiungiGiocatoriPartitaSingola.fxml"));
         root= loader.load();
         AggiungiGiocatoriPartitaSingolaController addPlayerSingleGameController = loader.getController();
@@ -43,8 +41,6 @@ public class HomeController {
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
-        Image icon = new Image("C:\\Users\\HP\\ProvaDefinitiva\\src\\main\\resources\\com\\example\\provadefinitiva\\Immagini\\logo.png");
-        stage.getIcons().add(icon);
         stage.show();
     }
 
@@ -62,7 +58,6 @@ public class HomeController {
     }
 
     public void gestisciGiocatori(ActionEvent event) throws IOException {
-
         FXMLLoader loader = new FXMLLoader(getClass().getResource("GestioneGiocatori.fxml"));
         root = loader.load();
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -78,10 +73,6 @@ public class HomeController {
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
-    }
-
-    public void nomiTorneo(ArrayList<String> nomiGiocatori) {
-       this.nomigiocatori = nomiGiocatori;
     }
 
     public void eliminaPartiteTornei(ActionEvent event) throws IOException{

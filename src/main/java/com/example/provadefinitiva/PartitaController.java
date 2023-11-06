@@ -13,13 +13,9 @@ import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
-import javafx.scene.shape.Path;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.util.Duration;
-
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.Timer;
@@ -92,14 +88,8 @@ public class PartitaController {
     @FXML
     private Button buttonVisualizzaLeaderBoard;
 
-    private File fileTorneoo;
-
     private Stage stage;
-
     private Scene scene;
-
-    private Parent root;
-    private String vincitore;
     MainEngine m = new MainEngine();
 
 
@@ -331,33 +321,48 @@ public class PartitaController {
     }
 
     public void checkBot(int giocatoredopo){
-        if(m.getGiocatori().get(giocatoredopo).getUsername().length()>3&&m.getGiocatori().get(giocatoredopo).getUsername().substring(0,3).equalsIgnoreCase("bot") ) {
+        if(m.getGiocatori().get(giocatoredopo).getUsername().length()>3 && m.getGiocatori().get(giocatoredopo).getUsername().substring(0,3).equalsIgnoreCase("bot") ) {
             PauseTransition pause = new PauseTransition(Duration.seconds(1.7));
             pause.setOnFinished(event -> {
                 int indice = -1;
                 switch (giocatoredopo) {
-                    case(0): if(labelGiocatore1.getText().substring(0,3).equalsIgnoreCase("bot")||labelGiocatore2.getText().substring(0,3).equalsIgnoreCase("bot") || labelGiocatore3.getText().substring(0,3).equalsIgnoreCase("bot"))
-                        indice = (m.getGiocatori().get(giocatoredopo)).giocaCartaMigliore();
+                    case (0): {
+                        if (labelGiocatore1.getText().substring(0, 3).equalsIgnoreCase("bot"))
+                            indice = (m.getGiocatori().get(giocatoredopo)).giocaCartaMigliore();
                         switch (indice) {
-                            case (0): {Imm1G1.fireEvent(new MouseEvent(MouseEvent.MOUSE_CLICKED, Imm1G1.getLayoutX(), Imm1G1.getLayoutY(), 0, 0, null, 1, true, true, true, true, true, true, true, true, true, true, null));};break;
-                            case (1): {Imm2G1.fireEvent(new MouseEvent(MouseEvent.MOUSE_CLICKED, Imm2G1.getLayoutX(), Imm2G1.getLayoutY(), 0, 0, null, 1, true, true, true, true, true, true, true, true, true, true, null));};break;
-                            case (2): {Imm3G1.fireEvent(new MouseEvent(MouseEvent.MOUSE_CLICKED, Imm3G1.getLayoutX(), Imm3G1.getLayoutY(), 0, 0, null, 1, true, true, true, true, true, true, true, true, true, true, null));}}break;
-                    case (1): if (labelGiocatore2.getText().substring(0,3).equalsIgnoreCase("bot") || labelGiocatore2.getText().substring(0,3).equalsIgnoreCase("bot"))
-                        indice = (m.getGiocatori().get(giocatoredopo)).giocaCartaMigliore();
+                            case (0): {giocaCartaBot(Imm1G1);}break;
+                            case (1): {giocaCartaBot(Imm2G1);}break;
+                            case (2): {giocaCartaBot(Imm3G1);}break;
+                        }
+                    }break;
+                    case (1): {
+                        if (labelGiocatore2.getText().substring(0, 3).equalsIgnoreCase("bot"))
+                            indice = (m.getGiocatori().get(giocatoredopo)).giocaCartaMigliore();
                         switch (indice) {
-                            case (0): {Imm1G2.fireEvent(new MouseEvent(MouseEvent.MOUSE_CLICKED, Imm1G2.getLayoutX(), Imm1G2.getLayoutY(), 0, 0, null, 1, true, true, true, true, true, true, true, true, true, true, null));};break;
-                            case (1): {Imm2G2.fireEvent(new MouseEvent(MouseEvent.MOUSE_CLICKED, Imm2G2.getLayoutX(), Imm2G2.getLayoutY(), 0, 0, null, 1, true, true, true, true, true, true, true, true, true, true, null));};break;
-                            case (2): {Imm3G2.fireEvent(new MouseEvent(MouseEvent.MOUSE_CLICKED, Imm3G2.getLayoutX(), Imm3G2.getLayoutY(), 0, 0, null, 1, true, true, true, true, true, true, true, true, true, true, null));}}break;
-                    case (2): if (labelGiocatore3.getText().substring(0,3).equalsIgnoreCase("bot") || labelGiocatore3.getText().substring(0,3).equalsIgnoreCase("bot"))
-                        indice = (m.getGiocatori().get(giocatoredopo)).giocaCartaMigliore();
+                            case (0): {giocaCartaBot(Imm1G2);}break;
+                            case (1): {giocaCartaBot(Imm2G2);}break;
+                            case (2): {giocaCartaBot(Imm3G2);}break;
+                        }
+                    }break;
+                    case (2): {
+                        if (labelGiocatore3.getText().substring(0, 3).equalsIgnoreCase("bot"))
+                            indice = (m.getGiocatori().get(giocatoredopo)).giocaCartaMigliore();
                         switch (indice) {
-                            case (0): {Imm1G3.fireEvent(new MouseEvent(MouseEvent.MOUSE_CLICKED, Imm1G3.getLayoutX(), Imm1G3.getLayoutY(), 0, 0, null, 1, true, true, true, true, true, true, true, true, true, true, null));};break;
-                            case (1): {Imm2G3.fireEvent(new MouseEvent(MouseEvent.MOUSE_CLICKED, Imm2G3.getLayoutX(), Imm2G3.getLayoutY(), 0, 0, null, 1, true, true, true, true, true, true, true, true, true, true, null));};break;
-                            case (2): {Imm3G3.fireEvent(new MouseEvent(MouseEvent.MOUSE_CLICKED, Imm3G3.getLayoutX(), Imm3G3.getLayoutY(), 0, 0, null, 1, true, true, true, true, true, true, true, true, true, true, null));}break;}
+                            case (0): {giocaCartaBot(Imm1G3);}break;
+                            case (1): {giocaCartaBot(Imm2G3);}break;
+                            case (2): {giocaCartaBot(Imm3G3);}break;
+                        }
+                    }break;
                 }
             });
             pause.play();
         }
+    }
+
+
+
+    private void giocaCartaBot(ImageView carta){
+        carta.fireEvent(new MouseEvent(MouseEvent.MOUSE_CLICKED, carta.getLayoutX(), carta.getLayoutY(), 0, 0, null, 1, true, true, true, true, true, true, true, true, true, true, null));
     }
 
 
@@ -481,7 +486,7 @@ public class PartitaController {
         transition3.play();
     }
 
-    private void returnImageViewsToOriginalPosition() { // metodo per far ritornare le carte distribuite dal mazzo ai giocatori al mazzo
+    private void returnImageViewsToOriginalPosition() { // metodo per far ritornare le carte distribuite dal mazzo ai giocatori, al mazzo
         // Crea le animazioni di ritorno veloce
         TranslateTransition returnTransition1 = new TranslateTransition(Duration.seconds(0.7), ImmMazzo1);
         returnTransition1.setToX(ImmMazzo.getLayoutX() - ImmMazzo1.getLayoutX());
@@ -527,8 +532,6 @@ public class PartitaController {
             m.trovaVincitore();
 
             LabelVincitore.setText("VINCITORE : "+ m.getVincitore().getUsername());
-            vincitore = m.getVincitore().getUsername();
-            System.out.println(m.getVincitore());
             m.salvaPartita();
             pause.play();
         }
@@ -536,7 +539,7 @@ public class PartitaController {
 
     public void tornaIndietro(ActionEvent event) throws IOException {
 
-        if(m.getPartita().getCarteInCampo().size()==0) {
+        if(m.getCarteInCampo().size()==0) {
             if (Integer.parseInt(m.getPartita().getCodice()) < 2000) {
 
                 if (m.getPartita().getVincitore() == null)  // se la partita non è ancora finita
@@ -558,7 +561,6 @@ public class PartitaController {
                 if (m.getPartita().getVincitore() == null)
                     m.salvaPartita();
 
-
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("PaginaIniziale.fxml"));
                 Parent root = loader.load();
                 stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -567,7 +569,6 @@ public class PartitaController {
                 stage.show();
                 if (m.getPartita().getVincitore() != null) {
                     String filePath = m.getPartita().getCodice() + ".csv";
-                      System.out.println("cidice partita"+m.getPartita().getCodice());
                       try {
                         File file = new File(filePath);
 
@@ -588,11 +589,10 @@ public class PartitaController {
                       String riga = scan.nextLine();
                       codici.add(riga);
                   }
-                 System.out.println(codici.remove(m.getPartita().getCodice()));
+                 codici.remove(m.getPartita().getCodice());
 
                   PrintWriter scrivo = new PrintWriter("PartiteETornei.csv");
                     for(int i=0; i<codici.size(); i++) {
-                        System.out.println(codici.get(i));
                         scrivo.println(codici.get(i));
                     }
                     scrivo.close();

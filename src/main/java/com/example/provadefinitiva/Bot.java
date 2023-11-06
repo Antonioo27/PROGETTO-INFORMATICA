@@ -1,5 +1,4 @@
 package com.example.provadefinitiva;
-import com.example.provadefinitiva.Partita;
 
 import java.util.ArrayList;
 
@@ -16,4 +15,4 @@ public class Bot extends Giocatore{
          return this.getCarte().indexOf(Partita.TrovaMaggiore(this.getCarte()));
     }
 
-}
+    }
